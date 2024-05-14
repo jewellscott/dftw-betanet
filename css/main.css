@@ -250,8 +250,8 @@ h4 {
 	margin: auto;
 }
 
-.max-width-80 {
-	max-width: 80%;
+.max-width-60 {
+	max-width: 60%;
 }
 
 .home-main .content-centered {
@@ -349,6 +349,12 @@ h4 {
 
 /* 3 column grid */
 
+/* 2 column grid */
+
+.grid-column-2 {
+	margin: 0 auto;
+}
+
 /* friends */
 
 .friends-grid {
@@ -359,7 +365,7 @@ h4 {
 	}
 
 	li {
-		padding: 2em;
+		padding: 1em;
 		list-style-type: none;
 	}
 
