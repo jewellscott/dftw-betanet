@@ -115,10 +115,14 @@ body {
   		font-style: normal;
   		letter-spacing: .2em;
   		padding: 0 1em;
-/*  		background: linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
+/*  	background: linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
   		-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-*/	}
+			-webkit-text-fill-color: transparent; */	
+			a {
+				color: white;
+				text-decoration: none;
+			}
+		}
 	.contact-nav {
 		ul {
 			display: flex;
@@ -248,10 +252,6 @@ h4 {
 
 .max-width-80 {
 	max-width: 80%;
-}
-
-.grid-column-2 { 
-
 }
 
 .home-main .content-centered {
