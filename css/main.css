@@ -246,6 +246,14 @@ h4 {
 	margin: auto;
 }
 
+.max-width-80 {
+	max-width: 80%;
+}
+
+.grid-column-2 { 
+
+}
+
 .home-main .content-centered {
 	display: flex;
 	justify-content: center;
@@ -340,3 +348,27 @@ h4 {
 }
 
 /* 3 column grid */
+
+/* friends */
+
+.friends-grid {
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	li {
+		padding: 2em;
+		list-style-type: none;
+	}
+
+	img {
+		border: 4px solid black;
+	}
+
+	a {
+		text-decoration: none;
+		color: black;
+	}
+}
