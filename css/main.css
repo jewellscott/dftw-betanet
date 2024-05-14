@@ -33,7 +33,7 @@ body {
 .wrapper {
 	min-height: 100%;
 	display: flex;
-  	flex-direction: column;
+  flex-direction: column;
 }
 
 .site-head, .site-foot {
@@ -75,6 +75,12 @@ body {
 	flex-wrap: wrap;
 }
 
+@media (max-width: 200) {
+	.site-nav {
+		background-color: blue;
+	}
+}
+
 .site-nav ul {
 	display: flex;
 	justify-content: flex-end;
@@ -97,7 +103,7 @@ body {
 }
 
 .site-nav li {
-	margin: .5em 0;
+	margin: 1em 0;
 }
 .site-foot {
 	background-color: black;
@@ -211,11 +217,12 @@ h4 {
 .home-bitmoji {
 	max-width: 500px;
 	margin-right: 5em;
+	align-items: center;
 }
 
 .home-main {
 	display: flex;
-	padding: 0;
+	padding: 0 0 2em 0;
 	h1 {
 		margin-bottom: 0;
 /*		background: black;
@@ -256,6 +263,7 @@ h4 {
 
 .home-main .content-centered {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	max-width: 80%;
@@ -290,6 +298,34 @@ h4 {
 	text-decoration: none;
 	color: blue;
 	font-weight: 700;
+}
+
+@media (max-width: 1600px) {
+	.home-bitmoji {
+			max-width: 400px;
+			margin: 1em;
+	}
+	.site-nav, .site-nav ul {
+		margin: 0 auto;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 800px) {
+	.home-bitmoji {
+			max-width: 250px;
+			margin: 1em;
+	}
+	.site-nav, .site-nav ul {
+		margin: 0 auto;
+		justify-content: center;
+	}
+	.site-foot {
+		flex-direction: column;
+		.tagline {
+			margin-bottom: 1em;
+		}
+	}
 }
 
 /* subpages */
