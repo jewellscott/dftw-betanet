@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS ONLINE</title>
+</head>
+<body>
+  <header>
+    <h1 style="color: red">Hello, Jewell.</h1>
+    <h2 style="color: red">Welcome to the Internet.</h2>
+    <p id="mantra">Maxim</p>
+  </header>
+  <main>
+    <section>
+      <h2>DFTW</h2>
+      <ul>
+        <li><a target="_blank" href="https://app.slack.com/client/T06RG1XDK40/C06QLJX5YUE">Slack</a></li>
+        <li><a target="_blank" href="https://perpetual.education/study-hall">Lessons</a></li>
+        <li><a target="_blank" href="https://perpetual.education/milestones">Timeline</a></li>
+        <li><a target="_blank" href="https://perpetual.education/study-hall">Study Hall</a></li>
+        <li><a target="_blank" href="https://perpetual.education/features">Language Features</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>BOARDS</h2>
+      <ul>
+        <li><a href="/">Take care of yourself</a></li>
+        <li><a href="/">Therapy</a></li>
+        <li><a href="/">Journaling</a></li>
+        <li><a href="/">Working and doing</a></li>
+        <li><a href="/">Thinking</a></li>
+        <li><a href="/">Gentle encouragement</a></li>
+        <li><a href="/">La vie en rose</a></li>
+        <li><a href="/">I think I will solve problems on purpose</a></li>
+     
+      </ul>
+    </section>
+  </main>
+  <script>
+
+
+    const mantras = [
+      "Action conquers fear.",
+      "Have fun.",
+      "Do it now.",
+      "One thing at a time.",
+      "Live in the moment.",
+      "Have patience.",
+      "Focus on the long game.",
+      "Do more with less.",
+      "Choose joy.",
+      "Keep moving forward.",
+      "Seize the day.",
+      "Make your dreams happen.",
+      "Yes, you can.",
+      "You've got this!",
+      "Sart now.",
+      "Actiomn -> Motivation.",
+      "Work (phys.): object displacement. Move!",
+      "Tetelestai.",
+      "Progress, not perfection.",
+      "Every day is another chance.",
+      "Practice kindness.",
+      "Let it be easy.",
+      "What would it look like if it were easy?",
+      "The best time is now.",
+      "Begin.",
+      "Make it happen.",
+      "Collect moments, not things.",
+      "Appreciate the little things.",
+      "Memento mori. Memento vivere.",
+      "Start with optimism.",
+      "Be here now.",
+      "Be kind to yourself.",
+      "Start somewhere.",
+      "The sun came up today.",
+      "u+2600 u+fe0f Reliability. We come through every day.",
+      "Taste and adjust.",
+      "Get better through action.",
+      "Enjoy today.",
+      "Girl, you totally got this.",
+      "Care for your body.",
+      "Use your brain.",
+      "Show up.",
+      "Write up a tentative plan.",
+      "Find strengths and solutions.",
+      "The journey is the destination.",
+      "Talent is a pursued interest.",
+      "You can.",
+      "One step at a time.",
+      "Dig deep.",
+      "Keep showing up.",
+      "You can do hard things.",
+      "Forward is forward.",
+      "Breathe in, breathe out.",
+      "What gets measured gets managed.",
+      "Do what you can see in the headlights.",
+      "Find a way!",
+      "Get clear objectives.",
+      "Play the tape all the way to the end.",
+      "Chip away.",
+      "Consider: tomorrow, next week, next month, next year.",
+      "Let him become a fool that he may become wise.",
+      "Someday is today.",
+      "Festina lente.",
+      "Who you are -> what you do -> who you are -> what you do -> who you are...",
+      "Walk by the spirit.",
+      "1% better."
+    ];
+
+let randomMantra = "";
+
+    let mantraString = document.getElementById("mantra");
+
+    function getRandomMantra() {
+      randomMantra = mantras[Math.floor(Math.random() * mantras.length)];
+      console.log(`Random mantra: ${randomMantra}`);
+      return randomMantra;
+    };
+
+    mantraString.textContent = `${getRandomMantra()}`;
+  </script>
+</body>
+</html>
