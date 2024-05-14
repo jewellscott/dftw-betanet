@@ -11,17 +11,17 @@
 	[ ] Inspo
 		[ ] Grid
 	[ ] Goals
-	[ ] Links
-		[ ] Use tech class... it's kinda cute.
+	[x] Links
+		[x] Use tech class... it's kinda cute.
 	[ ] Extras
-	[ ] Friends
-		[ ] Grid
+	[x] Friends
+		[x] Grid
 [ ] Add skip to main
 [ ] Add ARIA
 [-] Figure out self-hosted fonts
 [x] Add Favicons
-	[X] Maybe switch the icon img
+	[x] Maybe switch the icon img
 [ ] Create a cheeky page that *looks* like a Markdown file opened in the brower but is HTML... just use a mono font or something bruv
 [x] Add Bitmoji randomizer
 [x] Fix font/footer on the server debacle - CACHING ISSUE. Sometimes you gotta clear the cache fullstop, beyond a hard refresh
-[ ] Make responsive
+[-] Make responsive
