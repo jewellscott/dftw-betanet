@@ -25,3 +25,4 @@
 [x] Add Bitmoji randomizer
 [x] Fix font/footer on the server debacle - CACHING ISSUE. Sometimes you gotta clear the cache fullstop, beyond a hard refresh
 [-] Make responsive
+[ ] Add feature to make the website 80s vaporave or PR aesthetic if you click the footer link
