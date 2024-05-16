@@ -1,4 +1,12 @@
 [-] Setup page structure
+	[-] Classes/"Partials"
+		[ ] Home
+		[ ] Left
+			[ ] Top Level Page
+			[ ] Blog Post
+		[ ] Centered
+			[ ] Small
+			[ ] Large
 	[x] Home
 	[x] About
 	[-] Blog 
@@ -25,4 +33,11 @@
 [x] Add Bitmoji randomizer
 [x] Fix font/footer on the server debacle - CACHING ISSUE. Sometimes you gotta clear the cache fullstop, beyond a hard refresh
 [-] Make responsive
+	[ ] Play with typography
+		[ ] Use clamp()
 [ ] Add feature to make the website 80s vaporave or PR aesthetic if you click the footer link
+
+COMPLETELY REBUILD...
+[ ] Componentize with different stylesheets for header and footer
+[ ] Add inner column
+	[ ] Different widths: larger (home, maybe 960px), and a smaller one 

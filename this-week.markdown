@@ -6,7 +6,7 @@
 [ ] Work through Milestone content
 [ ] Navigate site with Screenreader
 [x] Set up Git
-[-] Practice and read up on nested CSS
+[x] Practice and read up on nested CSS
 [ ] Write a blog post about something
 [ ] Huddle with someone
 [ ] Watch/follow an Affinity Designer tutorial
