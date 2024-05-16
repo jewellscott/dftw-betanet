@@ -314,12 +314,13 @@ h4 {
 	.page-main {
 		padding: 10em 2em 4em 2em;
 		h1.top-level {
+			margin-top: -1em;
 			margin-right: -.4em;
 		}
 	}
 	.home-bitmoji {
 			max-width: 250px;
-			margin: 1em;
+			margin: 1em; 
 	}
 	.site-nav, .site-nav ul {
 		margin: 0 auto;
@@ -360,13 +361,6 @@ h4 {
 		margin-bottom: .2em;
 	}
 
-	h2 {
-		font-size: 1.2em;
-		margin-top: 2em;
-		border-left: 10px solid black;
-		padding-left: 2em;
-	}
-
 	.article-date {
 		font-weight: 700;
 		letter-spacing: .1em;
@@ -388,17 +382,29 @@ h4 {
 	}
 }
 
+.post-header {
+	h2 {
+		font-size: 1.2em;
+		margin-top: 2em;
+		border-left: 10px solid black;
+		padding-left: 2em;
+	}
+}
 /* 3 column grid */
 
 /* 2 column grid */
 
 .grid-column-2 {
 	margin: 0 auto;
-}
+	/*heading {
+		background: blue;
+	}
+*/}
 
 /* friends */
 
 .friends-grid {
+	max-width: 70%;
 	ul {
 		display: flex;
 		flex-wrap: wrap;
