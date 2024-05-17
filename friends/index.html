@@ -103,8 +103,13 @@
 	</footer>
 </div>
 <script>
+
+	function getRandomInt(max) { // number between 1 & max
+  return (Math.floor(Math.random() * Math.floor(max)))+1;
+}
+
 	let stephanie = document.getElementById("stephanie-bitmoji");
-stephanie.src = "../../jewell-hosted/bitmoji-resized/stephanie/bitmoji" + getRandomInt(12) + ".png";
+stephanie.src = "https://peprojects.dev/beta-one/jewell-hosted/bitmoji-resized/stephanie/bitmoji" + getRandomInt(12) + ".png";
 </script>
 </body>
 </html>
