@@ -9,19 +9,36 @@
 			[ ] Large
 	[x] Home
 	[x] About
+		[ ] About me
+			[ ] Typical descriptive paragraph, with a cheekly link to see a Myspace style situation
+		[ ] About the site
+			[ ] Colophon
+			[ ] Links to all versions
+			[ ] Design system?
 	[-] Blog 
 		[-] Post
 		[ ] Sanitize Substack export...
 	[ ] Work
-		[ ] Project
+		[ ] Projects
+			[ ] List of project ideas/todos
 			[ ] Case Study
 			[ ] Grid - like 30 days...
+		[ ] Experiments
+			[ ] A list of TODOs... that also have codepen links... or maybe just a self-hosted situation.
 	[ ] Inspo
 		[ ] Grid
+		[ ] Tags!
 	[ ] Goals
+		[ ] Collapsable areas
+			[ ] Week
+			[ ] Month
+			[ ] Quarter
+			[ ] End of DFTW
+			[ ] 3 Months post-DFTW
 	[x] Links
 		[x] Use tech class... it's kinda cute.
 	[ ] Extras
+		[ ] Playlists
 	[x] Friends
 		[x] Grid
 [ ] Add skip to main
