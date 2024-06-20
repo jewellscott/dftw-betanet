@@ -1,0 +1,154 @@
+/* setup */
+
+body {
+/*	background-color: #CCCCCC;*/
+}
+
+/* global */ 
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 18px;
+	--padding: clamp(50px, minmax(10vw, 10vh), 100px);
+	--vertical: 10px;
+	--vertical-small: calc(2 * var(--vertical));
+}
+
+/* primary layout */
+
+.inner-column {
+	padding: 20px;
+	max-width: 1200px;
+	margin-inline: auto;
+}
+
+/* secondary layout */
+
+.padding {
+	padding: 50px;
+}
+
+.padding-inline {
+	padding-inline: 50px;
+}
+
+.padding-block {
+	padding-block: 50px;
+}
+
+.centered {
+	margin-inline: auto;
+}
+
+/* breakpoints */
+
+/*--screen-small: 599px;
+--screen-smedium: 600px;
+--screen-medium: 900px;
+--screen-large: 1200px;*/
+
+/* typography */
+
+:root {
+	font-family: sans-serif;
+/*	font-size: 62.5%; /* to make conversion easier. 1 rem = 10px, 1.8rem = 18px */*/
+}
+
+
+
+.loud-voice, article h1, h1 {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: .8em;
+}
+
+h6 {
+	font-size: .7em;
+}
+
+p {
+	font-size: inherit;
+	line-height: 1.3;
+}
+
+p + p {
+	margin-top: 1.3em;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* images, links, et al setup */
+
+picture {
+	display: block;
+}
+
+img {
+	display: block;
+	width: 100%; /* fill parent element */
+	height: auto; /* keep ratio */
+}
+
+a {
+	display: block;
+}
+
+p a {
+	display: inline;
+}
+
+
+/* general styles */
+
+.link-button {
+	border: none;
+	border-radius: 10px;
+	padding: 1em;
+	font-size: .8em;
+	font-weight: 700;
+	display: inline-block;
+}
+
+
+
+/* general layouts */
+
+
+
+/*.center {
+
+}
+
+.left {
+
+}
+
+.right {
+
+}*/

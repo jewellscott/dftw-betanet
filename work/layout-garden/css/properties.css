@@ -1,0 +1,84 @@
+properties.css
+
+:root {
+	/* COLORS */
+
+	/* neutrals */
+	--white: #ffffff;
+	--offwhite: #eaeaea;
+	--lightgrey: #CCCCCC;
+	--darkgrey: #333333;
+	--off-black: #222;
+	--black: #000000;
+
+	--periwinkle: #9999f8;
+	--skyblue: #80cafa;
+	--aquamarine: #80cacb;
+	--lightgreen: #b1fca3;
+	--babyyellow: #FFFF99;
+	--gold: #f9d849;
+	--peach: #FFCC99;
+	--pink: #FF99CC;
+	--orchid: #FF99FF;
+	--lavender: #CC99FF;
+
+	--burgundy: #660033;
+/*	--umber: ;*/
+	--olive: #333300;
+	--hunter: #003300;
+	--turquoise: #003333;
+	--navy: #000066;
+	--violet: #330066;
+	--plum: #330033;
+
+	/* brights */
+
+	--red: #FF0000;
+	--yellow: #FFFF00;
+	--green: #00FF00;
+	--cyan: #00FFFF;
+	--blue: #0000FF;
+	--magenta: #FF00FF;
+
+
+
+	/* TYPOGRAPHY */
+
+	/* font-size */
+
+	/* font-weight */
+
+	/* font-weight */
+
+	/* line-height */
+
+
+
+
+
+	/* WHITESPACE */
+
+	/* padding */ 
+
+	/* margin */ 
+
+
+
+
+
+
+
+	/* MISCELLANEOUS */
+
+	/* border */
+
+	/* box-shadow */
+
+	/* opacity */
+
+	/* icons */
+	--icon-tiny: 12px;
+	--icon-small: 16px;
+	--icon-medium: 24px;
+	--icon-large: 32px;
+}
