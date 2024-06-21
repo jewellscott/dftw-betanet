@@ -58,7 +58,7 @@
 				<div class="meta">
 					<a href="" class="title">Renaissance</a>
 					<a href="" class="artist">Beyoncé</a>
-					<a href="" class="plays">18 plays</a>
+					<a href="" class="plays">77 plays</a>
 				</div>
 			</li>
 		</ul>
