@@ -380,13 +380,13 @@
 		justify-content: flex-end;
 	}
 
-	@media (max-width: 800px) {
+	@media (max-width: 650px) {
 		.albums {
 			background-color: cyan;
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 1fr 1fr;
 		}
-		
+
 	/*	.renaissance {
 			display: none;
 		}*/
