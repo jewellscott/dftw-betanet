@@ -150,8 +150,15 @@
 		align-items: center;
 	}
 	p {
-		font-size: clamp(1em, 2.5vw, 4em); 
+		font-size: clamp(1.5em, 2.5vw, 4em); 
 		font-weight: 700;
+		text-align: center;
+	}
+	@media (max-width: 600px) {
+		.container {
+			flex-direction: column;
+			padding-inline: 20px;
+		}
 	}
 }
 
@@ -198,3 +205,191 @@
 	}
 }
 
+
+/* paisley-park */
+
+.paisley-park {
+	background-color: #250242;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	p.quote {
+		color: white;
+		font-size: clamp(1.2em, 1.8em, 2em); 
+		line-height: 1.5em;
+		font-style: italic;
+		margin-top: 20px;
+		padding: 1em;
+		span {
+			font-size: 5em;
+			font-family: georgia, serif;
+			font-weight: 700;
+			font-style: normal;
+			color: purple;
+			vertical-align: center;
+		}
+		span:nth-child(1) {
+			padding-right: 50px;
+		}
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: 800px) {
+		p.quote {
+			span {
+				display: none;
+			}
+		}
+	}
+
+	.footer-links {
+		color: white;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		a {
+			color: white;
+			text-decoration: none;
+		}
+		h3 {
+			color: #c260c2;
+			font-size: 1em;
+			margin-bottom: 1em;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		section {
+			padding: 2em;
+		}
+		ul {
+			line-height: 1.4em;
+		}
+	}
+}
+
+
+/* black-glass */
+
+.black-glass {
+	background-color: #000000;
+	color: white;
+	h1 {
+		font-size: clamp(3em, 10vw, 8em); 
+		text-transform: uppercase;
+		text-align: center;
+	/* letter-spacing: -.05em;*/
+	}
+	h2 {
+		text-transform: uppercase;
+		font-size: clamp(1em, 3vw, 2em); 
+		letter-spacing: .05em;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	ul {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 50px;
+	}
+	h3 {
+		font-size: 1em;
+		font-weight: 800;
+		margin-bottom: .2em;
+	}
+	h4 {
+		font-size: .8em;
+	}
+	li {
+/*		background-color: rgba(255,255,255, .05);*/
+		border: 1px solid white;
+	}
+	.info {
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		align-items: space-between;
+	}
+}
+
+/* lastfm-top-albums */
+
+.lastfm-top-albums {
+	.inner-column {
+		max-width: 800px;
+	}
+	header {
+		display: flex;
+/*		background: blue;*/
+		justify-content: space-between;
+		margin-bottom: 1em;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	main a {
+		color: white;
+	}
+	.tools a {
+		display: inline-block;
+		font-size: .8em;
+	}
+	.albums {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr 1fr;
+		margin-bottom: 1em;
+
+		.prince {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+
+		.dirty-mind {
+/*			grid-column: 3 / span 1;*/
+		}
+	}
+	.album {
+		display: grid;
+		grid-template-areas: "middle";
+		a {
+			 text-shadow: 2px 2px 10px black;
+		}
+		picture, .meta {
+			grid-area: middle;
+		}
+	}
+	.meta {
+		align-self: end;
+  		padding: 20px;
+  		.title {
+  			font-weight: 700;
+  		}
+  		.artist, .plays {
+  			font-size: .7em;
+  		}
+	}
+	footer {
+		display: flex;
+		font-size: .8em;
+		justify-content: flex-end;
+	}
+
+	@media (max-width: 800px) {
+		.albums {
+			background-color: cyan;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
+		
+	/*	.renaissance {
+			display: none;
+		}*/
+	}
+
+}
