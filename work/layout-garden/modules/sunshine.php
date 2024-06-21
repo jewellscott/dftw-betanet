@@ -1,4 +1,4 @@
-<section class="sunshine padding-block">
+<section class="sunshine">
 	<div class="inner-column">
 		<ul>
 			<li>Every day will be a yellow day</li>

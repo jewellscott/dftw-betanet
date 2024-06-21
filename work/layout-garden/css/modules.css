@@ -4,7 +4,8 @@
 	font-size: clamp(1em, 2vw, 2.5em); 
 	text-transform: uppercase;
 	background-color: #003333;
-	color: #b1fca3}
+	color: #b1fca3;
+}
 
 .site-header:hover {
 	background-color: #80cacb;
@@ -93,12 +94,14 @@
 
 .peaches {
 	background-color: #FFCC99;
+	padding-block: 0;
 	.inner-column {
 		background-image: url("https://media.self.com/photos/5b75ad5728dfab53ee567688/4:3/w_2560%2Cc_limit/GettyImages-614938268.jpg");
 		min-height: 500px;
 		max-width: 100%;
 		mix-blend-mode: overlay;
 		display: flex;
+		padding-block: 100px;
 	}
 	blockquote {
 		max-width: 800px;
@@ -120,6 +123,35 @@
 		cite {
 			font-weight: 800;
 		}
+	}
+}
+
+/* jane */
+
+.jane {
+	background-color: red;
+	display: flex;
+	.inner-column {
+/*		max-width: 800px;*/
+	}
+	.container {
+		display: flex;
+		gap: 50px;
+		align-items: center;
+	}
+	picture {
+		background-color: red;
+	}
+	img {
+		mix-blend-mode: multiply;
+	}
+	blockquote {
+		display: flex;
+		align-items: center;
+	}
+	p {
+		font-size: clamp(1em, 2.5vw, 4em); 
+		font-weight: 700;
 	}
 }
 

@@ -16,12 +16,16 @@ html {
 
 body {
 	font-size: 18px;
-	--padding: clamp(50px, minmax(10vw, 10vh), 100px);
+	/*--padding: clamp(50px, minmax(10vw, 10vh), 100px);
 	--vertical: 10px;
-	--vertical-small: calc(2 * var(--vertical));
+	--vertical-small: calc(2 * var(--vertical));*/
 }
 
 /* primary layout */
+
+section {
+	padding-block: 50px;
+}
 
 .inner-column {
 	padding: 20px;

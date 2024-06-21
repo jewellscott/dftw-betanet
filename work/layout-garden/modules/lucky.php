@@ -1,4 +1,4 @@
-<section class="lucky padding-block">
+<section class="lucky">
 	<div class="inner-column">
 
 		<p>I'm feeling kind of lucky tonight</p>

@@ -1,5 +1,5 @@
 <section class="enrose">
-	<div class="inner-column padding-block">
+	<div class="inner-column">
 		
 		<h1>I see la vie en rose...</h1>
 
