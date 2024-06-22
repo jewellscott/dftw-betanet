@@ -44,6 +44,15 @@
 	</div>
 </section>
 
+<section class="ea">
+	<div class="inner-column">
+		<?php include './modules/ea.php'; ?> 
+	</div>
+</section>
+
+<section class="making-music">
+		<?php include './modules/making-music.php'; ?> 
+</section>
 
 
 
