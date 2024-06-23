@@ -11,8 +11,8 @@
 
 
 		<header>
-			<span>
-				<span class="making">Making Music</span>Creative Strategies <br>for Electronic Music Producers
+			<span class="book-title">
+				<span class="making">Making Music  </span>Creative Strategies <br>for Electronic Music Producers
 			</span>
 
 			<nav class="secondary-nav">
@@ -58,7 +58,7 @@
 			</article>
 
 			<div class="breadcrumb">
-				<a href="/">Active Listening ⬤</a>
+				<a href="/">Active Listening ></a>
 			</div>
 
 		</main>
@@ -73,7 +73,7 @@
 				<li>Imprint</li>
 			</ul>
 
-			<!-- <a href="/"><img src="./assets/jewellpentool.svg" class="site-logo"></a> -->
+			<a href="/"><img src="./assets/jewellpentool.svg" class="logo"></a>
 		</footer>
 
 		

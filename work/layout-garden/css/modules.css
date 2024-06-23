@@ -470,40 +470,104 @@
 
 
 .making-music {
-	background: cyan;
+/*	background: cyan;*/
 
 	.container {
 		display: flex;
+/*		background: pink;*/
 	}
 
 
 	.right {
 		max-width: 1400px;
 		margin-inline: auto;
-		background: lime;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding-inline: 20px;
+/*		background: lime;*/
 	}
 
 	.primary-nav {
-		max-width: 100px;
+		max-width: 90px;
 		background-color: #9999f8;
 	}
 
 
 	header {
-		display: flex;
+		display: flex;		
 		justify-content: space-between;
 		ul {
 			display: flex;
 			gap: 20px;
 		}
+		.book-title {
+			line-height: 1.5em;
+			font-weight: 300;
+		}
+		.making {
+			font-weight: 800;
+		}
 	}
 
 	main {
-		max-width: 600px;
-		background: yellow;
+		max-width: 650px;
+/*		background: yellow;*/
+		margin-inline: auto;
 	}
 
 	article {
-		background: orange;
+/*		background: orange;*/
+
+		/* TYPOGRAPHY */
+
+		p,li {
+			font-weight: 300;
+		}
+
+		p + p, p + h2, h2 + p, ul + p, p + ul {
+			margin-top: 30px;
+		}
+
+		h1 {
+			text-align: center;
+			margin-block: 2em;
+			font-size: clamp(1.5em, 5vw, 3em); 
+		}
+		p {
+			font-size: 20px;
+		}
+
+		ul {
+			line-height: 1.3em;
+		}
+		li {
+			list-style-type: ">  ";
+			margin-left: 1em;
+			margin-bottom: 1.3em;
+		}
+		.summary {
+			font-size: 1.5em;
+		}
+	}
+
+	.breadcrumb {
+		margin-block: 50px;
+		text-align: right;
+		font-weight: 300;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		ul {
+			display: flex;
+/*			justify-content: space-between;*/
+			gap: 20px;
+		}
+		.logo {
+			max-width: 100px;
+		}
 	}
 }
