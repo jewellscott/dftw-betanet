@@ -1,0 +1,16 @@
+a, button {
+	display: block;
+}
+
+p a {
+	display: inline-block;
+}
+
+picture {
+	display: block;
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+}

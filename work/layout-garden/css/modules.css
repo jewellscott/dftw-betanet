@@ -3,7 +3,7 @@
 .site-header {
 	font-size: clamp(1em, 2vw, 2.5em); 
 	text-transform: uppercase;
-	background-color: #003333;
+	background-color: var(--turquoise);
 	color: #b1fca3;
 }
 
@@ -479,13 +479,22 @@
 
 
 	.right {
-		max-width: 1400px;
-		margin-inline: auto;
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-		padding-inline: 20px;
-/*		background: lime;*/
+		background-color: orange;
+		.inner-column {
+			max-width: 1400px;
+			margin-inline: auto;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			padding-inline: 20px;
+		}
+
+		header, footer {
+			max-width: 1200px;
+			background-color: #facade;
+		}
+
+
 	}
 
 	.primary-nav {

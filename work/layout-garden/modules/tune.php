@@ -1,4 +1,4 @@
-<div>
+<div class="tune">
 	<h1>Care for a tune?</h1>
 	<ul>
 		<li><a href="/">Green & Gold – Lianne La Havas</a></li>

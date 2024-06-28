@@ -9,6 +9,8 @@
 
 	<div class="right">
 
+		<div class="inner-column">
+
 
 		<header>
 			<span class="book-title">
@@ -76,6 +78,6 @@
 			<a href="/"><img src="./assets/jewellpentool.svg" class="logo"></a>
 		</footer>
 
-		
+		</div>
 	</div>
 </div>
