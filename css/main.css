@@ -24,10 +24,10 @@ body {
   height: 100%;
   font-size: 16px;
   background: blue;
-/*	background: -moz-linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
+/*  background: -moz-linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
 	background: -webkit-linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
 	background: linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8aa0ff",endColorstr="#c898ff",GradientType=1);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8aa0ff",endColorstr="#c898ff",GradientType=1);*/
 */}
 
 .wrapper {
@@ -39,6 +39,11 @@ body {
 .site-head, .site-foot {
   flex-grow: 0;
   flex-shrink: 0;
+}
+
+.inner-column {
+	max-width: 1200px;
+	margin-inline: auto;
 }
 
 .page-main {
@@ -67,6 +72,7 @@ body {
 	max-width: 6em;
 	padding: 0 1em;
 	height: auto;
+	stroke: blue;
 }
 
 .site-nav {
@@ -90,7 +96,7 @@ body {
 
 .site-nav ul a {
 	text-decoration: none;
-	background-color: black;
+	background-color: blue;
 	color: white;
 	font-size: 1.2em;
 	text-transform: uppercase;
@@ -106,7 +112,7 @@ body {
 	margin: 1em 0;
 }
 .site-foot {
-	background-color: black;
+	background-color: blue;
 	color: white;
 	padding: 1em 2em;
 	display: flex;
@@ -190,7 +196,7 @@ h4 {
 
 .tech.button a {
 		text-decoration: none;
-		background-color: black;
+		background-color: blue;
 		color: white;
 		text-transform: uppercase;
   	font-family: "Jersey 15", sans-serif;
@@ -224,7 +230,8 @@ h4 {
 	display: flex;
 	padding: 0 0 2em 0;
 	h1 {
-		margin-bottom: 0;
+			margin-bottom: 0;
+			text-transform: uppercase;
 /*		background: black;
 		color: white;
 */	}
@@ -299,10 +306,17 @@ h4 {
 	font-weight: 700;
 }
 
+@media (min-width: 800px) {
+	.home-main h1 {
+		line-height: .1em;
+	}
+}
+
 @media (max-width: 1600px) {
 	.home-bitmoji {
 			max-width: 400px;
 			margin: 1em;
+			margin-bottom: 5em;
 	}
 	.site-nav, .site-nav ul {
 		margin: 0 auto;
@@ -321,6 +335,8 @@ h4 {
 	.home-bitmoji {
 			max-width: 250px;
 			margin: 1em; 
+			margin-top: -8em;
+			margin-bottom: 2em;
 	}
 	.site-nav, .site-nav ul {
 		margin: 0 auto;
