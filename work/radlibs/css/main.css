@@ -1,0 +1,109 @@
+/*@import './reset.css';
+@import './setup.css';
+*/
+/* structure */
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.inner-column {
+	max-width: 600px;
+	padding-inline: 20px;
+}
+
+main {
+	flex: 1;
+}
+
+footer {
+	flex: 0;
+}
+
+
+/* typography */
+
+
+body {
+	font-family: sans-serif;
+}
+
+h1 {
+	font-size: 6rem;
+	margin-top: 0;
+	margin-bottom: -3rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+p {
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+footer p {
+	font-weight: bold;
+}
+
+.lib {
+	font-weight: bold;
+	padding: .2em;
+}
+
+/* style */ 
+
+body {
+	border: 5px solid black;
+}
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+/*rgba(200,152,255,1) 100%)*/
+
+.subject {
+	background-color: rgba(138,160,255,1);
+}
+
+.adjective-one {
+	background-color: rgba(130,233,255,1);
+}
+
+.adjective-two {
+	background-color: rgba(150,255,224,1);
+}
+
+.object {
+	background-color: rgba(183,255,147,1);
+}
+
+.emotion-one {
+	background-color: rgba(250,255,132,1);
+}
+
+.color {
+	background-color: rgba(255,213,74,1);
+}
+
+.emotion-two {
+	background-color: rgba(255,182,136,1);
+}
+
+.accessory {
+	background-color: rgba(255,158,158,1);
+}
+
+.grunge-band {
+	background-color: rgba(255,150,233,1);
+}
+
+.sandwich-topping {
+	background-color: rgba(200,152,255,1);
+}
