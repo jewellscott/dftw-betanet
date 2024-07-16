@@ -32,12 +32,11 @@
 
 
 
-			echo "<p>Daria sat in <span class='lib subject'>" . $subject . "</span> class, doodling <span class='lib adjective-one'>" . $adjectiveOne . "</span> " . "sketches of Mr. O'Neill wearing a <span class='lib adjective-two'>" . $adjectiveTwo . "</span> <span class='lib object'>" . $object . "</span> on his head. She raised an eyebrow as she noticed Jane experimenting with a new shade of lipstick called <span class='lib emotion-one'>" . $emotionOne . "</span> <span class='lib color'>" . $color . "</span>.</p>";
+			echo "<p>Daria sat in <span class='lib subject'>" . $subject . "</span> class, doodling <span class='lib adjective-one'>" . $adjectiveOne . "</span> " . "sketches of Mr. O'Neill wearing a <span class='lib adjective-two'>" . $adjectiveTwo . "</span> <span class='lib object'>" . $object . "</span> on his head. She raised an eyebrow as she noticed Jane experimenting with a new shade of lipstick called <span class='lib emotion-one'>" . $emotionOne . "</span> <span class='lib color'>" . $color . "</span>.</p>"; ?>
 
-			echo "<p>Jane shrugged and explained that it matched her <span class='lib accessory'>" . $accessory . "</span> perfectly, to which Daria deadpanned, 'It's so you.'</p>";
+			<p>Jane shrugged and explained that it matched her <span class='lib accessory'> <?php echo $accessory;?></span> perfectly, to which Daria deadpanned, 'It's so you.'</p>
 
-			echo "<p>Meanwhile, back at home, Trent strummed his guitar in the garage, humming a tune inspired by <span class='lib grunge-band'>" . $grungeBand . "</span> and the <span class='lib emotion-two'>" . $emotionTwo . "</span> of leftover <span class='lib sandwich-topping'>" . $sandwichTopping . "</span>. </p>"
-		?>
+			<p>Meanwhile, back at home, Trent strummed his guitar in the garage, humming a tune inspired by <span class='lib grunge-band'><?=$grungeBand?></span> and the <span class='lib emotion-two'><?=$emotionTwo?></span> of leftover <span class='lib sandwich-topping'><?=$sandwichTopping?></span>. </p>
 		
 		</div>
 		
