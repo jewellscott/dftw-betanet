@@ -1,8 +1,18 @@
 @import 'reset.css'; 
 @import 'setup.css';
 @import 'settings.css';
+@import 'structure.css';
 
-body {
+/*body {
 
 }
+*/
 
+
+header, footer, main {
+	border: solid 5px green;
+}
+
+.site-logo {
+	max-width: 100px;
+}

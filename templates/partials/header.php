@@ -25,10 +25,11 @@
 </head>
 <body>
 
-	<div class="wrapper">
 	<header class="site-head">
 		<nav class="site-nav">
-			<a href="/"><img src="../../assets/img/social/jewellpentool.svg" width="100" class="site-logo"></a>
+			<a href="/" class="site-logo">
+				<?php include('templates/components/site-logo.php');?>
+			</a>
 			<ul>
 				<li><a href="/about">About</a></li>
 				<li><a href="/blog">Blog</a></li>

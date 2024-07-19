@@ -8,7 +8,6 @@
 			</ul>
 		</nav>
 	</footer>
-</div>
 <script src="../../js/random-bitmoji.js"></script>
 </body>
 </html>

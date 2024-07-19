@@ -2,7 +2,7 @@
 
 	<main class="home-main page-main">
 
-		<div class="content-centered">
+		<div class="inner-column">
 			<div class="left">
 				<img src="/" id="random-bitmoji" class="home-bitmoji" alt="A bitmoji of me!">
 			</div>
