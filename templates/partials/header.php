@@ -1,9 +1,9 @@
- <?php //include('config.php'); ?> 
+<?php include('config.php'); ?> 
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
 	<meta charset="UTF-8">
-	<!-- <base href="<?=$BASE_URL?>"> -->
+	<base href="<?=BASE_URL?>"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>✨ jewell.online ✨</title>
 	<meta name="Description" content="Jewell's PE Portal">
@@ -11,8 +11,7 @@
 	<meta property="og:description" content="Jewell's PE Portal">
 	<meta property="og:image" content="https://peprojects.dev/beta-one/jewell/assets/img/social/rainbowskygrid.jpg">
 
-	<link rel="stylesheet" href="../../css/reset.css">
-	<!-- <link rel="stylesheet" href="../../css/main.css"> -->
+	<link rel="stylesheet" href="styles/styles.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
