@@ -36,17 +36,17 @@ require_once $baseDir . '/functions.php';
 			<a href="/" class="site-logo">
 				<?php include(getFile('templates/components/site-logo.php'));?>
 			</a>
-			<ul>
+			<ol class="link-list">
 				<li><a href="/about">About</a></li>
 				<li><a href="/blog">Blog</a></li>
 				<li><a href="/work">Work</a></li>
-				<!-- <li><a href="./inspo">Inspo</a></li> -->
+				<li><a href="./inspo">Inspo</a></li>
 				<li><a href="/goals">Goals</a></li>
 				<li><a href="/links">Links</a></li>
-				<!-- <li><a href="./extras">Extras</a></li> -->
+				<li><a href="./extras">Extras</a></li>
 				<li><a href="/friends">Friends</a>
 				</li>
 				<li><a href="/style-guide">Style Guide</a></li>
-			</ul>
+			</ol>
 		</nav>
 	</header>

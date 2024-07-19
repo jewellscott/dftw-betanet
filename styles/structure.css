@@ -16,5 +16,5 @@ main {
 	max-width: 1200px; 
 	margin-inline: auto; /* horizontally center this by default */
 	padding-inline: 16px; /* a loose default */
-	border: 10px solid var(--primary-color);
+	border: 5px dashed var(--primary-color);
 }

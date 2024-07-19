@@ -4,16 +4,17 @@
 @import 'structure.css';
 @import 'typography.css';
 
+
+/* components */
+
+@import 'site-head.css';
+@import 'site-foot.css';
+
+
+
+
 /*body {
 
 }
 */
 
-
-header, footer, main {
-	border: solid 5px green;
-}
-
-.site-logo {
-	max-width: 100px;
-}
