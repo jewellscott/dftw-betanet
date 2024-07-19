@@ -1,1 +1,7 @@
 @import 'reset.css'; 
+@import 'setup.css';
+
+body {
+/*	background-color: blue;*/
+}
+
