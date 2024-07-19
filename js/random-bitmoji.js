@@ -3,4 +3,4 @@ function getRandomInt(max) { // number between 1 & max
 }
     
 let jewell = document.getElementById("random-bitmoji");
-jewell.src = "https://pe-projects/beta-one/jewell-hosted/bitmoji-resized/numbered/bitmoji" + getRandomInt(174) + ".png";
+jewell.src = "https://peprojects.dev/beta-one/jewell-hosted/bitmoji-resized/numbered/bitmoji" + getRandomInt(174) + ".png";

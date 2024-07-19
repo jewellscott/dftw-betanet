@@ -16,4 +16,4 @@
 	</div>
 	</main>
 	
-<?php include 'templates/partials/footer.php'; ?>
+	<?php includeFile('templates/partials/footer.php'); ?>
