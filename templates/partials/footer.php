@@ -1,6 +1,4 @@
-</main>
-
-	<footer class="site-foot">
+<footer class="site-foot">
 		<p class="tagline"><a href="https://youtu.be/R_nviNS0IAw?si=G_oLg3MDTul68Zj5&t=205" target="_blank">Poor, lonely computer. It's time someone programmed you.</a></p>
 		<nav class="contact-nav">
 			<ul>
@@ -11,6 +9,6 @@
 		</nav>
 	</footer>
 </div>
-<script src="./js/random-bitmoji.js"></script>
+<script src="../../js/random-bitmoji.js"></script>
 </body>
 </html>
