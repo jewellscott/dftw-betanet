@@ -11,7 +11,7 @@ require_once $baseDir . '/functions.php';
 	<meta charset="UTF-8">
 	<base href="<?=BASE_URL?>"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>✨ jewell.online ✨</title>
+	<title>✨ jewell.NEW ✨</title>
 	<meta name="Description" content="Jewell's PE Portal">
 	<meta property="og:title" content="JEWELL!">
 	<meta property="og:description" content="Jewell's PE Portal">
@@ -36,17 +36,20 @@ require_once $baseDir . '/functions.php';
 			<a href="/" class="site-logo">
 				<?php include(getFile('templates/components/site-logo.php'));?>
 			</a>
+			<div class="nav-right">
 			<ol class="link-list">
 				<li><a href="/about">About</a></li>
 				<li><a href="/blog">Blog</a></li>
 				<li><a href="/work">Work</a></li>
-				<li><a href="./inspo">Inspo</a></li>
+				<!-- <li><a href="./inspo">Inspo</a></li> -->
 				<li><a href="/goals">Goals</a></li>
 				<li><a href="/links">Links</a></li>
-				<li><a href="./extras">Extras</a></li>
+				<!-- <li><a href="./extras">Extras</a></li> -->
 				<li><a href="/friends">Friends</a>
 				</li>
 				<li><a href="/style-guide">Style Guide</a></li>
+				<li>				<?php include(getFile('templates/components/hue-slider.php'));?></li>
 			</ol>
+		</div>
 		</nav>
 	</header>

@@ -2,51 +2,50 @@
 
 
 	<main class="page-main">
-		<div class="content-centered max-width-60">
+		<div class="inner-column">
 			<header class="page-header">
-				<h1 class="top-level">Friends</h1>
-				<h2>All of my PE peeps!</h2>
+				<h1 class="top-level xl-type rainbow">Friends</h1>
+				<h2 class="l-type">All of my PE peeps!</h2>
 			</header>
-		</div>
-		<section class="grid-column-2 grid-column-3 max-width-60">
+		<section class="grid-column-3">
 			<ul>
-				<li>
+				<li class="l-type card-rainbow">
 					<a href="../../andy">
 						<img src="https://placehold.co/300" alt="Andy">
 						<h2>Andy</h2>
 					</a>
 				</li>
-				<li>
+				<li class="l-type">
 					<a href="../../anna/">
 						<img src="https://placehold.co/300" alt="Anna">
 						<h2>Anna</h2>
 					</a>
 				</li>
-				<li>
+				<li class="l-type">
 					<a href="../../lex/">
 						<img src="https://peprojects.dev/beta-one/jewell-hosted/bitmoji-resized/lex/bitmoji1.png" alt="Lex">
 						<h2>Lex</h2>
 					</a>
 				</li>
-				<li>
+				<li class="l-type">
 					<a href="../../oli">
 						<img src="https://placehold.co/300" alt="Oli">
 						<h2>Oli</h2>
 					</a>
 				</li>
-				<li>
+				<li class="l-type">
 					<a href="../../peter">
 						<img src="/" alt="Peter" id="peter-bitmoji">
 						<h2>Peter</h2>
 					</a>
 				</li>
-				<li>
+				<li class="l-type">
 					<a href="../../stephanie">
 						<img src="/" alt="Stephanie" id="stephanie-bitmoji">
 						<h2>Stephanie</h2>
 					</a>
 				</li>
-				<li>
+				<li class="l-type">
 					<a href="../../derek/">
 						<img src="https://placehold.co/300" alt="Derek">
 						<h2>Derek</h2>
@@ -54,6 +53,7 @@
 				</li>
 			</ul>
 		</section>
+	</div>
 	</main>
 
 	<footer class="site-foot">

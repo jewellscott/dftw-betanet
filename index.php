@@ -2,7 +2,7 @@
 
 <?php include 'templates/partials/header.php'; ?>
 
-<main class="home-main page-main">
+<main class="home-main">
 
 	<div class="inner-column">
 

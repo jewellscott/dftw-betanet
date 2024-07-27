@@ -3,6 +3,7 @@
 @import 'settings.css';
 @import 'structure.css';
 @import 'typography.css';
+@import 'components.css';
 
 
 /* components */
@@ -12,9 +13,19 @@
 
 
 
+/* body */
 
-/*body {
-
+html {
+	min-height: 100vh;
 }
-*/
+
+ body {
+ 	background: var(--primary-color);
+/* 	 background: var(--rainbow-gradient);*/
+/* 	 margin: 100px;*/
+}
+
+main {
+	background-color: white;
+}
 

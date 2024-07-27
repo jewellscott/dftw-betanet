@@ -1,5 +1,5 @@
 .site-head {
-	padding: 1em 2em;
+	padding: 1em 3em;
 	background-color: white;
 	.site-logo {
 		max-width: 100px;
@@ -18,10 +18,12 @@
 		justify-content: flex-end;
 		align-items: center;
 		flex-wrap: wrap;
+		gap: 2em;
 /*		list-style-type: decimal;*/
+/*		list-style-position: inside;*/
 		a {
 			text-decoration: none;
-			background-color: blue;
+			background-color: var(--primary-color);
 			color: white;
 			font-size: 1.2rem;
 			text-transform: uppercase;
@@ -35,3 +37,8 @@
 }
 
 
+@media (max-width: 800px) {
+    .site-nav, .site-nav .link-list {
+        margin: 0 auto;
+        justify-content: center;
+    }

@@ -6,23 +6,150 @@ p {
 	font-size: 1rem;
 }
 
+main {
+	line-height: 1.6em;
+	h1, ul {
+  		margin-bottom: .7em;
+  	}
+  	h2 {
+  		margin-block: 1em;
+  	}
+  	h2, p {
+		margin-top: 1em;
+	}
+	li {
+		list-style-type: initial;
+	}
+}
+
+
+.page-list li {
+
+	a {
+		text-decoration: none;
+		color: var(--primary-color);
+		font-size: 1.5em;
+		font-weight: 600;
+	}
+	p {
+		font-family: var(--display-type);
+		font-size: 1rem;
+  		font-optical-sizing: auto;
+	}
+	line-height: .4em;
+	list-style-type: none;
+	margin-bottom: 2em;
+
+}
+
+.card-list li {
+	list-style-type: none;
+	margin-bottom: 2rem;
+}
+
+/* article */
+
+.post-header {
+
+	.article-date {
+		letter-spacing: .1em;
+		color: blue;
+	}
+
+	.post-metadata {
+		display: flex;
+		align-items: baseline;
+		margin-bottom: 2rem;
+	}
+
+	.post-metadata > * {
+		padding-right: 1rem;
+	}
+}
+
+/* component text things? idk! */
+
+.callout {
+		border-left: 10px solid var(--primary-color);
+		padding-left: 2em;
+}
+
+article {
+	h2, h3, h4, h5, h6 {
+		color: var(--primary-color);
+	}
+
+	p a {
+		font-weight: 600;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+	p + h2 {
+		margin-top: 3rem;
+	}
+
+	p + h3 {
+		margin-top: 2rem;
+	}
+
+	h3 + p {
+		margin-top: 1.5rem;
+	}
+
+	p + p {
+		margin-top: 1.5rem;
+	}
+
+	ol, ul, blockquote {
+		margin-block: 2rem;
+	}
+
+	picture, iframe {
+		margin-block: 3rem;
+	}
+
+	ol li {
+		list-style-type: decimal;
+	}
+
+	li::marker {
+		font-weight: 700;
+	}
+}
+
+/* type patterns */
+
 .xl-type {
 	font-family: var(--display-type);
 	font-size: 5rem;
 	font-weight: 700;
 	line-height: 0.8;
+	letter-spacing: -.05em;
 	&.rainbow {
 		background: linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
+		padding: .1em;
+		color: var(--primary-color);
 	}
 	&.top-level {
 		line-height: .1em;
 		text-transform: uppercase;
+		padding: .1em;
 	}
 }
 
-.x-type {
+.l-type {
 	font-family: var(--display-type);
 	font-size: 2rem;
+	font-optical-sizing: auto;
+	font-weight: 700;
+}
+
+.ml-type {
+	font-family: var(--display-type);
+	font-size: 1.5rem;
 	font-optical-sizing: auto;
 	font-weight: 700;
 }
@@ -35,7 +162,37 @@ p {
 
 .sm-type {
 	font-family: var(--display-type);
+	font-size: 1.2rem;
+  	font-optical-sizing: auto;
+  	font-weight: 700;
+  }
+
+.s-type {
+	font-family: var(--display-type);
 	font-size: 1rem;
   	font-optical-sizing: auto;
   	font-weight: 700;
+}
+
+.xs-type {
+	font-family: var(--display-type);
+	font-size: 1rem;
+  	font-optical-sizing: auto;
+}
+
+.tech-type {
+		text-decoration: none;
+		background-color: var(--primary-color);
+		color: white;
+		font-size: inherit;
+		text-transform: uppercase;
+	  	font-family: "Jersey 15", sans-serif;
+	  	font-weight: 400;
+	  	font-style: normal;
+	  	letter-spacing: .2em;
+		padding: .3em 1em;
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
 }

@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html { 
+	height: 100%;
+}
+
 a {
 	/* we use links as parent elements so often, that we can default to this */
 	display: block;

@@ -2,37 +2,73 @@
 
 	<main class="page-main">
 		<div class="inner-column">
-		<div class="content-left">
-			<h1 class="top-level">Work</h1>
-			<p class="outside-link">Follow me on <span class="tech button"><a href="/">Github</a></span></p>
-			<section class="top-level-section">
-				<h2>Featured</h2>
-				<ul class="page-list">
-					<li>
-						<a href="./curry-crush/">Curry Crush</a>
-						<p class="article-date">Small business website</p>
-					</li>
-					<li>
-						<a href="./30-days-of-design/">30 Days of Design: Round 1</a>
-						<p class="article-date">30 Graphics in 30 Days: Life in Technicolor</p>
-					</li>
-				</ul>
-			</section>
-			<section class="top-level-section">
-			<h2>Latest</h2>
-			<ul class="page-list">
-				<li>
-						<a href="./curry-crush/">Curry Crush</a>
-						<p class="article-date">Small business website</p>
-					</li>
-					<li>
-						<a href="./30-days-of-design/">30 Days of Design: Round 1</a>
-						<p class="article-date">30 Graphics in 30 Days: Life in Technicolor</p>
-					</li>
-			</ul>
-		</section>
+				<h1 class="xl-type top-level rainbow">Work</h1>
+				<p class="sm-type">Follow me on <span class="tech-type"><a href="/">Github</a></span> <span class="tech-type"><a href="/">CodePen</a></span></p>
+				<section class="top-level-section">
+					<h2 class="l-type">Featured</h2>
+					<ul class="card-list horizontal-list">
+						<li class="work-card">
+							<h3><a href="#">Curry Crush</a></h3>
+							<p class="xs-type">Small business website</p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="#" class=" m-type tech-type">Live</a>
+						</li>
+
+						<li class="work-card">
+							<h3><a href="#">Layout Garden</a></h3>
+							<p class="xs-type">Electroskeletal neurogenesis</p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="#" class=" m-type tech-type">Live</a>
+						</li>
+
+						<li class="work-card">
+							<h3><a href="#">30 Days of Design: Round 1</a></h3>
+							<p class="xs-type">30 Graphics in 30 Days: Life in Technicolor</p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="#" class=" m-type tech-type">Live</a>
+						</li>
+					</ul>
+				</section>
+				<section class="top-level-section">
+					<h2 class="l-type">Latest</h2>
+					<ul class="card-list horizontal-list">
+						<li class="work-card">
+							<h3><a href="#">Monster Match</a></h3>
+							<p class="xs-type">Adopt a 'sta! </p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="#" class=" m-type tech-type">Live</a>
+						</li>
+
+						<li class="work-card">
+							<h3><a href="#">Radlibs</a></h3>
+							<p class="xs-type">Madlibs, just radder.</p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="#" class=" m-type tech-type">Live</a>
+						</li>
+
+						<li class="work-card">
+							<h3><a href="#">Curry Crush</a></h3>
+							<p class="xs-type">Small business website</p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="#" class=" m-type tech-type">Live</a>
+						</li>
+
+						<li class="work-card">
+							<h3><a href="#">Layout Garden</a></h3>
+							<p class="xs-type">Electroskeletal neurogenesis</p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="#" class=" m-type tech-type">Live</a>
+						</li>
+
+						<li class="work-card">
+							<h3><a href="#">30 Days of Design: Round 1</a></h3>
+							<p class="xs-type">30 Graphics in 30 Days: Life in Technicolor</p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="#" class=" m-type tech-type">Live</a>
+						</li>
+					</ul>
+				</section>
 		</div>
-	</div>
 	</main>
 
 	<footer class="site-foot">

@@ -1,0 +1,113 @@
+<?php 
+
+$monsters = [
+	[	
+		"id" => 101,
+		"name" => "Codey",
+		"species" => "Techno-Troll",
+		"age" => 3, 
+		"size" => "Medium (~4 feet tall)",
+		"adopted" => true,
+		"portrait" => "https://peprojects.dev/images/portrait.jpg",
+		"favoriteFood" => "Mountain Dew Code Red",
+		"personality" => "Curious and intelligent, loves solving puzzles, can become impatient if not engaged"
+	],
+	[
+		"id" => 102,
+		"name" => "Fragoo",
+		"species" => "Fluffy Goblin",
+		"age" => 5,
+		"size" => "Small (~2 feet tall)",
+		"adopted" => false,
+		"portrait" => "https://peprojects.dev/images/portrait.jpg",
+		"favoriteFood" => "Goldfish crackers",
+		"personality" => "Playful and mischevious, loves games and pranks",
+		"specialRequirements" => "Needs plenty of playtime and a safe space to explore"
+	],
+	[
+		"id" => 103,
+		"name" => "Limabean",
+		"species" => "Bean-Sprite",
+		"age" => 2,
+		"size" => "Tiny (~1 foot tall)",
+		"adopted" => false,
+		"portrait" => "https://peprojects.dev/images/portrait.jpg",
+		"favoriteFood" => "Marshmallows",
+		"personality" => "Gentle and shy, loves to hide and snuggle",
+		"specialRequirements" => "Best suited for a quiet home without aggressive pets"
+	],
+	[
+		"id" => 104,
+		"name" => "Miss Reads-a-Lot",
+		"species" => "Bookworm Beast",
+		"age" => 7,
+		"size" => "Medium (~3 feet tall)",
+		"adopted" => false,
+		"portrait" => "https://peprojects.dev/images/portrait.jpg",
+		"favoriteFood" => "Dried figs",
+		"personality" => "Intellectual and reserved, enjoys reading and learning, perfect for solitary or low-energy companions",
+		"specialRequirements" => "Prefers snacks that can be nibbled slowly"
+	],
+	[
+		"id" => 105,
+		"name" => "Mr. Banana",
+		"species" => "Fruit-Folk",
+		"age" => 4,
+		"size" => "Medium (~4 feet tall)",
+		"adopted" => false,
+		"portrait" => "https://peprojects.dev/images/portrait.jpg",
+		"favoriteFood" => "Pizza",
+		"personality" => "Cheerful and outgoing, loves to make others laugh; enjoys social gatherings and parties",
+	],
+	[
+		"id" => 106,
+		"name" => "Orangina",
+		"species" => "Citrus Sprite",
+		"age" => 6,
+		"size" => "Small (~3 feet tall)",
+		"adopted" => false,
+		"portrait" => "https://peprojects.dev/images/portrait.jpg",
+		"favoriteFood" => "Poke",
+		"personality" => "Energetic and bubbly, brings a lot of brightness to any room. Friendly with both monsters and humans; great with kids",
+		"specialRequirements" => "Needs regular sun exposure and vitamin-rich snacks"
+	],
+	[
+		"id" => 107,
+		"name" => "Shadow",
+		"species" => "Fluffy Goblin",
+		"age" => 10,
+		"size" => "Varies (can shift size between 3-6 feet tall)",
+		"adopted" => false,
+		"portrait" => "https://peprojects.dev/images/portrait.jpg",
+		"favoriteFood" => "Melancholia",
+		"personality" => "Mysterious and aloof, prefers solitude",
+		"specialRequirements" => "Feeds on dark energy or moonlight; does not require physical food"
+	],
+];
+
+echo "<h1>Monster Match</h2>";
+
+
+foreach ($monsters as $monster) {
+	echo "<li class='monster'>";
+	echo 
+		"<monster-card id='" . $monster["id"] . "'>";
+	echo "<h2 class='"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

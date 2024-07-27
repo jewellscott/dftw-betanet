@@ -1,52 +1,13 @@
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>✨ jewell.work ✨ | 30 days of design</title>
-
-	<meta property="og:image" content="https://peprojects.dev/beta-one/jewell/assets/img/social/rainbowskygrid.jpg">
-
-	<link rel="stylesheet" href="../../css/reset.css">
-	<link rel="stylesheet" href="../../css/main.css">
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Jersey+10&family=Jersey+15&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap" rel="stylesheet">
-
-	<link rel="icon" href="../../assets/favicon/favicon.ico" sizes="32x32">
-	<link rel="icon" href="../../assets/favicon/icon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="../../assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
-	<link rel="manifest" href="../../assets/favicon/manifest.webmanifest">
-</head>
-<body>
-	<div class="wrapper">
-	<header class="site-head">
-		<nav class="site-nav">
-			<a href="../../"><img src="../../assets/img/social/jewellpentool.svg" class="site-logo"></a>
-			<ul>
-				<li><a href="../../about">About</a></li>
-				<li><a href="../../blog/">Blog</a></li>
-				<li><a href="../">Work</a></li>
-				<!-- <li><a href="../../inspo">Inspo</a></li> -->
-				<li><a href="../../goals/">Goals</a></li>
-				<li><a href="../../links/">Links</a></li>
-				<!-- <li><a href="../../extras">Extras</a></li> -->
-				<li><a href="../../extras">Friends</a></li>
-			</ul>
-		</nav>
-	</header>
+<?php include '../../templates/partials/header.php'; ?>
 
 	<main class="page-main">
-		<div class="content-centered max-width-60">
+		<div class="inner-column">
 			<header class="page-header">
-				<h1>30 Days of Design</h1>
-				<h2>30 graphics in 30 days</h2>
+				<h1 class="xl-type rainbow">30 Days of Design</h1>
+				<h2 class="callout l-type">30 graphics in 30 days</h2>
 				<p> I set out to create a graphic every day for 30 days, and a theme emerged: Life in Technicolor.</p>
-				<p>I got a tattoo out of a magazine. And then, the little engine decided that he just wasn't the competitive type. Can't you just punish us? I'd like to pay my check to society and get on with my life. So Cinderella skipped the ball and asked her fairy Godmother to make her the first woman president. Realizing that the monarchy was becoming obsolete, the prince opened a video store. I figure you think about depressing stuff a lot. You're that type, you know?</p>
-				<p>Something something something lorem, limited color palette, something something. #000000 #000000 #000000 tooltips and stuff.</p>
 			</header>
-		</div>
-		<section class="grid-column-2 grid-column-5 max-width-60">
+		<section class="grid-column-6">
 			<ul>
 				<li><img src="https://peprojects.dev/beta-one/jewell-hosted/30-days-of-design/day1.jpg" alt="1"></li>
 				<li><img src="https://peprojects.dev/beta-one/jewell-hosted/30-days-of-design/day2.jpg" alt="2"></li>
@@ -80,18 +41,7 @@
 				<li><img src="https://peprojects.dev/beta-one/jewell-hosted/30-days-of-design/day-30.png" alt="30"></li>
 			</ul>
 		</section>
+	</div>
 	</main>
 
-	<footer class="site-foot">
-		<p class="tagline"><a href="https://youtu.be/R_nviNS0IAw?si=G_oLg3MDTul68Zj5&t=205" target="_blank">Poor, lonely computer. It's time someone programmed you.</a></p>
-		<nav class="contact-nav">
-			<ul>
-				<li><a href="/">Contact</a></li>
-				<span class="footer-icon"> / </span>
-				<li><a href="/">Substack</a></li>
-			</ul>
-		</nav>
-	</footer>
-</div>
-</body>
-</html>
+	<?php includeFile('templates/partials/footer.php'); ?>

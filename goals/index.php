@@ -2,14 +2,15 @@
 
 
 	<main class="page-main">
-		<div class="content-centered">
+		<div class="inner-column">
+			<div class="content-left">
 			<header class="page-header">
-				<h1 class="top-level">Goals</h1>
-				<h2 class>Copy copy copy</h2>
+				<h1 class="xl-type rainbow top-level">Goals</h1>
+				<h2 class="l-type">Now and later.</h2>
 			</header>
 			<section>
-				<h2>Experiences</h2>
-				<ul>
+				<h2 class="l-type">Experiences</h2>
+				<ul class="callout">
 					<li>Contribute to open source</li>
 					<li>Create something for a friend</li>
 					<li>Collaborate on a project with a peer</li>
@@ -21,14 +22,16 @@
 				</ul>
 			</section>
 			<section>
-				<h2>Projects</h2>
-				<ul>
+				<h2 class="l-type">Projects</h2>
+				<ul class="callout">
 					<li>jewellscott.com (including subdomains and possibly custom CMS) </li>
 					<li>jewell.dev</li>
 					<li>sicksadipsum (rebuild/redesign)</li>
 					<li>500greatest</li>
 					<li>seeingsounds</li>
 				</ul>
+			</section>
+		</div>
 		</div>
 	</main>
 

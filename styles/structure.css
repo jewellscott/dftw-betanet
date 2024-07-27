@@ -13,8 +13,68 @@ main {
 
 .inner-column {
 	width: 100%;
-	max-width: 1200px; 
+	max-width: 1270px; 
 	margin-inline: auto; /* horizontally center this by default */
-	padding-inline: 16px; /* a loose default */
-	border: 5px dashed var(--primary-color);
+	padding-inline: 32px; /* a loose default */
+}
+
+.inner-column-800 {
+	width: 100%;
+	max-width: 800; 
+	margin-inline: auto; /* horizontally center this by default */
+	padding-inline: 32px; /* a loose default */
+}
+
+.home-main {
+	display: flex;
+	align-items: center;
+}
+
+.page-main {
+	padding-block: 10em 4em;
+	section {
+		margin-top: 4em;
+	}
+}
+
+.content-left {
+	max-width: 70ch;
+}
+
+
+.grid-column-3 {
+	ul {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	  gap: 20px;
+	}	
+	li {
+		padding: 20px;
+		list-style-type: none;
+	}
+}
+
+.grid-column-6 {
+	ul {
+	  display: grid;
+	  gap: 20px;
+	  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	}	
+	li {
+		list-style-type: none;
+	}
+}
+
+.horizontal-list {
+	display: grid;
+	gap: 50px;
+   grid-auto-columns: max-content;
+   grid-template-rows: 1fr;
+   width: 100%;
+   overflow-x: auto;
+
+   li {
+   	grid-row: 1;
+   	grid-column: auto;
+   }
 }
