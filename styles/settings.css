@@ -18,10 +18,4 @@
 	body {
 		color: #e6e6db;
 	}
-	.site-nav .link-list li a, .site-foot p.tagline a, .site-foot span, .site-foot .contact-nav li a, p .tech-type a, ul li .tech-type a {
-		color: var(--background-color);
-	}
-	.xl-type .rainbow { 
-		color: #fff00;
-	 }
 }
