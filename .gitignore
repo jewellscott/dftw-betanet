@@ -1,3 +1,4 @@
 .DS_Store
 *.fileloc
 /about/About.fileloc
+config.php
