@@ -5,6 +5,9 @@
 			
 		<div class="content-left">
 		<h1 class="xl-type rainbow top-level">About</h1>
+
+			<p class="sm-type">Contact me via <span class="tech-type"><a href="/">Email</a></span></p>
+
 			<section class="top-level-section">
 			<h2 class="l-type">About me</h2>
 			<p>If I'm not back in ten minutes, don't send help. It was dead already, sweetheart. Just like the others. There's no such thing as a making-out scholarship. It won't work. My face is too expressive. I could pass the test, but I like having low self-esteem. It makes me feel special. Maybe that one about feeling like a big misfit whom everybody hates. The other kids will really relate to that. I know I do. Well, I have been saving up for a pair of snappy orthopedic shoes.</p>
