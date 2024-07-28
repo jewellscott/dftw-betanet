@@ -11,7 +11,7 @@
 				<h2 class="l-type">Featured</h2>
 				<ul class="page-list">
 					<li>
-						<a href="/blog/an-interest-pursued/">DFTW 01: An interest, pursued.</a>
+						<a href="blog/an-interest-pursued/">DFTW 01: An interest, pursued.</a>
 						<p class="xs-type">April 25, 2024</p>
 					</li>
 				</ul>
@@ -20,7 +20,7 @@
 			<h2 class="l-type">Latest</h2>
 			<ul class="page-list">
 				<li>
-					<a href="/blog/kitchen-sink-blog-post/">Kitchen Sink Blog Post</a>
+					<a href="blog/kitchen-sink-blog-post/">Kitchen Sink Blog Post</a>
 					<p class="xs-type">July 27, 2024</p>
 				</li>
 			</ul>
