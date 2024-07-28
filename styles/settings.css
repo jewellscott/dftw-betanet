@@ -12,10 +12,23 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--primary-color: #e6e6db;
+/*		--background-color: #1c1c20;*/
 		--background-color: #161724;
 		--rainbow-gradient: linear-gradient(103deg, rgba(52,64,116,1) 0%, rgba(54,93,102,1) 16%, rgba(51,93,80,1) 31%, rgba(79,108,64,1) 39%, rgba(124,126,74,1) 51%, rgba(125,111,66,1) 63%, rgba(128,92,70,1) 73%, rgba(129,70,70,1) 82%, rgba(113,62,103,1) 90%, rgba(93,66,124,1) 100%);
 	}
 	body {
 		color: #e6e6db;
 	}
+
+
+	/* test for computer blue theme */
+	/*:root {
+		--primary-color: #161724;
+		--background-color: blue;
+	}
+	body {
+		color: white;
+	}*/
+
 }
+
