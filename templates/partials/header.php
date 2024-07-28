@@ -43,8 +43,8 @@ require_once $baseDir . '/functions.php';
 				<!-- <li><a href="./inspo">Inspo</a></li> -->
 				<li><a href="goals">Goals</a></li>
 				<li><a href="links">Links</a></li>
-				<li><a href="./extras">Extras</a></li>
-				<li><a href="friends">Friends</a>
+				<li><a href="extras">Extras</a></li>
+				<!-- <li><a href="friends">Friends</a> -->
 				</li>
 				<li><a href="style-guide">Style Guide</a></li>
 			</ol>
