@@ -8,5 +8,5 @@
 			</ul>
 		</nav>
 	</footer>
-<script src="../../js/random-bitmoji.js"></script>
+<script src="js/random-bitmoji.js"></script>
 </html>
