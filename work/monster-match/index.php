@@ -92,7 +92,6 @@ foreach ($monsters as $monster) {
 	echo "<li class='monster'>";
 	echo 
 		"<monster-card id='" . $monster["id"] . "'>";
-	echo "<h2 class='"
 }
 
 
