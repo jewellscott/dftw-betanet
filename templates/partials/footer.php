@@ -9,5 +9,4 @@
 		</nav>
 	</footer>
 <script src="../../js/random-bitmoji.js"></script>
-</body>
 </html>

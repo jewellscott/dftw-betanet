@@ -1,7 +1,27 @@
-html {
+:root {
 	--primary-color: #0000ff;
+	--background-color: #ffffff;
+	--rainbow-gradient: linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
 	--display-type: "Space Mono";
 	--body-type: "Helvetica Neue", sans-serif;
 	--accent-type: "Jersey 15", sans-serif;
-	--rainbow-gradient: linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
+}
+
+/* themes */
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary-color: #e6e6db;
+		--background-color: #161724;
+		--rainbow-gradient: linear-gradient(103deg, rgba(52,64,116,1) 0%, rgba(54,93,102,1) 16%, rgba(51,93,80,1) 31%, rgba(79,108,64,1) 39%, rgba(124,126,74,1) 51%, rgba(125,111,66,1) 63%, rgba(128,92,70,1) 73%, rgba(129,70,70,1) 82%, rgba(113,62,103,1) 90%, rgba(93,66,124,1) 100%);
+	}
+	body {
+		color: #e6e6db;
+	}
+	.site-nav .link-list li a, .site-foot p.tagline a, .site-foot span, .site-foot .contact-nav li a, p .tech-type a, ul li .tech-type a {
+		color: var(--background-color);
+	}
+	.xl-type .rainbow { 
+		color: #fff00;
+	 }
 }

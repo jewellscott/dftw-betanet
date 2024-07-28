@@ -26,6 +26,6 @@ html {
 }
 
 main {
-	background-color: white;
+	background-color: var(--background-color);
 }
 

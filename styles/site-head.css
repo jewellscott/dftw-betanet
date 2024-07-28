@@ -1,6 +1,6 @@
 .site-head {
 	padding: 1em 3em;
-	background-color: white;
+	background-color: var(--background-color);
 	.site-logo {
 		max-width: 100px;
 		@media (width < 800px) {
@@ -24,7 +24,7 @@
 		a {
 			text-decoration: none;
 			background-color: var(--primary-color);
-			color: white;
+			color: var(--background-color);
 			font-size: 1.2rem;
 			text-transform: uppercase;
 	  		font-family: "Jersey 15", sans-serif;

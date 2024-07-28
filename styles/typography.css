@@ -129,7 +129,7 @@ article {
 	line-height: 0.8;
 	letter-spacing: -.05em;
 	&.rainbow {
-		background: linear-gradient(103deg, rgba(138,160,255,1) 0%, rgba(130,233,255,1) 16%, rgba(150,255,224,1) 31%, rgba(183,255,147,1) 39%, rgba(250,255,132,1) 51%, rgba(255,213,74,1) 63%, rgba(255,182,136,1) 73%, rgba(255,158,158,1) 82%, rgba(255,150,233,1) 90%, rgba(200,152,255,1) 100%);
+		background: var(--rainbow-gradient);
 		padding: .1em;
 		color: var(--primary-color);
 	}
@@ -183,7 +183,7 @@ article {
 .tech-type {
 		text-decoration: none;
 		background-color: var(--primary-color);
-		color: white;
+		color: var(--background-color);
 		font-size: inherit;
 		text-transform: uppercase;
 	  	font-family: "Jersey 15", sans-serif;
