@@ -1,11 +1,31 @@
 <type-specimen>
 
-	<!-- <h1>Space Mono</p> -->
+	<section class="typefaces">
+
+			<p class="xl-type rainbow">Amazingly few discotheques provide jukeboxes.</p>
+
+			<p class="l-type">Amazingly few discotheques provide jukeboxes.</p>
+
+			<p class="ml-type">Amazingly few discotheques provide jukeboxes.</p>
+
+			<p class="m-type">Amazingly few discotheques provide jukeboxes.</p>
+
+			<p class="sm-type">Amazingly few discotheques provide jukeboxes.</p>
+
+			<p class="s-type">Amazingly few discotheques provide jukeboxes.</p>
+
+
+			<p class="xs-type">Amazingly few discotheques provide jukeboxes.</p>
+
+			<p class="tech-type">Amazingly few discotheques provide jukeboxes.</p>
+
+	</section>
+
+	<section class="type-voices">
 
 
 
-	<p class="xl-type">For You</p>
-	<p class="x-type">Prince</p>
-	<p class="m-type">Dirty Mind</p>
-	<p class="sm">Controversy</p>
+	</section>
+	
 </type-specimen>
+

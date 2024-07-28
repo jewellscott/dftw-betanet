@@ -78,3 +78,9 @@ main {
    	grid-column: auto;
    }
 }
+
+.spotify-list {
+	li {
+		width: 400px;
+	}
+}

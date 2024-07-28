@@ -9,13 +9,13 @@
 			</header>
 
 
-		<section class="jewell-diptych">
+		<!-- <section class="jewell-diptych">
 			<?php includeFile('templates/modules/jewell-diptych.php'); ?>
 			</div>
 		</section>
+ -->
 
-
-
+ 	<?php include '../templates/modules/type-specimen.php'; ?>
 
 	</main>
 
