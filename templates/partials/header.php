@@ -36,7 +36,6 @@ require_once $baseDir . '/functions.php';
 			<a href="/" class="site-logo">
 				<?php include(getFile('templates/components/site-logo.php'));?>
 			</a>
-			<div class="nav-right">
 			<ol class="link-list">
 				<li><a href="/about">About</a></li>
 				<li><a href="/blog">Blog</a></li>
@@ -48,8 +47,6 @@ require_once $baseDir . '/functions.php';
 				<li><a href="/friends">Friends</a>
 				</li>
 				<li><a href="/style-guide">Style Guide</a></li>
-				<li>				<?php include(getFile('templates/components/hue-slider.php'));?></li>
 			</ol>
-		</div>
 		</nav>
 	</header>
