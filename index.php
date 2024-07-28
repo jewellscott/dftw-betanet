@@ -6,7 +6,7 @@
 
 	<div class="inner-column">
 
-		<?php includeFile('templates/modules/jewell-diptych.php')?>
+		<?php includeFile('templates/modules/jewell-diptych-home.php')?>
 	</div>
 </main>
 

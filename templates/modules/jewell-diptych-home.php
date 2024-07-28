@@ -1,4 +1,4 @@
-<jewell-diptych>
+<jewell-diptych-home>
 	
 	<picture>
 		<img src="/" id="random-bitmoji" class="home-bitmoji" alt="A bitmoji of me!">
@@ -6,15 +6,18 @@
 
 	<div class="info">
 		<h1 class="name xl-type rainbow">Jewell Scott</h1>
-		<h2 class="message l-type">Currently immersing myself in Design for the Web at Perpetual Education.</h2>
+		<p class="message l-type">Currently immersing myself in Design for the Web at Perpetual Education.</h2>
+
+		<!-- <p class="message m-type">Take a look around... </h2> -->
+
 	</div>
 
-</jewell-diptych>
+</jewell-diptych-home>
 
 
 
 <style>
-	jewell-diptych {
+	jewell-diptych-home {
 		display: grid;
 		gap: 1em;
 

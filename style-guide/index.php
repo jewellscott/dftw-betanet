@@ -24,7 +24,12 @@
 
 
 <style>
-	.inner-column {
-		padding: 20px;
+
+	.page-header {
+		@media (width < 600px) {
+			h1.top-level{
+				line-height: 1em;
+			}
+		}
 	}
 </style>
