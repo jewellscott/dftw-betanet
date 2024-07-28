@@ -33,7 +33,7 @@ require_once $baseDir . '/functions.php';
 
 	<header class="site-head">
 		<nav class="site-nav">
-			<a href="/" class="site-logo">
+			<a href="" class="site-logo">
 				<?php include(getFile('templates/components/site-logo.php'));?>
 			</a>
 			<ol class="link-list">
