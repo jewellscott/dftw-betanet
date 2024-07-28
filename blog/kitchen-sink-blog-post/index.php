@@ -80,7 +80,7 @@
 				  <p>And as a consequence, so did I. And throughout history, Islam has demonstrated through words and deeds the possibilities of religious tolerance and racial equality. But if we choose to be bound by the past, we will never move forward.</p>
 				</article>
 
-			<?php includeFile('templates/modules/contact-card.php'); ?>
+			<?php // includeFile('templates/modules/contact-card.php'); ?>
 
 			</main>
 		</section>
