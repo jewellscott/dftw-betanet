@@ -10,7 +10,6 @@ $monsters = [
 		"adopted" => true,
 		"portrait" => "https://peprojects.dev/images/square.jpg",
 		"favoriteFood" => "Mountain Dew Code Red",
-		// I want this to be a nested array...
 		"personality" => [
 			"Curious and intelligent",
 			"Loves solving puzzles",
@@ -18,19 +17,36 @@ $monsters = [
 		]
 	],
 	[
-		"id" => 102,
-		"name" => "Fragoo",
-		"species" => "Fluffy Goblin",
-		"age" => 5,
-		"size" => "Small (~2 feet tall)",
+		"id" => 106,
+		"name" => "Orangina",
+		"species" => "Citrus Sprite",
+		"age" => 6,
+		"size" => "Small (~3 feet tall)",
 		"adopted" => false,
 		"portrait" => "https://peprojects.dev/images/square.jpg",
-		"favoriteFood" => "Goldfish crackers",
+		"favoriteFood" => "Poke",
 		"personality" => [
-			"Playful and mischevious",
-			"Loves games and pranks"
+			"Energetic and bubbly", 
+			"brings a lot of brightness to any room",
+			"Friendly with both monsters and humans",
+			"Great with kids"
 		],
-		"specialRequirements" => "Needs plenty of playtime and a safe space to explore"
+		"specialRequirements" => "Needs regular sun exposure and vitamin-rich snacks"
+	],
+	[
+		"id" => 105,
+		"name" => "Mr. Banana",
+		"species" => "Fruit-Folk",
+		"age" => 4,
+		"size" => "Medium (~4 feet tall)",
+		"adopted" => false,
+		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"favoriteFood" => "Pizza",
+		"personality" => [
+			"Cheerful and outgoing", 
+			"Loves to make others laugh",
+			"Enjoys social gatherings and parties"
+		]
 	],
 	[
 		"id" => 103,
@@ -64,38 +80,6 @@ $monsters = [
 		"specialRequirements" => "Prefers snacks that can be nibbled slowly"
 	],
 	[
-		"id" => 105,
-		"name" => "Mr. Banana",
-		"species" => "Fruit-Folk",
-		"age" => 4,
-		"size" => "Medium (~4 feet tall)",
-		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
-		"favoriteFood" => "Pizza",
-		"personality" => [
-			"Cheerful and outgoing", 
-			"Loves to make others laugh",
-			"Enjoys social gatherings and parties"
-		]
-	],
-	[
-		"id" => 106,
-		"name" => "Orangina",
-		"species" => "Citrus Sprite",
-		"age" => 6,
-		"size" => "Small (~3 feet tall)",
-		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
-		"favoriteFood" => "Poke",
-		"personality" => [
-			"Energetic and bubbly", 
-			"brings a lot of brightness to any room",
-			"Friendly with both monsters and humans",
-			"Great with kids"
-		],
-		"specialRequirements" => "Needs regular sun exposure and vitamin-rich snacks"
-	],
-	[
 		"id" => 107,
 		"name" => "Shadow",
 		"species" => "Fluffy Goblin",
@@ -109,6 +93,21 @@ $monsters = [
 			"Prefers solitude"
 		],
 		"specialRequirements" => "Feeds on dark energy or moonlight; does not require physical food"
+	],
+	[
+		"id" => 102,
+		"name" => "Fragoo",
+		"species" => "Fluffy Goblin",
+		"age" => 5,
+		"size" => "Small (~2 feet tall)",
+		"adopted" => false,
+		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"favoriteFood" => "Goldfish crackers",
+		"personality" => [
+			"Playful and mischevious",
+			"Loves games and pranks"
+		],
+		"specialRequirements" => "Needs plenty of playtime and a safe space to explore"
 	],
 ];
 

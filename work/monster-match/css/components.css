@@ -80,37 +80,37 @@ monster-card {
 	color: #751417;
 }
 
-.monster:nth-child(2) {
+.monster:nth-child(7) {
 	/* Fragoo */
 	background-color: #f4b6e8;
 	color: #75145c;
 }
 
-.monster:nth-child(3) {
+.monster:nth-child(4) {
 	/* Limabean */
 	background-color: #c3fddc;
 	color: #377e48;
 }
 
-.monster:nth-child(4) {
+.monster:nth-child(5) {
 	/* Miss Reads-a-Lot */
 	background-color: #bee7fc;
 	color: #255a7d;
 }
 
-.monster:nth-child(5) {
+.monster:nth-child(3) {
 	/* Mr. Banana */
 	background-color: #e1febb;
 	color: #517f23;
 }
 
-.monster:nth-child(6) {
+.monster:nth-child(2) {
 	/* Orangina */
 	background-color: #f8d3b7;
 	color: #773712;
 }
 
-.monster:nth-child(7) {
+.monster:nth-child(6) {
 	/* Shadow */
 	background-color: #c2b4fa;
 	color: #1b017b;
