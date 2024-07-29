@@ -1,0 +1,23 @@
+body {
+   padding: 16px ;
+}
+
+.inner-column {
+   max-width: 1200px;
+   margin-inline: auto;
+}
+
+.monster-list {
+	display: grid;
+	gap: 50px;
+   grid-auto-columns: max-content;
+   grid-template-rows: 1fr;
+   width: 100%;
+   overflow-x: auto;
+
+
+   li {
+   	grid-row: 1;
+   	grid-column: auto;
+   }
+}

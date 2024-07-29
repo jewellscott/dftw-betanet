@@ -1,0 +1,117 @@
+.site-header {
+	margin-block: 2em;
+	h1 {
+		font-size: 5rem;
+		font-weight: 700;
+		color: #7c661e;
+	}
+	h2 {
+		font-size: 1.5rem;
+		color: #7c661e;
+	}
+}
+
+
+.monster {
+	margin-bottom: 2em;
+	border-radius: 10px;
+	max-width: 300px;
+	padding: 1em 2em;
+	.monster-img {
+		border-radius: 50%;
+		max-width: 200px;
+	}
+
+	.name {
+		font-size: 2rem;
+		font-weight: 700;
+	}
+	.stats {
+		font-size: 1.2rem;
+		font-weight: 700;
+
+	}
+}
+
+
+.label-sticker {
+	background-color: #fcf0ba;
+	text-transform: uppercase;
+	padding: .3rem .6rem;
+	border-radius: 5px;
+}
+
+monster-card {
+	display: flex;
+	flex-direction: column;
+
+	.name {
+		align-self: center;
+	}
+
+	.monster-img {
+		margin-bottom: 1em;
+		align-self: center;
+	}
+
+	.stats {
+		margin-block: .5em;
+		align-self: center;
+	}
+
+	.personality, .favorite-food, .special-requirements {
+		line-height: 1.2rem;
+	}
+
+	.personality li::before, .favorite-food::before, .special-requirements::before {
+		content: "• ";
+	}
+
+	.req-sticker {
+		align-self: center;
+		margin-block: .5em;
+	}
+
+}
+
+.monster:nth-child(1) {
+	/* Codey */
+	background-color: #f4b6be;
+	color: #751417;
+}
+
+.monster:nth-child(2) {
+	/* Fragoo */
+	background-color: #f4b6e8;
+	color: #75145c;
+}
+
+.monster:nth-child(3) {
+	/* Limabean */
+	background-color: #c3fddc;
+	color: #377e48;
+}
+
+.monster:nth-child(4) {
+	/* Miss Reads-a-Lot */
+	background-color: #bee7fc;
+	color: #255a7d;
+}
+
+.monster:nth-child(5) {
+	/* Mr. Banana */
+	background-color: #e1febb;
+	color: #517f23;
+}
+
+.monster:nth-child(6) {
+	/* Orangina */
+	background-color: #f8d3b7;
+	color: #773712;
+}
+
+.monster:nth-child(7) {
+	/* Shadow */
+	background-color: #c2b4fa;
+	color: #1b017b;
+}
