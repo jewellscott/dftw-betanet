@@ -30,3 +30,14 @@ main {
 	background-color: var(--background-color);
 }
 
+
+
+/* inspo */
+
+
+.inspo-pics  {
+	margin-top: 4em;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 10px;
+}
