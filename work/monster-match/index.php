@@ -10,7 +10,12 @@ $monsters = [
 		"adopted" => true,
 		"portrait" => "https://peprojects.dev/images/portrait.jpg",
 		"favoriteFood" => "Mountain Dew Code Red",
-		"personality" => "Curious and intelligent, loves solving puzzles, can become impatient if not engaged"
+		// I want this to be a nested array...
+		"personality" => [
+			"Curious and intelligent",
+			"Loves solving puzzles",
+			"Can become impatient if not engaged"
+		]
 	],
 	[
 		"id" => 102,
@@ -21,7 +26,10 @@ $monsters = [
 		"adopted" => false,
 		"portrait" => "https://peprojects.dev/images/portrait.jpg",
 		"favoriteFood" => "Goldfish crackers",
-		"personality" => "Playful and mischevious, loves games and pranks",
+		"personality" => [
+			"Playful and mischevious",
+			"Loves games and pranks"
+		],
 		"specialRequirements" => "Needs plenty of playtime and a safe space to explore"
 	],
 	[
@@ -33,7 +41,10 @@ $monsters = [
 		"adopted" => false,
 		"portrait" => "https://peprojects.dev/images/portrait.jpg",
 		"favoriteFood" => "Marshmallows",
-		"personality" => "Gentle and shy, loves to hide and snuggle",
+		"personality" => [
+			"Gentle and shy",
+			 "Loves to hide and snuggle"
+			],
 		"specialRequirements" => "Best suited for a quiet home without aggressive pets"
 	],
 	[
@@ -45,7 +56,11 @@ $monsters = [
 		"adopted" => false,
 		"portrait" => "https://peprojects.dev/images/portrait.jpg",
 		"favoriteFood" => "Dried figs",
-		"personality" => "Intellectual and reserved, enjoys reading and learning, perfect for solitary or low-energy companions",
+		"personality" => [
+			"Intellectual and reserved",
+			"Enjoys reading and learning",
+			"Perfect for solitary or low-energy companions"
+		],
 		"specialRequirements" => "Prefers snacks that can be nibbled slowly"
 	],
 	[
@@ -57,7 +72,11 @@ $monsters = [
 		"adopted" => false,
 		"portrait" => "https://peprojects.dev/images/portrait.jpg",
 		"favoriteFood" => "Pizza",
-		"personality" => "Cheerful and outgoing, loves to make others laugh; enjoys social gatherings and parties",
+		"personality" => [
+			"Cheerful and outgoing", 
+			"Loves to make others laugh",
+			"Enjoys social gatherings and parties"
+		]
 	],
 	[
 		"id" => 106,
@@ -68,7 +87,12 @@ $monsters = [
 		"adopted" => false,
 		"portrait" => "https://peprojects.dev/images/portrait.jpg",
 		"favoriteFood" => "Poke",
-		"personality" => "Energetic and bubbly, brings a lot of brightness to any room. Friendly with both monsters and humans; great with kids",
+		"personality" => [
+			"Energetic and bubbly", 
+			"brings a lot of brightness to any room",
+			"Friendly with both monsters and humans",
+			"Great with kids"
+		],
 		"specialRequirements" => "Needs regular sun exposure and vitamin-rich snacks"
 	],
 	[
@@ -80,25 +104,70 @@ $monsters = [
 		"adopted" => false,
 		"portrait" => "https://peprojects.dev/images/portrait.jpg",
 		"favoriteFood" => "Melancholia",
-		"personality" => "Mysterious and aloof, prefers solitude",
+		"personality" => [
+			"Mysterious and aloof", 
+			"prefers solitude"
+		],
 		"specialRequirements" => "Feeds on dark energy or moonlight; does not require physical food"
 	],
 ];
 
-echo "<h1>Monster Match</h2>";
+echo "<h1>Monster Match</h1>";
 
+
+// foreach ($monsters as $monster) {
+// 	echo "<li class='monster'>";
+// 	echo 
+// 		"<monster-card id='" . $monster["id"] . "'>";
+// }
+
+echo "<ul class='monster-list'>";
 
 foreach ($monsters as $monster) {
 	echo "<li class='monster'>";
-	echo 
-		"<monster-card id='" . $monster["id"] . "'>";
+
+		echo 
+		"<monster-card id='" . $monster["id"] . ">"
+
+
+
+			. "<picture class='portrait'><img width='400px' src='" . $monster["portrait"] . "''>";
+
+			if ($monster["adopted"] == true) {
+			 	echo 
+
+			 	"<div class='adopted'><span>Adopted!</span></div>";
+			 	
+			 };
+
+			echo "<h2 class='name' id=" . $monster["name"] . ">" . $monster["name"] . "</h2>"
+			. "<h3 class='stats'>" . $monster["species"] . " * " . $monster["age"] . "</h3>"
+
+			. "<ul class='personality'>"; 
+	
+				foreach ($monster["personality"] as $trait) {
+
+					echo "<li>" . $trait . "</li>";
+
+				};
+
+			 echo "</ul>";
+
+			 echo "<p class='favorite-food'>Favorite Food: " . $monster["favoriteFood"] . "</p>";
+
+			 if (array_key_exists("specialRequirements",$monster)) {
+
+			 	echo "<h3 class='specialRequirements'> Special Requirements</h3>";
+
+			 	echo "<p>" . $monster["specialRequirements"] . "</p>";
+			 };
+
+		 echo "</monster-card>";
+
+	echo "</li>";
 }
 
-
-
-
-
-
+echo "</ul>";
 
 
 
