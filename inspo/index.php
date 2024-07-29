@@ -1,36 +1,35 @@
-<?php include '../templates/partials/header.php';
-
-echo "<main>";
-
-// Get the directory of inspo images
-
+<?php
 
 function getInspo() {
-
 	$colorInspo = scandir('inspo/colors');
 	array_splice($colorInspo, 0, 3);
 
-	// Loop through the contents
+	shuffle($colorInspo);
+
+	// Loop through the contents and create a picture element
 
 	echo "<ul class='inspo-pics'>";
 
 	foreach($colorInspo as $image) {
-
 		$imgSrc = BASE_URL . "inspo/inspo/colors/" . $image;
-
-			echo "<li><picture><img src='$imgSrc'></picture></li>";
-
+		echo "<li><picture><img src='$imgSrc'></picture></li>";
 	};
 
 	echo "</ul>";
-
-	// Create a picture element for each image
-	// Display elements on the page
-
 }
+?>
 
-getInspo();
+<?php include '../templates/partials/header.php' ?>
 
-echo "</main>";
-includeFile('templates/partials/footer.php');
+<main class="page-main">
+	<div class="inner-column">
+		<h1 class="xl-type top-level rainbow">Inspo</h1>
+	</div>
 
+	<div class="inspo-container">
+		<?php getInspo(); ?>
+	</div>
+</main>
+
+
+<?php includeFile('templates/partials/footer.php'); ?>
