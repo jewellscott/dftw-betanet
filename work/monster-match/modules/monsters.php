@@ -129,11 +129,11 @@ $monsters = [
 				</ul>
 				<p class="favorite-food">Favorite Food: <?=$monster["favoriteFood"]?></p>
 				<?php if (array_key_exists("specialRequirements",$monster)) { ?>
-					<span class="label-sticker req-sticker">Special Requirements</span>
+					<span class="label-sticker req-sticker rainbow"><span>S</span><span>p</span><span>e</span><span>c</span><span>i</span><span>a</span><span>l</span> <span>R</span><span>e</span><span>q</span><span>u</span><span>i</span><span>r</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>s</span></span>
 					<p class="special-requirements"><?=$monster["specialRequirements"]?></p>
 				<?php }; ?>
 				<?php if ($monster["adopted"] == true) { ?>
-					<div><span class='adopted label-sticker'>Adopted!</span></div>
+					<div><span class='adopted label-sticker rainbow'><span>A</span><span>d</span><span>o</span><span>p</span><span>t</span><span>e</span><span>d</span><span>!</span></span></div>
 				<?php }; ?>
 			</monster-card>
 		</li>

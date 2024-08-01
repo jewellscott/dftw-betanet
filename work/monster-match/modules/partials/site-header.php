@@ -11,7 +11,7 @@
 <div class="inner-column">
 
 
-<h1>Monster Match</h1>
+<h1 class="rainbow"><span>M</span><span>o</span><span>n</span><span>s</span><span>t</span><span>e</span><span>r</span> <span>M</span><span>a</span><span>t</span><span>c</span><span>h</span></h1>
 <h2>Discover lovable, quirky monsters waiting for their forever homes</h2>
 
 </div>
