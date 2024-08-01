@@ -11,9 +11,13 @@
 	}
 }
 
+.monster-list {
+	background-color: #fcf0ba;
+	padding: 20px;
+	border-radius: 10px;
+}
 
 .monster {
-	margin-bottom: 2em;
 	border-radius: 10px;
 	max-width: 300px;
 	padding: 1em 2em;

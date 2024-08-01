@@ -111,50 +111,31 @@ $monsters = [
 	],
 ];
 
-echo "<ul class='monster-list'>";
+?>
 
-foreach ($monsters as $monster) {
-	echo "<li class='monster'>";
-
-		echo 
-		"<monster-card id='" . $monster["id"] . ">"
-
-
-
-			. "<picture class='portrait'><img class='monster-img' src='" . $monster["portrait"] . "''></picture>";
-
-			if ($monster["adopted"] == true) {
-			 	echo 
-
-			 	"<div><span class='adopted label-sticker'>Adopted!</span></div>";
-			 	
-			 };
-
-			echo "<h2 class='name' id=" . $monster["name"] . ">" . $monster["name"] . "</h2>"
-			. "<h3 class='stats'>" . $monster["species"] . " •  " . $monster["age"] . "</h3>"
-
-			. "<ul class='personality'>"; 
-	
-				foreach ($monster["personality"] as $trait) {
-
-					echo "<li>" . $trait . "</li>";
-
-				};
-
-			 echo "</ul>";
-
-			 echo "<p class='favorite-food'>Favorite Food: " . $monster["favoriteFood"] . "</p>";
-
-			 if (array_key_exists("specialRequirements",$monster)) {
-
-			 	echo "<span class='label-sticker req-sticker'> Special Requirements</span>";
-
-			 	echo "<p class='special-requirements'>" . $monster["specialRequirements"] . "</p>";
-			 };
-
-		 echo "</monster-card>";
-
-	echo "</li>";
-}
-
-echo "</ul>";
+<ul class="monster-list">
+	<?php foreach ($monsters as $monster) { ?>
+		<li class="monster">
+			<monster-card id="<?=$monster["id"]?>">
+				<picture class="portrait">
+					<img src="<?=$monster["portrait"]?>" class="monster-img">
+				</picture>
+				<h2 class="name" id="<?=$monster["name"]?>"><?=$monster["name"]?></h2>
+				<h3 class="stats"><?=$monster["species"]?> • <?=$monster["age"]?></h3>
+				<ul class="personality">
+					<?php foreach ($monster["personality"] as $trait) { ?>
+						<li><?=$trait?></li>
+					<?php }; ?>
+				</ul>
+				<p class="favorite-food">Favorite Food: <?=$monster["favoriteFood"]?></p>
+				<?php if (array_key_exists("specialRequirements",$monster)) { ?>
+					<span class="label-sticker req-sticker">Special Requirements</span>
+					<p class="special-requirements"><?=$monster["specialRequirements"]?></p>
+				<?php }; ?>
+				<?php if ($monster["adopted"] == true) { ?>
+					<div><span class='adopted label-sticker'>Adopted!</span></div>
+				<?php }; ?>
+			</monster-card>
+		</li>
+	<?php }; ?>
+</ul>
