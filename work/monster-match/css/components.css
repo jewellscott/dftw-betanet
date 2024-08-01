@@ -12,7 +12,7 @@
 }
 
 .monster-list {
-	background-color: #fcf0ba;
+/*	background-color: white;*/
 	padding: 20px;
 	border-radius: 10px;
 }
@@ -43,11 +43,23 @@
 	text-transform: uppercase;
 	padding: .3rem .6rem;
 	border-radius: 5px;
+	font-weight: 700;
 }
 
 monster-card {
 	display: flex;
 	flex-direction: column;
+
+	position: relative;
+
+	.adopted {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: rotate(-15deg) translate(-40px, -20px);
+		font-size: 2rem;
+	}
+
 
 	.name {
 		align-self: center;

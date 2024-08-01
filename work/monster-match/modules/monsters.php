@@ -8,7 +8,7 @@ $monsters = [
 		"age" => 3, 
 		"size" => "Medium (~4 feet tall)",
 		"adopted" => true,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/codey.jpg",
 		"favoriteFood" => "Mountain Dew Code Red",
 		"personality" => [
 			"Curious and intelligent",
@@ -23,7 +23,7 @@ $monsters = [
 		"age" => 6,
 		"size" => "Small (~3 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/orangina.jpg",
 		"favoriteFood" => "Poke",
 		"personality" => [
 			"Energetic and bubbly", 
@@ -40,7 +40,7 @@ $monsters = [
 		"age" => 4,
 		"size" => "Medium (~4 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/mr-banana.jpg",
 		"favoriteFood" => "Pizza",
 		"personality" => [
 			"Cheerful and outgoing", 
@@ -55,7 +55,7 @@ $monsters = [
 		"age" => 2,
 		"size" => "Tiny (~1 foot tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/limabean.jpg",
 		"favoriteFood" => "Marshmallows",
 		"personality" => [
 			"Gentle and shy",
@@ -70,7 +70,7 @@ $monsters = [
 		"age" => 7,
 		"size" => "Medium (~3 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/miss-reads-a-lot.jpg",
 		"favoriteFood" => "Dried figs",
 		"personality" => [
 			"Intellectual and reserved",
@@ -86,7 +86,7 @@ $monsters = [
 		"age" => 10,
 		"size" => "Varies (can shift size between 3-6 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/shadow.jpg",
 		"favoriteFood" => "Melancholia",
 		"personality" => [
 			"Mysterious and aloof", 
@@ -101,7 +101,7 @@ $monsters = [
 		"age" => 5,
 		"size" => "Small (~2 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/fragoo.jpg",
 		"favoriteFood" => "Goldfish crackers",
 		"personality" => [
 			"Playful and mischevious",
