@@ -20,7 +20,7 @@
 .monster {
 	border-radius: 10px;
 	max-width: 300px;
-	padding: 1em 2em;
+	padding: 1.5em 2em;
 	.monster-img {
 		border-radius: 50%;
 		max-width: 200px;
@@ -51,6 +51,11 @@ monster-card {
 
 	.name {
 		align-self: center;
+	}
+
+	picture {
+		display: grid;
+		place-items: center;
 	}
 
 	.monster-img {
