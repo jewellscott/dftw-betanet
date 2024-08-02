@@ -45,7 +45,7 @@
 
 ?>
 
-<h1>Retirement Calculator</h1>
+<h1><a href="?">Retirement Calculator</a></h1>
 
 
 <form method="POST">
