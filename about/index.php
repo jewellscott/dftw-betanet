@@ -6,7 +6,7 @@
 		<div class="content-left">
 		<h1 class="xl-type rainbow top-level">About</h1>
 
-			<p class="sm-type">Contact me via <span class="tech-type"><a href="/">Email</a></span></p>
+			<p class="sm-type">Wanna know more? <span class="tech-type"><a href="/">Resume</a></span> <span class="tech-type"><a href="/">Email</a></span></p>
 
 			<section class="top-level-section">
 			<h2 class="l-type">About me</h2>

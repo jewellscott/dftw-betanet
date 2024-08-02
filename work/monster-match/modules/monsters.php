@@ -8,7 +8,7 @@ $monsters = [
 		"age" => 3, 
 		"size" => "Medium (~4 feet tall)",
 		"adopted" => true,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/codey.jpg",
 		"favoriteFood" => "Mountain Dew Code Red",
 		"personality" => [
 			"Curious and intelligent",
@@ -23,7 +23,7 @@ $monsters = [
 		"age" => 6,
 		"size" => "Small (~3 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/orangina.jpg",
 		"favoriteFood" => "Poke",
 		"personality" => [
 			"Energetic and bubbly", 
@@ -40,7 +40,7 @@ $monsters = [
 		"age" => 4,
 		"size" => "Medium (~4 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/mr-banana.jpg",
 		"favoriteFood" => "Pizza",
 		"personality" => [
 			"Cheerful and outgoing", 
@@ -55,7 +55,7 @@ $monsters = [
 		"age" => 2,
 		"size" => "Tiny (~1 foot tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/limabean.jpg",
 		"favoriteFood" => "Marshmallows",
 		"personality" => [
 			"Gentle and shy",
@@ -70,7 +70,7 @@ $monsters = [
 		"age" => 7,
 		"size" => "Medium (~3 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/miss-reads-a-lot.jpg",
 		"favoriteFood" => "Dried figs",
 		"personality" => [
 			"Intellectual and reserved",
@@ -86,7 +86,7 @@ $monsters = [
 		"age" => 10,
 		"size" => "Varies (can shift size between 3-6 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/shadow.jpg",
 		"favoriteFood" => "Melancholia",
 		"personality" => [
 			"Mysterious and aloof", 
@@ -101,7 +101,7 @@ $monsters = [
 		"age" => 5,
 		"size" => "Small (~2 feet tall)",
 		"adopted" => false,
-		"portrait" => "https://peprojects.dev/images/square.jpg",
+		"portrait" => "assets/portraits/fragoo.jpg",
 		"favoriteFood" => "Goldfish crackers",
 		"personality" => [
 			"Playful and mischevious",
@@ -111,50 +111,31 @@ $monsters = [
 	],
 ];
 
-echo "<ul class='monster-list'>";
+?>
 
-foreach ($monsters as $monster) {
-	echo "<li class='monster'>";
-
-		echo 
-		"<monster-card id='" . $monster["id"] . ">"
-
-
-
-			. "<picture class='portrait'><img class='monster-img' src='" . $monster["portrait"] . "''></picture>";
-
-			if ($monster["adopted"] == true) {
-			 	echo 
-
-			 	"<div><span class='adopted label-sticker'>Adopted!</span></div>";
-			 	
-			 };
-
-			echo "<h2 class='name' id=" . $monster["name"] . ">" . $monster["name"] . "</h2>"
-			. "<h3 class='stats'>" . $monster["species"] . " •  " . $monster["age"] . "</h3>"
-
-			. "<ul class='personality'>"; 
-	
-				foreach ($monster["personality"] as $trait) {
-
-					echo "<li>" . $trait . "</li>";
-
-				};
-
-			 echo "</ul>";
-
-			 echo "<p class='favorite-food'>Favorite Food: " . $monster["favoriteFood"] . "</p>";
-
-			 if (array_key_exists("specialRequirements",$monster)) {
-
-			 	echo "<span class='label-sticker req-sticker'> Special Requirements</span>";
-
-			 	echo "<p class='special-requirements'>" . $monster["specialRequirements"] . "</p>";
-			 };
-
-		 echo "</monster-card>";
-
-	echo "</li>";
-}
-
-echo "</ul>";
+<ul class="monster-list">
+	<?php foreach ($monsters as $monster) { ?>
+		<li class="monster">
+			<monster-card id="<?=$monster["id"]?>">
+				<picture class="portrait">
+					<img src="<?=$monster["portrait"]?>" class="monster-img">
+				</picture>
+				<h2 class="name" id="<?=$monster["name"]?>"><?=$monster["name"]?></h2>
+				<h3 class="stats"><?=$monster["species"]?> • <?=$monster["age"]?></h3>
+				<ul class="personality">
+					<?php foreach ($monster["personality"] as $trait) { ?>
+						<li><?=$trait?></li>
+					<?php }; ?>
+				</ul>
+				<p class="favorite-food">Favorite Food: <?=$monster["favoriteFood"]?></p>
+				<?php if (array_key_exists("specialRequirements",$monster)) { ?>
+					<span class="label-sticker req-sticker rainbow"><span>S</span><span>p</span><span>e</span><span>c</span><span>i</span><span>a</span><span>l</span> <span>R</span><span>e</span><span>q</span><span>u</span><span>i</span><span>r</span><span>e</span><span>m</span><span>e</span><span>n</span><span>t</span><span>s</span></span>
+					<p class="special-requirements"><?=$monster["specialRequirements"]?></p>
+				<?php }; ?>
+				<?php if ($monster["adopted"] == true) { ?>
+					<div><span class='adopted label-sticker rainbow'><span>A</span><span>d</span><span>o</span><span>p</span><span>t</span><span>e</span><span>d</span><span>!</span></span></div>
+				<?php }; ?>
+			</monster-card>
+		</li>
+	<?php }; ?>
+</ul>

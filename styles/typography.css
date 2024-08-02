@@ -8,7 +8,7 @@ p {
 
 main {
 	line-height: 1.6em;
-	h1, ul {
+	h1, ul, ol {
   		margin-bottom: .7em;
   	}
   	h2 {
@@ -16,9 +16,6 @@ main {
   	}
   	h2, p {
 		margin-top: 1em;
-	}
-	li {
-		list-style-type: initial;
 	}
 }
 
@@ -37,13 +34,11 @@ main {
   		font-optical-sizing: auto;
 	}
 	line-height: .4em;
-	list-style-type: none;
 	margin-bottom: 2em;
 
 }
 
 .card-list li {
-	list-style-type: none;
 	margin-bottom: 2rem;
 }
 
@@ -70,11 +65,20 @@ main {
 /* component text things? idk! */
 
 .callout {
-		border-left: 10px solid var(--primary-color);
-		padding-left: 2em;
+	border-left: 10px solid var(--primary-color);
+	padding-left: 2em;
+}
+
+ul.callout{
+	list-style-type: initial;
+}
+
+ol.callout {
+	list-style-type: decimal;
 }
 
 article {
+
 	h2, h3, h4, h5, h6 {
 		color: var(--primary-color);
 	}
@@ -112,12 +116,16 @@ article {
 		margin-block: 3rem;
 	}
 
-	ol li {
-		list-style-type: decimal;
-	}
-
 	li::marker {
 		font-weight: 700;
+	}
+
+	ul{
+		list-style-type: initial;
+	}
+
+	ol {
+		list-style-type: decimal;
 	}
 }
 

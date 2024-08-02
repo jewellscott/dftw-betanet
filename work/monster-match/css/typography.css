@@ -1,3 +1,14 @@
 body {
 	font-family: Chalkboard, Comic Sans;
 }
+
+
+.name, .stats {
+	text-align: center;
+}
+
+.name {
+	-webkit-hyphens:none;
+	-moz-hyphens: none; 
+	hyphens: none;
+}
