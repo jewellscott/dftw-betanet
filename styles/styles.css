@@ -41,3 +41,8 @@ main {
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	gap: 10px;
 }
+
+.inspo-container {
+	margin-inline: 20px;
+}
+
