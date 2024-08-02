@@ -1,3 +1,10 @@
+<?php
+$baseDir = realpath(dirname(__FILE__) . '/../../../../');
+require_once $baseDir . '/config.php';
+require_once $baseDir . '/functions.php';
+?>
+
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -8,11 +15,11 @@
 <body>
 
 <header class="site-header">
-<div class="inner-column">
+	<div class="inner-column">
 
+		<h1 class="rainbow"><span>M</span><span>o</span><span>n</span><span>s</span><span>t</span><span>e</span><span>r</span> <span>M</span><span>a</span><span>t</span><span>c</span><span>h</span></h1>
+		
+		<h2>Discover lovable, quirky monsters waiting for their forever homes</h2>
 
-<h1>Monster Match</h1>
-<h2>Discover lovable, quirky monsters waiting for their forever homes</h2>
-
-</div>
+	</div>
 </header>
