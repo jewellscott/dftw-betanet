@@ -1,13 +1,13 @@
 body {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh; 
+	height: 100vh; 
 	/* be at least a full viewport height */
 	/* consider 100svh and 100dvh too */
 } 
 
 main {
-	flex-grow: 1; 
+	flex: 1; 
 	/* fill up available space which happens push the footer down to the bottom */
 }
 

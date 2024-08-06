@@ -20,6 +20,3 @@
 			<a href="/">Sign-in</a>
 		</div>
 	</header>
-
-	<main>
-

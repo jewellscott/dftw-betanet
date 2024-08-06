@@ -6,6 +6,8 @@
 	</div>
 </div>
 
+<main>
+
 <section class="diptych">
 	<div class="inner-column">
 
@@ -37,6 +39,8 @@
 		
 	</div>
 </section>
+
+</main>
 
 <div class="site-footer">
 	<div class="inner-column">
