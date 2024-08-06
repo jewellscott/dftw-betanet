@@ -1,0 +1,20 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; 
+	/* be at least a full viewport height */
+	/* consider 100svh and 100dvh too */
+} 
+
+main {
+	flex-grow: 1; 
+	/* fill up available space which happens push the footer down to the bottom */
+}
+
+.inner-column {
+	display: block;
+	/*	width: 98%; maybe? */
+	max-width: 1200px; /* could be a variable in settings */
+	margin-inline: auto; /* horizontally center this by default */
+	padding: var(--padding); /* a loose default */
+}

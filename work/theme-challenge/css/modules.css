@@ -1,0 +1,46 @@
+.site-header {
+	background-color: #7b8bc5;
+	border: var(--border);
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.site-header-nav ul, .sign-in {
+		display: flex;
+		border: var(--border);
+		padding: var(--padding);
+	}
+
+	a {
+		border: var(--border);
+		padding: var(--padding);
+	}
+}
+
+.diptych {
+
+}
+
+.cta {
+
+}
+
+.articles {
+
+}
+
+.cta:nth-child(2) {
+	background-color: pink;
+}
+
+.site-footer {
+
+}
+
+@media (width > 600px) {
+	.site-header header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
