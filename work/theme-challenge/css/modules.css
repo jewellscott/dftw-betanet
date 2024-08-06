@@ -19,7 +19,28 @@
 }
 
 .diptych {
-
+	background-color: #8bb1c9;
+	border: var(--border);
+	picture {
+		border: var(--border);
+		padding: var(--padding);
+		img {
+			border: var(--border);
+			padding: var(--padding);
+		}
+	}
+	.diptych-copy {
+		border: var(--border);
+		padding: var(--padding);
+		padding-block: calc(var(--padding) * 4);
+		display: flex;
+		flex-direction: column;
+		gap: var(--padding);
+		h2, p {
+			border: var(--border);
+			padding: var(--padding);
+		}
+	}
 }
 
 .cta {
@@ -42,5 +63,22 @@
 	.site-header header {
 		flex-direction: row;
 		justify-content: space-between;
+	}
+	.diptych .inner-column {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: "copy picture"; 
+		picture {
+			grid-area: picture;
+			display: grid;
+			align-items: center;
+		}
+		.diptych-copy {
+			grid-area: copy;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
 	}
 }

@@ -6,5 +6,10 @@
 	</div>
 </div>
 
+<section class="diptych">
+	<div class="inner-column">
 
-
+		<?php include 'modules/diptych.php' ?>
+		
+	</div>
+</section>

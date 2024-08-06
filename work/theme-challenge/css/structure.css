@@ -18,3 +18,8 @@ main {
 	margin-inline: auto; /* horizontally center this by default */
 	padding: var(--padding); /* a loose default */
 }
+
+
+section {
+	padding-block: calc(var(--padding) * 4);
+}
