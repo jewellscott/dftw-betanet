@@ -7,6 +7,11 @@ body {
 	font-weight: 700;
 }
 
+.l-type {
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
 p {
 	line-height: 1.2rem;
 }
