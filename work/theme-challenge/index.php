@@ -1,51 +1,78 @@
-<div class="site-header">
-	<div class="inner-column">
+<!doctype html>
 
-		<?php include 'modules/site-header.php' ?>
-		
-	</div>
-</div>
+<html lang='en' class='special-magic no-js'>
 
-<main>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
 
-<section class="diptych">
-	<div class="inner-column">
+		<title>Theme challenge master file</title>
+		<meta name='description' content='Theme challenge master file'>
+		<meta property='og:image' content='Can you research emulate a website for a specific niche industry?'>
 
-		<?php include 'modules/diptych.php' ?>
-		
-	</div>
-</section>
+		<link rel='stylesheet' href='styles/site.css'>
 
-<section class="cta">
-	<div class="inner-column">
+		<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+	</head>
 
-		<?php include 'modules/cta.php' ?>
-		
-	</div>
-</section>
 
-<section class="articles">
-	<div class="inner-column">
+	<body>
 
-		<?php include 'modules/articles.php' ?>
-		
-	</div>
-</section>
+		<header id="top">
+		<inner-column>
+			
+			<?php include('modules/mast-head/template.php'); ?>
 
-<section class="cta-2">
-	<div class="inner-column">
+		</inner-column>	
+		</header>
 
-		<?php include 'modules/cta.php' ?>
-		
-	</div>
-</section>
 
-</main>
+		<main id="page-content">
+			<section class='welcome' id='welcome'>
+			<inner-column>
 
-<div class="site-footer">
-	<div class="inner-column">
+				<?php include('modules/graphic-diptych/template.php'); ?>
 
-		<?php include 'modules/site-footer.php' ?>
-		
-	</div>
-</div>
+			</inner-column>
+			</section>
+
+
+			<section class='sign-up' id='sign-up'>
+			<inner-column>
+
+				<?php include('modules/call-to-action/template.php'); ?>
+
+			</inner-column>
+			</section>
+
+
+			<section class='latest' id='latest'>
+			<inner-column>
+
+				<?php include('modules/articles-intro/template.php'); ?>
+
+			</inner-column>
+			</section>
+
+
+			<section class='get-involved' id='get-involved'>
+			<inner-column>
+
+				<?php include('modules/call-to-action/template.php'); ?>
+
+			</inner-column>
+			</section>
+		</main>
+
+
+		<footer>
+		<inner-column>
+			
+			<?php include('modules/site-map/template.php'); ?>
+
+		</inner-column>
+		</footer>
+
+	</body>
+
+</html>

@@ -1,0 +1,36 @@
+/*
+	this could be broken up into things 
+	like "color" and "spacing" as needed as it grows
+*/
+
+
+html {
+	--black: #111111;
+	--white: #FEFEFA;
+	--papyrus: #fcfaef;
+	--dark-terra: #213b31;
+	--rich-emerald: #1b433c;
+
+	--neutral-stuffs: #ADACA8;
+
+	--color: #3f622d;
+	--highlight: #75fbee;
+
+	--shadow: rgba(0, 0, 0, 0.8);
+
+	--corners: 10px; /* or whatevers */
+
+	--paper: var(--papyrus);
+	--ink: var(--black);
+
+	/* structure */
+	--standard-inner-column: 1140px;
+	--tight-inner-column: 800px;
+
+	/*@media (prefers-color-scheme: dark) {
+		--paper: #231a1a;
+		--ink: #ffffe2;
+		--color: red;
+		--highlight: pink;
+	}*/
+}

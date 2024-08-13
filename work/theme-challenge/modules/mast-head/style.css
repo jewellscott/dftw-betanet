@@ -1,0 +1,44 @@
+
+mast-head {
+	display: flex;
+	flex-direction: column;
+	/* if you're not 100% sure what is happening... don't be too stubborn to put a border on it! */
+
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--rich-emerald);
+
+	.logo {
+		* {
+			fill: var(--rich-emerald);
+		}
+	}
+
+	nav {
+		ul {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			gap: 20px;
+		}
+		.home {
+			padding: 10px 10px 10px 0;
+		}
+		a:not(.home,) {
+			padding: .5em 1em;
+		}
+	}
+
+	.user-menu {
+		align-self: center;
+		padding-bottom: 10px;
+	}
+
+	@media (min-width:  600px) {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

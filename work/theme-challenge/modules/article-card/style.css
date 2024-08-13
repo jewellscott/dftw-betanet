@@ -1,0 +1,35 @@
+
+.article-card {
+	display: block;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	text-content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 20px;
+		h1 {
+			font-size: 1.6rem;
+			margin-bottom: .5rem;
+			color: var(--dark-terra);
+		}
+		/*.teaser {
+			min-height: 100px;
+		}*/
+	}
+
+	a {
+		margin-top: 20px;
+	}
+
+	border-radius: 5%;
+
+	picture {
+		border-radius: 5% 5% 0 0;
+	}
+
+	background-color: var(--papyrus);
+}

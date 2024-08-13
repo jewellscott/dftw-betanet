@@ -1,0 +1,25 @@
+
+graphic-diptych {
+	display: block;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 10vh 0;
+
+	p {
+		margin-top: 20px;
+		font-size: 1.4rem;
+	}
+
+	picture {
+			border-radius: 5%;
+	}
+
+	@media (min-width:  700px) {
+		flex-direction: row;
+		align-items: center;
+		:is(picture, text-content) {
+			flex-basis: 50%;
+		}
+	}
+}

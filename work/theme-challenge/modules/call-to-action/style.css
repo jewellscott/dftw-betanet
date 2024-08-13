@@ -1,0 +1,15 @@
+
+call-to-action {
+	display: block;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20vh 0;
+	.button {
+		margin-top: 20px;
+	}
+	.story {
+		font-size: 1.4rem;
+	}
+}
