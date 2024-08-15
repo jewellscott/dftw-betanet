@@ -3,9 +3,7 @@
 .loud-voice	{
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: clamp(36px, 5vw, 60px);
-	@media (min-width: 600px) {
-		font-weight: 700; /* or variable font */
-	}
+	font-weight: 700; 
 }
 
 .attention-voice	{

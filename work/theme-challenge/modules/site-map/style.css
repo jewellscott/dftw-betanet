@@ -4,17 +4,22 @@ site-map {
 	/*border: 4px solid green;*/
 
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 	gap: 20px;
 
 	padding: 10vh 0 15vh;
 
+	text-align: center;
+	align-items: center;
+
 	.logo {
-		max-width: 180px;
+		max-width: 350px;
 		margin-bottom: 20px;
-		* {
-			fill: var(--ink);
-		}
+		margin-inline: auto;
+	}
+
+	nav + nav {
+		margin-top: 20px;
 	}
 
 	color: var(--dark-terra);
@@ -26,7 +31,27 @@ site-map {
 		text-transform: uppercase;
 	}
 
+	.strong-voice {
+			font-size: 1.4rem;
+	}
+
 	li a {
 		font-family: 'Cabin', sans-serif;
+		font-size: 1.2rem;
+		line-height: 1.5rem;
 	}
+
+	a:not(.home):hover {
+		text-decoration: underline;
+  		text-decoration-skip-ink: none;
+		text-decoration-thickness: .4rem;
+		text-decoration-color: var(--highlight);
+	}
+
+	@media (min-width:  600px) {
+		/*display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+*/	}
 }

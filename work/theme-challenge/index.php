@@ -12,7 +12,7 @@
 
 		<link rel='stylesheet' href='styles/site.css'>
 
-		<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700|Corben:400,700" rel="stylesheet">
 	</head>
 
 

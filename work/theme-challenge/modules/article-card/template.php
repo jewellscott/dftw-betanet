@@ -7,7 +7,9 @@
 
 <article class='article-card'>
 	<picture>
-		<img src='images/<?=$thumbnail?>' alt='$todo'>
+		<!-- <img src='images/<?=$thumbnail?>' alt='$todo'> -->
+		<img src='<?=$thumbnail?>' alt='$todo'>
+
 	</picture>
 
 	<text-content>

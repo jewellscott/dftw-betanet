@@ -3,7 +3,7 @@
 
 <articles-intro>
 	<header>
-		<h2 class='attention-voice'>Heading for this section here</h2>
+		<h2 class='loud-voice'>Heading for this section here</h2>
 
 		<p>A short introduction explaining why these articles are here to help you understand if you want to read them.</p>
 	</header>

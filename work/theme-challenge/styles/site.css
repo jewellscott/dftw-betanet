@@ -35,8 +35,8 @@
 
 /* then other contextual styles */
 body {
-	background-color: var(--paper);
-	color: var(--ink);
+	background-color: var(--papyrus);
+	color: var(--black);
 }
 
 section:is(.sign-up, .get-involved) {
@@ -46,29 +46,59 @@ section:is(.sign-up, .get-involved) {
 }
 
 section.welcome {
-	background-color: var(--dark-terra);
-	color: var(--papyrus);
+/* graphic diptych */ 
+	background-color: var(--papyrus);
+	color: var(--dark-terra);
 }
 
 section.sign-up {
+	/* cta 1*/
 	background-color: var(--rich-emerald);
+	background-image: url(https://images.unsplash.com/photo-1679335424216-e1edb8ea8e92?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA);
+	background-repeat: no-repeat;
+  	background-size: cover;
+   background-blend-mode: lighten;
 	color: var(--papyrus);
+	call-to-action {
+		h2, p {
+			text-shadow: var(--black) 0 0 20px;
+		}	
+	}
+
+	padding: 40vh 0;
+
+	.button {
+		background-color: var(--highlight);
+		color: var(--color);
+		margin-top: 50px;
+	}
 }
 
 section.latest {
 	background-color: var(--white);
-}
-
-section.get-involved {
-	background-color: var(--color);
-	color: var(--papyrus);
-}
-
-section.get-involved {
-	.button {
-		background-color: var(--highlight);
+	header h2 {
 		color: var(--rich-emerald);
 	}
+	.article-card {
+		background-color: var(--papyrus);
+		h1 {
+			color: var(--dark-terra);
+		}
+	}
+}
+
+
+section.get-involved {
+	background-color: var(--dark-terra);
+	color: var(--papyrus);
+	call-to-action {
+		h2, p {
+			text-shadow: var(--black) 0 0 100px;
+		}	
+		align-items: center;
+		text-align: center;
+	}
+	padding: 10vh 0;
 }
 
 /*@media (prefers-color-scheme: dark) {
