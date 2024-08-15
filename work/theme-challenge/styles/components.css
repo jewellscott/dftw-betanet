@@ -29,6 +29,11 @@
 	padding: .75em 1.5em;*/
 }
 
+a.button:hover {
+	background-color: var(--highlight);
+	color: var(--color);
+}
+
 /* 
 	article-card - might be something you put here?
 */

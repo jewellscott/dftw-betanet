@@ -67,10 +67,15 @@ section.sign-up {
 
 	padding: 40vh 0;
 
-	.button {
+	a.button {
 		background-color: var(--highlight);
 		color: var(--color);
 		margin-top: 50px;
+	}
+
+	a.button:hover {
+		background-color: var(--papyrus);
+		color: var(--color);
 	}
 }
 
