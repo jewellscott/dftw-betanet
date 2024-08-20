@@ -1,5 +1,5 @@
-<h1>Album title</h1>
-<h2>Album artist</h2>
+<h1><?=$_GET["album"]?></h1>
+<h2>Prince</h2>
 
 <picture>
 	<img src="https://peprojects.dev/images/square.jpg" width="500" alt="">
