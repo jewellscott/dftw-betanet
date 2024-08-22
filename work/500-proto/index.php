@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 
-<?php 
-
-	$page = null;
-	if(isset($_GET['page'])) {
-		$page = $_GET['page']; // url?page=string
-	} else {
-		$page = "home";
-	}
-
-?>
+<?php require('router.php'); ?>
 
 <html lang="en">
 <head>
@@ -36,17 +27,7 @@
 	<main>
 		<inner-column>
 			
-			<?php 
-				if ($page == 'home') {
-					include('home.php');
-				}
-				if ($page == 'albums') {
-					include('albums.php');
-				}
-				if ($page == 'album') { 
-					include('album.php');
-			}
-			?>
+			<?php getTemplate($page); ?>
 
 		</inner-column>
 
