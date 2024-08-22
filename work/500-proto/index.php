@@ -14,12 +14,30 @@
 	<header>
 
 		<inner-column>
-
+			<a href="?page=home" class="site-logo">500 Greatest</a>
+	
 			<nav class="site-menu">
-				<a href="?page=home" class="home">500 Greatest</a>
-				<a href="?page=albums">Albums</a>
+
+				<nav class="album-filters">
+					<a href="?page=albums" class="albums-ranked">⦿ Albums, Ranked</a>
+				</nav>
+				
+
+				<nav class="list-filters">
+					<span class="nav-label">Filter by</span>
+					<!--  ?page=list&filter=artist -->
+					<a href="#" class="dead">Artist</a>
+					<a href="#" class="dead">Genre</a>
+					<a href="#" class="dead">Year</a>
+					<a href="#" class="dead">Label</a>
+				</nav>
+
+				<nav class="user-menu">
+					<a href="?page=add-album" class="add-album">+ Add Album</a>
+				</nav>
 			</nav>
-			
+
+	
 		</inner-column>
 
 	</header>
