@@ -33,6 +33,7 @@
 				</nav>
 
 				<nav class="user-menu">
+					<a href="?page=my-albums" class="add-album">My Albums</a>
 					<a href="?page=add-album" class="add-album">+ Add Album</a>
 				</nav>
 			</nav>
