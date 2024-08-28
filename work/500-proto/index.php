@@ -19,7 +19,7 @@
 			<nav class="site-menu">
 
 				<nav class="album-filters">
-					<a href="?page=albums" class="albums-ranked">⦿ Albums, Ranked</a>
+					<a href="?page=albums" class="albums-ranked <?php if ($page == 'albums') {echo 'active';} ?>">⦿ Albums, Ranked</a>
 				</nav>
 				
 
@@ -33,8 +33,8 @@
 				</nav>
 
 				<nav class="user-menu">
-					<a href="?page=my-albums" class="add-album">My Albums</a>
-					<a href="?page=add-album" class="add-album">+ Add Album</a>
+					<a href="?page=my-albums" class="my-albums <?php if ($page == 'my-albums') {echo 'active';} ?>">My Albums</a>
+					<a href="?page=add-album" class="add-album <?php if ($page == 'add-album') {echo 'active';} ?>">+ Add Album</a>
 				</nav>
 			</nav>
 

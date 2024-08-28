@@ -1,11 +1,39 @@
 <?php 
 
-	if(isset($_POST["add"])) {
-		$newAlbum = $_POST;
-		echo 'Added ' . $newAlbum["title"] . ' by ' . $newAlbum["artist"] . ' (' . $newAlbum["year"] . ')';
+	$formSubmitted = isset($_POST["add"]);
 
-		var_dump($newAlbum);
-	}
+	function slugify($title) {
+		// lowercase
+		$lower = strtolower($title);
+		// spaces
+		$dashed = preg_replace('/[^a-z0-9]+/', '-', $lower);
+		// trim spaces
+		$trimmed = trim($dashed);
+		return $trimmed;
+		// special char
+	} 
+
+	if($formSubmitted) {
+		$album = $_POST;
+		// echo 'Added ' . $newAlbum["title"] . ' by ' . $newAlbum["artist"] . ' (' . $newAlbum["year"] . ')';
+
+		// var_dump($newAlbum);
+
+		// create album
+
+		$newAlbum = [
+			"id" => uniqid(),
+			"slug" => slugify($album["title"]),
+			"title" => htmlspecialchars($album["title"]),
+			"artist" => htmlspecialchars($album["artist"]),
+			"coverURL" => $album["cover-url"],
+			"description" => htmlspecialchars($album["description"]),
+		];
+
+		file_put_contents("data/my-albums.json", json_encode($newAlbum));
+
+		// save album
+	};
 
 ?>
 

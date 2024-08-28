@@ -9,6 +9,7 @@ body {
 main {
 	flex-grow: 1; 
 	/* fill up available space which happens push the footer down to the bottom */
+	min-height: 800px;
 }
 
 inner-column {

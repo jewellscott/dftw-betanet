@@ -1,15 +1,23 @@
-<?php include('data/album-data.php'); ?>
+<?php // include('data/album-data.php'); ?>
+
+
+<?php 
+	$albums = file_get_contents('data/albums.json');
+	$albums = json_decode($albums, true);
+
+
+?>
 
 
 <?php 
 
 	if(isset($_GET["album"])) {
-		$this_album_rank = $_GET["album"];
+		$this_album_id = $_GET["album"];
 		// change to id later
 	}
 
-	foreach($album_data as $album) {
-		if ($this_album_rank == $album["rank"]) {
+	foreach($albums as $album) {
+		if ($this_album_id == $album["id"]) {
 			$this_album = $album;
 
 			$rank = str_pad($this_album["rank"], 3, '0', STR_PAD_LEFT);

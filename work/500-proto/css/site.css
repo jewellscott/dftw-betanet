@@ -22,13 +22,26 @@ header a.site-logo {
 	justify-content: space-between;
 	padding-block: 1em;
 
+	a {
+		/* I want to add padding 
+		(for visual effect and clicking space, 
+		but I don't want the vertical alignment 
+		on the left to be messed up... */
+/*		padding: 1em;*/
+	}
+
+	a.active {
+		text-decoration: underline;
+/*		border-bottom: 2px solid black;*/
+	}
+
 	.list-filters, .user-menu {
 		display: flex;
 		gap: 20px;
 		align-items: center;
 	}
 
-	.albums-ranked, .nav-label, .add-album {
+	.albums-ranked, .nav-label, .my-albums, .add-album {
 		font-weight: 700;
 	}
 

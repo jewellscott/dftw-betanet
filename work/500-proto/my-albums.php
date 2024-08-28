@@ -1,47 +1,28 @@
 <h1>My Albums</h1>
 
-<?php
+<?php 
 
-// the goal: dynamically generate ids and assign to every item in the array
-// add an id to every album
+	$myAlbums = file_get_contents('data/my-albums.json');
+	$myAlbums = json_decode($myAlbums, true);
 
-$albums = [
-	[
-		"title" => "For You",
-		"artist" => "Prince"
-	],
-	[
-		"title" => "The Cool",
-		"artist" => "Lupe Fiasco"
-	],
-	[
-		'artist' => 'Big Star',
-       'title' => '#1 Record',
-   ],
-];
+	print_r($myAlbums);
+?>
 
-$newAlbums = [];
+<ul class="album-list">
 
-// foreach ($albums as $album) {
-// 	$album["id"] = uniqid("");
-// 	$album["custom"] = true;
-// 	$album["slug"] = 
-// 	array_push($newAlbums);
-// }
+	<?php
 
+	echo ("Start of list -- ");
 
+	foreach (array_reverse($myAlbums) as $album) { ?>
 
-$newAlbums = array_map(function ($album) {
-	$id = ["id" => uniqid("")];
-	$custom = ["custom" => true];
-	// $album["slug"] = 
-	return array_merge($id, $custom, $album);
-}, $albums);
+		<?php echo ("list item:"); ?>
 
-$json = json_encode($newAlbums);
+		<li class="album my-album">
 
+			<?php include('modules/album-card/template.php'); ?>
+		</li>
 
-file_put_contents("new-albums.json", $json);
+	<?php } ?>
 
-
-print_r($newAlbums);
+</ul>

@@ -1,4 +1,9 @@
-<?php include('data/album-data.php'); ?>
+<?php 
+
+	$albums = file_get_contents('data/albums.json');
+	$albums = json_decode($albums, true);
+
+?>
 
 <h1>Albums</h1>
 
@@ -6,32 +11,11 @@
 
 	<?php
 
-	foreach (array_reverse($album_data) as $album) { ?>
+	foreach (array_reverse($albums) as $album) { ?>
 
 		<li class="album">
-	
-			<album-card>
 
-				<?php 
-					$rank = str_pad($album["rank"], 3, '0', STR_PAD_LEFT);
-				?>
-
-				<a href='?page=album&album=<?=$album["rank"]?>'>
-
-					<h2 class="rank"><?=$rank?></h2>
-
-					<picture>
-						<img 
-						src="<?=$album["coverUrl"]?>" 
-						alt="<?=$album["title"]?>, <?=$album["artist"]?>">
-					</picture>
-
-					<h2 class="title"><?=$album["title"]?></h2>
-					<h3 class="artist"><?=$album["artist"]?></h3>
-					<h4 class="year"><?=$album["year"]?></h4>
-				</a>
-
-			</album-card>
+			<?php include('modules/album-card/template.php'); ?>
 		</li>
 
 	<?php } ?>
