@@ -19,17 +19,21 @@
 			<nav class="site-menu">
 
 				<nav class="album-filters">
-					<a href="?page=albums" class="albums-ranked <?php if ($page == 'albums') {echo 'active';} ?>">⦿ Albums, Ranked</a>
+					<a href="?page=albums" class="rs-500 <?php if ($page == 'albums') {echo 'active';} ?>">Rolling Stone 500</a>
 				</nav>
 				
 
 				<nav class="list-filters">
-					<span class="nav-label">Filter by</span>
+					<span class="nav-label">Sort by</span>
 					<!--  ?page=list&filter=artist -->
 					<a href="#" class="dead">Artist</a>
-					<a href="#" class="dead">Genre</a>
+					<!-- <a href="#" class="dead">Genre</a> -->
+					<!-- <a href="#" class="dead">Rating</a> -->
+
+					<a href="#" class="dead">Rank</a>
+
 					<a href="#" class="dead">Year</a>
-					<a href="#" class="dead">Label</a>
+					<!-- <a href="#" class="dead">Label</a> -->
 				</nav>
 
 				<nav class="user-menu">
