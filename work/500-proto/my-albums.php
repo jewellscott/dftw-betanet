@@ -1,25 +1,19 @@
-<h1>My Albums</h1>
-
 <?php 
 
-	$myAlbums = file_get_contents('data/my-albums.json');
-	$myAlbums = json_decode($myAlbums, true);
+	$albums = file_get_contents('data/my-albums.json');
+	$albums = json_decode($albums, true);
 
-	print_r($myAlbums);
 ?>
+
+<h1>My Albums</h1>
 
 <ul class="album-list">
 
 	<?php
 
-	echo ("Start of list -- ");
+	foreach (array_reverse($albums) as $album) { ?>
 
-	foreach (array_reverse($myAlbums) as $album) { ?>
-
-		<?php echo ("list item:"); ?>
-
-		<li class="album my-album">
-
+		<li class="album">
 			<?php include('modules/album-card/template.php'); ?>
 		</li>
 

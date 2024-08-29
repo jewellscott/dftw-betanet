@@ -2,10 +2,13 @@
 
 
 <?php 
-	$albums = file_get_contents('data/albums.json');
-	$albums = json_decode($albums, true);
 
+		$greatestAlbums = file_get_contents('data/albums.json');
+		$greatestAlbums = json_decode($greatestAlbums, true);
 
+		$myAlbums = file_get_contents('data/my-albums.json');
+		$myAlbums = json_decode($myAlbums, true);
+		
 ?>
 
 
@@ -16,11 +19,17 @@
 		// change to id later
 	}
 
-	foreach($albums as $album) {
+	foreach($greatestAlbums as $album) {
 		if ($this_album_id == $album["id"]) {
 			$this_album = $album;
 
 			$rank = str_pad($this_album["rank"], 3, '0', STR_PAD_LEFT);
+		}
+	}
+
+	foreach($myAlbums as $album) {
+		if ($this_album_id == $album["id"]) {
+			$this_album = $album;
 		}
 	}
 ?>
@@ -29,7 +38,9 @@
 
 	<album-detail>
 
-		<span class="rank"><?=$rank?></span>
+		<?php if (isset($this_album["rank"])) {?>
+			<span class="rank"><?=$rank?></span>
+		<?php } ?>
 
 		<album-content>
 

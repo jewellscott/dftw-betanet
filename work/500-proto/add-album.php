@@ -26,11 +26,14 @@
 			"slug" => slugify($album["title"]),
 			"title" => htmlspecialchars($album["title"]),
 			"artist" => htmlspecialchars($album["artist"]),
-			"coverURL" => $album["cover-url"],
+			"year" => $album["year"],
+			"coverUrl" => $album["cover-url"],
 			"description" => htmlspecialchars($album["description"]),
 		];
 
-		file_put_contents("data/my-albums.json", json_encode($newAlbum));
+		file_put_contents("data/my-albums.json", json_encode([$newAlbum]));
+
+		// header(“Location: https://www.example.com/”)
 
 		// save album
 	};
