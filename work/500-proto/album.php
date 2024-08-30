@@ -1,70 +1,61 @@
-<?php // include('data/album-data.php'); ?>
-
-
 <?php 
-
+	function getAlbums() {
 		$greatestAlbums = file_get_contents('data/albums.json');
 		$greatestAlbums = json_decode($greatestAlbums, true);
 
 		$myAlbums = file_get_contents('data/my-albums.json');
 		$myAlbums = json_decode($myAlbums, true);
-		
+
+		return array_merge($greatestAlbums, $myAlbums);
+	}
+
+	function getAlbumById($albums, $id) {
+		foreach($albums as $album) {
+			if ($id == $album["id"]) {
+				return $album;
+			} 
+		}
+		return null;	 		
+ 	}
+
+	function padRanking($rank) {
+		return str_pad($rank, 3, '0', STR_PAD_LEFT);
+	}
 ?>
 
 
 <?php 
+	$this_album_id = $_GET["album"];
+ 	$albums = getAlbums();
 
-	if(isset($_GET["album"])) {
-		$this_album_id = $_GET["album"];
-		// change to id later
-	}
-
-	foreach($greatestAlbums as $album) {
-		if ($this_album_id == $album["id"]) {
-			$this_album = $album;
-
-			$rank = str_pad($this_album["rank"], 3, '0', STR_PAD_LEFT);
-		}
-	}
-
-	foreach($myAlbums as $album) {
-		if ($this_album_id == $album["id"]) {
-			$this_album = $album;
-		}
-	}
+ 	$this_album = getAlbumById($albums, $this_album_id);
 ?>
+
 
 <?php if (isset($this_album)) { ?>
 
 	<album-detail>
-
 		<?php if (isset($this_album["rank"])) {?>
-			<span class="rank"><?=$rank?></span>
+			<span class="rank"><?=padRanking($this_album["rank"]);?></span>
 		<?php } ?>
 
 		<album-content>
-
-				<picture>
-					<img src="<?=$this_album["coverUrl"];?>" alt="">
-				</picture>
+			<picture>
+				<img src="<?=$this_album["coverUrl"];?>" alt="">
+			</picture>
 
 			<div class="right">
 				<album-stats>
-
 					<h1 class="title"><?=$this_album["title"];?></h1>
 					<h2 class="artist"><?=$this_album["artist"];?></h2>
 					<h3 class="year"><?=$this_album["year"];?></h3>
-					
 				</album-stats>
 
 				<album-description>
 					<p><?=$this_album["description"];?></p>
 				</album-description>
-				
 			</div>
-			
 		</album-content>
-
 	</album-detail>
 
 <?php } else { ?>
