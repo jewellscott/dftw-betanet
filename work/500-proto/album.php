@@ -1,10 +1,9 @@
 <?php 
-	function getAlbums() {
-		$greatestAlbums = file_get_contents('data/albums.json');
-		$greatestAlbums = json_decode($greatestAlbums, true);
 
-		$myAlbums = file_get_contents('data/my-albums.json');
-		$myAlbums = json_decode($myAlbums, true);
+	function getAlbums() {
+
+		$greatestAlbums = getData('albums.json');
+		$myAlbums = getData('my-albums.json');
 
 		return array_merge($greatestAlbums, $myAlbums);
 	}

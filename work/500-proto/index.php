@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <?php require('router.php'); ?>
+<?php require('functions.php'); ?>
 
 <html lang="en">
 <head>
