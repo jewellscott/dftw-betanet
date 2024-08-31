@@ -12,6 +12,9 @@
 			<button class="tech-type" type="submit" name="submit">
 			Submit
 			</button>
+			<button class="tech-type" type="reset" name="reset">
+			<a href="work/e4p/exercises/saying-hello">Reset</a>
+			</button>
 		</fieldset>
 	</div>
 
