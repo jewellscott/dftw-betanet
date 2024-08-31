@@ -6,7 +6,14 @@
 				<section class="top-level-section">
 					<h2 class="l-type">Input, Processing and Output</h2>
 					
-					<ul class="card-list">
+					<ul class="card-list horizontal-list">
+						<li class="exercise-card">
+							<h3>Saying Hello</h3>
+							<p class="xs-type">Hello, World</p>
+
+							<a href="work/e4p/exercises/saying-hello" class="m-type tech-type">PHP</a>
+						</li>
+
 						<li class="exercise-card">
 							<h3>Retirement Calculator</h3>
 							<p class="xs-type">Computers know what year it is.</p>

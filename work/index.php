@@ -6,12 +6,12 @@
 				<p class="sm-type">Follow me on <span class="tech-type"><a href="/">Github</a></span> <span class="tech-type"><a href="/">CodePen</a></span></p>
 				<section class="top-level-section">
 					<h2 class="l-type">Featured</h2>
-					<ul class="card-list horizontal-list">
+					<ul class="card-list horizontal-list-wrap">
 						<li class="work-card">
-							<h3><a href="work/curry-crush">Curry Crush</a></h3>
-							<p class="xs-type">Small business website</p>
+							<h3><a href="work/500-proto">500 Greatest</a></h3>
+							<p class="xs-type">A thing about albums</p>
 							<a href="#" class=" m-type tech-type">Case Study</a>
-							<a href="work/curry-crush" class=" m-type tech-type">Live</a>
+							<a href="work/500-proto" class=" m-type tech-type">Live</a>
 						</li>
 
 						<li class="work-card">
@@ -31,7 +31,22 @@
 				</section>
 				<section class="top-level-section">
 					<h2 class="l-type">Latest</h2>
-					<ul class="card-list horizontal-list">
+					<ul class="card-list horizontal-list-wrap">
+
+						<li class="work-card">
+							<h3><a href="work/500-proto">500 Greatest</a></h3>
+							<p class="xs-type">A thing about albums</p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="work/500-proto" class=" m-type tech-type">Live</a>
+						</li>
+
+						<li class="work-card">
+							<h3><a href="work/e4p">Exercises for Programmers</a></h3>
+							<p class="xs-type">How to get good</p>
+							<a href="#" class=" m-type tech-type">Case Study</a>
+							<a href="work/e4p" class=" m-type tech-type">Live</a>
+						</li>
+
 						<li class="work-card">
 							<h3><a href="work/monster-match">Monster Match</a></h3>
 							<p class="xs-type">Adopt a 'sta! </p>
