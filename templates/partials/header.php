@@ -33,6 +33,7 @@ require_once $baseDir . '/functions.php';
 
 	<header class="site-head">
 		<nav class="site-nav">
+
 			<a href="<?=BASE_URL?>" class="site-logo">
 				<?php include(getFile('templates/components/site-logo.php'));?>
 			</a>
@@ -50,3 +51,11 @@ require_once $baseDir . '/functions.php';
 			</ol>
 		</nav>
 	</header>
+
+	<aside>
+		<dev-info>
+		<?php if(IS_DEV) { 
+			echo $_SERVER["QUERY_STRING"];
+		 } ?>
+		</dev-info>
+	</aside>
