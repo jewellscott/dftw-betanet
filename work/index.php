@@ -10,22 +10,21 @@
 						<li class="work-card">
 							<h3><a href="work/500-proto">500 Greatest</a></h3>
 							<p class="xs-type">A thing about albums</p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
+							<!-- <a href="#" class=" m-type tech-type">Case Study</a> -->
 							<a href="work/500-proto" class=" m-type tech-type">Live</a>
 						</li>
 
 						<li class="work-card">
 							<h3><a href="work/layout-garden">Layout Garden</a></h3>
 							<p class="xs-type">Electroskeletal neurogenesis</p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
+							<!-- <a href="#" class=" m-type tech-type">Case Study</a> -->
 							<a href="work/layout-garden" class=" m-type tech-type">Live</a>
 						</li>
 
 						<li class="work-card">
 							<h3><a href="work/30-days-of-design">30 Days of Design: Round 1</a></h3>
 							<p class="xs-type">30 Graphics in 30 Days: Life in Technicolor</p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
-							<a href="work/30-days-of-design" class=" m-type tech-type">Live</a>
+							<a href="work/30-days-of-design" class=" m-type tech-type">Live/Case Study</a>
 						</li>
 					</ul>
 				</section>
@@ -36,50 +35,50 @@
 						<li class="work-card">
 							<h3><a href="work/500-proto">500 Greatest</a></h3>
 							<p class="xs-type">A thing about albums</p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
+							<!-- <a href="#" class=" m-type tech-type">Case Study</a> -->
 							<a href="work/500-proto" class=" m-type tech-type">Live</a>
 						</li>
 
 						<li class="work-card">
 							<h3><a href="work/e4p">Exercises for Programmers</a></h3>
 							<p class="xs-type">How to get good</p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
+							<!-- <a href="#" class=" m-type tech-type">Case Study</a> -->
 							<a href="work/e4p" class=" m-type tech-type">Live</a>
 						</li>
 
 						<li class="work-card">
 							<h3><a href="work/monster-match">Monster Match</a></h3>
 							<p class="xs-type">Adopt a 'sta! </p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
+							<!-- <a href="#" class=" m-type tech-type">Case Study</a> -->
 							<a href="work/monster-match" class=" m-type tech-type">Live</a>
 						</li>
 
 						<li class="work-card">
 							<h3><a href="work/radlibs">Radlibs</a></h3>
 							<p class="xs-type">Madlibs, just radder.</p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
+							<!-- <a href="#" class=" m-type tech-type">Case Study</a> -->
 							<a href="work/radlibs" class=" m-type tech-type">Live</a>
 						</li>
 
 						<li class="work-card">
 							<h3><a href="work/layout-garden">Layout Garden</a></h3>
 							<p class="xs-type">Electroskeletal neurogenesis</p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
+							<!-- <a href="#" class=" m-type tech-type">Case Study</a> -->
 							<a href="work/layout-garden" class=" m-type tech-type">Live</a>
 						</li>
 
 						<li class="work-card">
 							<h3><a href="work/curry-crush">Curry Crush</a></h3>
 							<p class="xs-type">Small business website</p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
+							<!-- <a href="#" class=" m-type tech-type">Case Study</a> -->
 							<a href="work/curry-crush" class=" m-type tech-type">Live</a>
 						</li>
 
 						<li class="work-card">
 							<h3><a href="work/30-days-of-design">30 Days of Design: Round 1</a></h3>
 							<p class="xs-type">30 Graphics in 30 Days: Life in Technicolor</p>
-							<a href="#" class=" m-type tech-type">Case Study</a>
-							<a href="work/30-days-of-design" class=" m-type tech-type">Live</a>
+							<!-- <a href="#" class=" m-type tech-type">Case Study</a> -->
+							<a href="work/30-days-of-design" class=" m-type tech-type">Case Study/Live</a>
 						</li>
 					</ul>
 				</section>
