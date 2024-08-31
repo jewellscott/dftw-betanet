@@ -17,6 +17,8 @@
 
  	<?php include '../templates/modules/type-specimen.php'; ?>
 
+ 	<?php include '../templates/modules/form-specimen.php'; ?>
+
 	</main>
 
 
@@ -27,9 +29,21 @@
 
 	.page-header {
 		@media (width < 600px) {
-			h1.top-level{
+			h1.top-level {
 				line-height: 1em;
 			}
 		}
+	}
+
+	.inner-column {
+		@media (width < 700px) {
+			h2.top-level {
+				line-height: 1em;
+			}
+		}
+
+	form {
+		background-color: #eceff6;
+		padding: 20px;
 	}
 </style>

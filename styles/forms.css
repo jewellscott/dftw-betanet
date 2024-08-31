@@ -1,0 +1,75 @@
+form {
+	display: grid;
+	gap: 3em;
+}
+
+fieldset + fieldset, fieldset + button {
+/*		margin-top: 3em;*/
+}
+
+input + label, select + *, * + output {
+	margin-top: 1em;
+}
+
+/*fieldset {
+	border-left: 10px solid var(--primary-color);
+	padding-left: 1em;
+}*/
+
+label, input:not([type="color"]) {
+	display: block;
+	width: 75%;
+	font-family: inherit;
+}
+
+output, input[type="color"] {
+	display: inline-block;
+	font-family: inherit;
+}
+
+label {
+	/* sm-type */
+	font-family: var(--display-type);
+	font-size: 1.2rem;
+  	font-optical-sizing: auto;
+  	font-weight: 700;
+  	margin-bottom: .5em;
+}
+
+legend {
+	/* ml-type */
+	font-family: var(--display-type);
+	font-size: 1.5rem;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	margin-block: 1em;
+}
+
+input, select, output:not(.tech-type) {
+	border: 2px solid var(--primary-color);
+	padding: .25em;
+	font-size: 1.2rem;
+	accent-color: var(--primary-color);
+}
+
+input[type="radio"], input[type="checkbox"] {
+	display: initial;
+	width: initial;
+}
+
+ input[type="radio"] + label, input[type="checkbox"] + label {
+	display: initial;
+	width: 75%;
+ }
+
+ input[type="color"] {
+ 	padding: unset;
+}
+
+/* explore styling of option and select later */
+
+button {
+/*		padding: .5em 1em;
+	font-family: inherit;
+*/		border: none;
+}
