@@ -1,8 +1,20 @@
 <?php include '../../templates/partials/header.php'; ?>
 
 <?php 
-	
+
 	$categories = getData('categories.json');
+	$exercises = getData('exercises.json');
+	$foundExercise = null;
+
+	$id = $_GET["exercise"];
+
+	foreach($exercises as $exercise) {
+		if ($exercise["id"] === $id) {
+			$foundExercise = $exercise;
+		}
+	}
+	
+	$pageTitle = $foundExercise["title"] ?? "Exercises for Programmers";
 
 ?>
 
@@ -10,8 +22,14 @@
 	<main class="page-main">
 		<div class="inner-column">
 
+				<!-- change dynamically into exercise title -->
+				<h1 class="xl-type rainbow"><?=$pageTitle?></h1>
 
-				<h1 class="xl-type rainbow">Exercises for Programmers</h1>
+				<section>
+
+					<?php include "exercises/$id/form.php";?>
+
+				</section>
 
 				<?php foreach ($categories as $category) { ?>
 

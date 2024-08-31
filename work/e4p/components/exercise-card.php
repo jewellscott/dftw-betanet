@@ -5,11 +5,14 @@
 ?>
 
 <article class="exercise-card">
-	<!-- Make this a link -->
-	<h1 class="card-title"><?=$title?></h1>
+	<h1 class="card-title">
+		<a href="work/e4p/?exercise=<?=$id?>">
+			<?=$title?>
+		</a>
+	</h1>
 	<p class="xs-type"><?=$description?></p>
 
-	<a href="work/e4p/exercises/<?=$id?>" class="m-type tech-type">LINK</a>
+	<a href="work/e4p/?exercise=<?=$id?>" class="m-type tech-type">LINK</a>
 </article>
 
 <?php
