@@ -43,7 +43,7 @@
 		}
 
 	form {
-		background-color: #eceff6;
+		background-color: var(--accent-background);
 		padding: 20px;
 	}
 </style>

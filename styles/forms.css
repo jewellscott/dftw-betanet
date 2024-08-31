@@ -1,6 +1,8 @@
 form {
+	background-color: var(--accent-background);
 	display: grid;
 	gap: 2em;
+
 
 	.input-wrapper, .output-wrapper {
 		padding: 40px;
@@ -9,7 +11,7 @@ form {
 	.input-wrapper {
 		display: grid;
 		gap: 2em;
-		background-color: #edeff6;
+		background-color: var(--accent-background);
 	}
 
 	.output-wrapper {
