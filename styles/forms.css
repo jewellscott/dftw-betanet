@@ -1,6 +1,6 @@
 form {
 	display: grid;
-	
+	gap: 2em;
 
 	.input-wrapper, .output-wrapper {
 		padding: 40px;
@@ -94,6 +94,10 @@ form {
 		width: fit-content;
 		display: inline;
 	}
+}
+
+form.e4p {
+	gap: 0;
 }
 
  @media (width > 800px) {
