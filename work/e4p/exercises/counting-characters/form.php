@@ -1,10 +1,30 @@
 <?php 
 
+	// prompt for an input string
+	// display the output 
+		// input string
+		// number of chars the string contains
+
+	
+	// constraints
+		// output contains og string
+		// single output statement to construct the output
+		// use built-in function to determine length of the string
+
+	// challenges
+		// if the user enters nothing, state that the user must enter something into the program
+		// update the character count every time a key is presed 
+
 ?>
 
 <form method="POST" class="e4p">
 	<div class="input-wrapper">
 		<fieldset>
+
+
+			<label for="name">What's your name?</label>
+
+			<input type="text" name="name" required>
 		
 		</fieldset>
 

@@ -2,6 +2,7 @@
 
 		<main class="page-main">
 			<div class="inner-column">
+
 				<a href="work/e4p" class="tech-type breadcrumb">Back</a>
 
 				<h1 class="xl-type rainbow">Title</h1>

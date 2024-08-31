@@ -1,0 +1,26 @@
+[
+	{
+		"id": "saying-hello",
+		"title": "Saying Hello",
+		"description": "“Hello, World!”",
+		"category": "input-output"
+	},
+	{
+		"id": "counting-characters",
+		"title": "Counting the Number of Characters",
+		"description": "Strings attached? Count ‘em!",
+		"category": "input-output"
+	},
+	{
+		"id": "retirement-calculator",
+		"title": "Retirement Calculator",
+		"description": "Computers know what year it is.",
+		"category": "input-output"
+	},
+	{
+		"id": "area-rectangular-room",
+		"title": "Area of a Rectangular Room",
+		"description": "RR description.",
+		"category": "calculations"
+	}
+]
