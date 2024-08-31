@@ -32,3 +32,12 @@
 		display: inline-block;
 	}
 }
+
+.breadcrumb {
+	margin-bottom: 2em;
+	display: inline-block;
+}
+
+* + .breadcrumb {
+	margin-top: 2em;
+}

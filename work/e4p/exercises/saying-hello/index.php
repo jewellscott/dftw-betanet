@@ -2,11 +2,15 @@
 
 		<main class="page-main">
 			<div class="inner-column">
-				<!-- Add some breadcumbs back to E4P... --> 
+
+				<a href="work/e4p" class="tech-type breadcrumb">Back</a>
 
 				<h1 class="xl-type rainbow">Saying Hello</h1>
 
 				<?php include 'form.php';?>
+
+				<a href="work/e4p/exercises/counting-characters" class="tech-type breadcrumb">Next</a>
+
 			</div>
 		</main>
 
