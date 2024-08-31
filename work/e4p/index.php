@@ -9,10 +9,38 @@
 					<ul class="card-list horizontal-list">
 						<li class="exercise-card">
 							<h3>Saying Hello</h3>
-							<p class="xs-type">Hello, World</p>
+							<p class="xs-type">Hello, World!</p>
 
 							<a href="work/e4p/exercises/saying-hello" class="m-type tech-type">PHP</a>
 						</li>
+
+						<li class="exercise-card">
+							<h3>Counting the Number of Characters</h3>
+							<p class="xs-type">Strings attached? Count 'em!</p>
+
+							<a href="work/e4p/exercises/counting-characters" class="m-type tech-type">PHP</a>
+						</li>
+
+						<!-- <li class="exercise-card">
+							<h3>Printing Quotes</h3>
+							<p class="xs-type">Quip</p>
+
+							<a href="work/e4p/exercises/retirement-calculator" class="m-type tech-type">PHP</a>
+						</li> -->
+
+						<!-- <li class="exercise-card">
+							<h3>Mad Lib</h3>
+							<p class="xs-type">Quip</p>
+
+							<a href="work/e4p/exercises/retirement-calculator" class="m-type tech-type">PHP</a>
+						</li>
+ -->
+						<!-- <li class="exercise-card">
+							<h3>Simple Math</h3>
+							<p class="xs-type">Quip</p>
+
+							<a href="work/e4p/exercises/retirement-calculator" class="m-type tech-type">PHP</a>
+						</li> -->
 
 						<li class="exercise-card">
 							<h3>Retirement Calculator</h3>
