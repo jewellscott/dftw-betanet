@@ -46,7 +46,11 @@
 			<div class="right">
 				<album-stats>
 					<h1 class="title"><?=$this_album["title"];?></h1>
-					<h2 class="artist"><?=$this_album["artist"];?></h2>
+					<h2 class="artist">
+						<a href="">
+							<?=$this_album["artist"];?>‰
+						</a>
+						</h2>
 					<h3 class="year"><?=$this_album["year"];?></h3>
 				</album-stats>
 

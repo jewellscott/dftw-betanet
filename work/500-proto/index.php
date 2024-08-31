@@ -16,6 +16,9 @@
 
 		<inner-column>
 			<a href="?page=home" class="site-logo">500 Greatest</a>
+
+			<span><?php echo $_SERVER["QUERY_STRING"]; ?></span>
+
 	
 			<nav class="site-menu">
 
@@ -27,13 +30,13 @@
 				<nav class="list-filters">
 					<span class="nav-label">Sort by</span>
 					<!--  ?page=list&filter=artist -->
-					<a href="#" class="dead">Artist</a>
+					<a href="?page=albums&sort=artist" class="dead">Artist</a>
 					<!-- <a href="#" class="dead">Genre</a> -->
 					<!-- <a href="#" class="dead">Rating</a> -->
 
-					<a href="#" class="dead">Rank</a>
+					<a href="?page=albums&sort=rank" class="dead">Rank</a>
 
-					<a href="#" class="dead">Year</a>
+					<a href="?page=albums&sort=year" class="dead">Year</a>
 					<!-- <a href="#" class="dead">Label</a> -->
 				</nav>
 
