@@ -18,7 +18,7 @@
 							<h3>Counting the Number of Characters</h3>
 							<p class="xs-type">Strings attached? Count 'em!</p>
 
-							<a href="work/e4p/exercises/counting-characters" class="m-type tech-type">PHP</a>
+							<a href="work/e4p/exercises/counting-characters/" class="m-type tech-type">PHP</a>
 						</li>
 
 						<!-- <li class="exercise-card">
