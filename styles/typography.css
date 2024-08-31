@@ -67,6 +67,11 @@ main {
 .callout {
 	border-left: 10px solid var(--primary-color);
 	padding-left: 2em;
+	a {
+		color: var(--primary-color);
+		font-family: var(--display-type);
+		font-weight: 700;
+	}
 }
 
 ul.callout{

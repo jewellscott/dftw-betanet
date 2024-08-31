@@ -1,75 +1,103 @@
 form {
 	display: grid;
-	gap: 3em;
+	
+
+	.input-wrapper, .output-wrapper {
+		padding: 40px;
+	}
+
+	.input-wrapper {
+		display: grid;
+		gap: 2em;
+		background-color: #edeff6;
+	}
+
+	.output-wrapper {
+		background-color: var(--primary-color);
+		color: var(--background-color);
+	}
+
+
+	fieldset + fieldset, fieldset + button {
+	/*		margin-top: 3em;*/
+	}
+
+	input + label, select + *, * + output {
+		margin-top: 1em;
+	}
+
+	/*fieldset {
+		border-left: 10px solid var(--primary-color);
+		padding-left: 1em;
+	}*/
+
+	label, input:not([type="color"]) {
+		display: block;
+		width: 75%;
+		font-family: inherit;
+	}
+
+	output, input[type="color"] {
+		display: inline-block;
+		font-family: inherit;
+	}
+
+	label {
+		/* sm-type */
+		font-family: var(--display-type);
+		font-size: 1.2rem;
+	  	font-optical-sizing: auto;
+	  	font-weight: 700;
+	  	margin-bottom: .5em;
+	}
+
+	legend {
+		/* ml-type */
+		font-family: var(--display-type);
+		font-size: 1.5rem;
+		font-optical-sizing: auto;
+		font-weight: 700;
+		margin-block: 1em;
+	}
+
+	input, select, output:not(.tech-type) {
+		border: 2px solid var(--primary-color);
+		padding: .25em;
+		font-size: 1.2rem;
+		accent-color: var(--primary-color);
+	}
+
+	output > p {
+		font-size: 1.2rem;
+		font-optical-sizing: auto;
+	}
+
+	input[type="radio"], input[type="checkbox"] {
+		display: initial;
+		width: initial;
+	}
+
+	 input[type="radio"] + label, input[type="checkbox"] + label {
+		display: initial;
+		width: 75%;
+	 }
+
+	 input[type="color"] {
+	 	padding: unset;
+	}
+
+	/* explore styling of option and select later */
+
+	button {
+		border: none;
+		background-color: white;
+		width: fit-content;
+		display: inline;
+	}
 }
 
-fieldset + fieldset, fieldset + button {
-/*		margin-top: 3em;*/
-}
-
-input + label, select + *, * + output {
-	margin-top: 1em;
-}
-
-/*fieldset {
-	border-left: 10px solid var(--primary-color);
-	padding-left: 1em;
-}*/
-
-label, input:not([type="color"]) {
-	display: block;
-	width: 75%;
-	font-family: inherit;
-}
-
-output, input[type="color"] {
-	display: inline-block;
-	font-family: inherit;
-}
-
-label {
-	/* sm-type */
-	font-family: var(--display-type);
-	font-size: 1.2rem;
-  	font-optical-sizing: auto;
-  	font-weight: 700;
-  	margin-bottom: .5em;
-}
-
-legend {
-	/* ml-type */
-	font-family: var(--display-type);
-	font-size: 1.5rem;
-	font-optical-sizing: auto;
-	font-weight: 700;
-	margin-block: 1em;
-}
-
-input, select, output:not(.tech-type) {
-	border: 2px solid var(--primary-color);
-	padding: .25em;
-	font-size: 1.2rem;
-	accent-color: var(--primary-color);
-}
-
-input[type="radio"], input[type="checkbox"] {
-	display: initial;
-	width: initial;
-}
-
- input[type="radio"] + label, input[type="checkbox"] + label {
-	display: initial;
-	width: 75%;
+ @media (width > 800px) {
+ 	form.e4p {
+ 		grid-template-columns: 1fr 1fr;
+ 	}
  }
-
- input[type="color"] {
- 	padding: unset;
-}
-
-/* explore styling of option and select later */
-
-button {
-/*		padding: .5em 1em;
-	font-family: inherit;
-*/		border: none;
-}
