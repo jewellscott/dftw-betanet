@@ -6,13 +6,16 @@
 	$exercises = getData('exercises.json');
 	$foundExercise = null;
 
-	$id = $_GET["exercise"];
+	if (isset($_GET["exercise"])) {
+		$id = $_GET["exercise"];
 
-	foreach($exercises as $exercise) {
-		if ($exercise["id"] === $id) {
-			$foundExercise = $exercise;
+		foreach($exercises as $exercise) {
+			if ($exercise["id"] === $id) {
+				$foundExercise = $exercise;
+			}
 		}
-	}
+	};
+
 	
 	$pageTitle = $foundExercise["title"] ?? "Exercises for Programmers";
 
@@ -27,7 +30,11 @@
 
 				<section>
 
-					<?php include "exercises/$id/form.php";?>
+					<?php 
+						if (isset($_GET["exercise"])) {
+						include "exercises/$id/form.php";
+					};
+					?>
 
 				</section>
 
