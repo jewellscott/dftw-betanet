@@ -19,4 +19,5 @@
 	- Has e4p index display like normal
 	- Has second button with a detail page with the form, constraints, challenges, and notes
 - [ ] Make a mini game for the `output` window before the `submit` button is clicked
+	- Or maybe pixel art?
 
