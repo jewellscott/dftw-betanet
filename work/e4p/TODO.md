@@ -3,7 +3,10 @@
 - [ ] Get forms code review from Derek
 	- [ ] Control flow (inputs, outputs)
 	- [ ] Error messaging
-- [ ] 
+- [ ] Go back and add PHP form validation (with error messaging)
+	- [ ] Saying Hello
+	- [ ] Counting the number of characters
+	- [ ] Retirement Calculator
 
 
 
