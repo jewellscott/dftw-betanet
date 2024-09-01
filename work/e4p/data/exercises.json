@@ -16,11 +16,5 @@
 		"title": "Retirement Calculator",
 		"description": "Computers know what year it is.",
 		"category": "input-output"
-	},
-	{
-		"id": "area-rectangular-room",
-		"title": "Area of a Rectangular Room",
-		"description": "RR description.",
-		"category": "calculations"
 	}
 ]
