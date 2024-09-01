@@ -12,7 +12,7 @@
 	</h1>
 	<p class="xs-type"><?=$description?></p>
 
-	<a href="work/e4p/?exercise=<?=$id?>" class="m-type tech-type">LINK</a>
+	<a href="work/e4p/?exercise=<?=$id?>" class="m-type tech-type">Play</a>
 </article>
 
 <?php

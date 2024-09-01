@@ -41,7 +41,7 @@
 			Submit
 			</button>
 			<button class="tech-type" type="reset" name="reset">
-			<a href="work/e4p/exercises/retirement-calculator">Reset</a>
+			<a href="work/e4p/?exercise=retirement-calculator">Reset</a>
 			</button>
 		</fieldset>
 	</div>
