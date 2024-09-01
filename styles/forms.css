@@ -4,19 +4,29 @@ form {
 	gap: 2em;
 
 
-	.input-wrapper, .output-wrapper {
+	input-wrapper, output-wrapper {
 		padding: 40px;
 	}
 
-	.input-wrapper {
+	input-wrapper {
 		display: grid;
 		gap: 2em;
 		background-color: var(--accent-background);
 	}
 
-	.output-wrapper {
+	output-wrapper {
 		background-color: var(--primary-color);
 		color: var(--background-color);
+	}
+
+	error-message {
+		background: var(--rainbow-gradient);
+		width: 75%;
+		padding-inline: .5em;
+		/* xs-type */
+		font-family: var(--display-type);
+		font-size: 1rem;
+	  	font-optical-sizing: auto;
 	}
 
 
