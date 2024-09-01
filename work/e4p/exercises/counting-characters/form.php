@@ -18,27 +18,24 @@
 ?>
 
 <form method="POST" class="e4p">
-	<div class="input-wrapper">
+	<input-wrapper>
 		<fieldset>
-
-
 			<label for="name">What's your name?</label>
 
 			<input type="text" name="name" required>
-		
 		</fieldset>
 
 		<fieldset>
 			<button class="tech-type" type="submit" name="submit">
 			Submit
 			</button>
-			<button class="tech-type" type="reset" name="reset">
+			<button class="tech-type-invert" type="reset" name="reset">
 			<a href="work/e4p/?exercise=counting-characters">Reset</a>
 			</button>
 		</fieldset>
-	</div>
+	</input-wrapper>
 
-	<div class="output-wrapper">
+	<output-wrapper>
 		  <output name="result" for="">
 		  		<?php
 					if (isset($_POST["submit"])) {
@@ -46,5 +43,5 @@
 					}
 				?>
 		  </output>
-	</div>
+	</output-wrapper>
 </form>
