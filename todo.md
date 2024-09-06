@@ -1,60 +1,77 @@
-[-] Setup page structure
-	[-] Classes/"Partials"
-		[ ] Home
-		[ ] Left
-			[ ] Top Level Page
-			[ ] Blog Post
-		[ ] Centered
-			[ ] Small
-			[ ] Large
-	[x] Home
-	[x] About
-		[ ] About me
-			[ ] Typical descriptive paragraph, with a cheekly link to see a Myspace style situation
-		[ ] About the site
-			[ ] Colophon
-			[ ] Links to all versions
-			[ ] Design system?
-	[-] Blog 
-		[-] Post
-		[ ] Sanitize Substack export...
-	[ ] Work
-		[ ] Projects
-			[ ] List of project ideas/todos
-			[ ] Case Study
-			[ ] Grid - like 30 days...
-		[ ] Experiments
-			[ ] A list of TODOs... that also have codepen links... or maybe just a self-hosted situation.
-	[ ] Inspo
-		[ ] Grid
-		[ ] Tags!
-	[ ] Goals
-		[ ] Collapsable areas
-			[ ] Week
-			[ ] Month
-			[ ] Quarter
-			[ ] End of DFTW
-			[ ] 3 Months post-DFTW
-	[x] Links
-		[x] Use tech class... it's kinda cute.
-	[ ] Extras
-		[ ] Playlists
-	[x] Friends
-		[x] Grid
-[ ] Add skip to main
-[ ] Add ARIA
-[-] Figure out self-hosted fonts
-[x] Add Favicons
-	[x] Maybe switch the icon img
-[ ] Create a cheeky page that *looks* like a Markdown file opened in the brower but is HTML... just use a mono font or something bruv
-[x] Add Bitmoji randomizer
-[x] Fix font/footer on the server debacle - CACHING ISSUE. Sometimes you gotta clear the cache fullstop, beyond a hard refresh
-[-] Make responsive
-	[ ] Play with typography
-		[ ] Use clamp()
-[ ] Add feature to make the website 80s vaporave or PR aesthetic if you click the footer link
+# dftw
+[ ] Read about a11y/aria stuff
+[ ] Learn about SVG sprites
 
-COMPLETELY REBUILD...
-[ ] Componentize with different stylesheets for header and footer
-[ ] Add inner column
-	[ ] Different widths: larger (home, maybe 960px), and a smaller one 
+# betanet
+[ ] Refactor 
+	[ ] Make stuff modular
+	[ ] Fix typography
+		[ ] Clamp headers
+[ ] Add `experiments` page
+	- A list of TODOs... that also have codepen links... or maybe just a self-hosted situation.
+[ ] a11yify
+	[ ] Skip to main
+	[ ] ARIA
+[ ] Add theme switcher
+[ ] Add computer blue theme
+	[ ] Self host pixelated fonts
+	[ ] Pixelate bitmojis with library
+	[ ] Add js to activate when footer link is clicked
+	[ ] ? Make logo text with a blinking insertion cursor
+[ ] Make site logo animated?
+	[ ] Switch to console style animated text with 
+[ ] Experiment with header links to not be the buttons, but numbered like a VHS menu 1. ABOUT 2. etc etc
+[ ] Add new bitmojis
+
+# 404
+
+
+# about
+	[ ] Fill in "about"
+	[ ] Fill in "about the site"/colophon
+		[ ] Link to style guide?
+
+
+# blog
+	[ ] Sanitize substack export
+
+
+# css/styles
+	[ ] Change `styles` to `css` and rename header links
+
+
+# extras
+	[ ] Make a playlist page with YouTube links and an audio player
+		[ ] Data-driven/json file
+		[ ] Rainbow background (gradient shifts)
+		[ ] Bouncing song title/artists around the page
+
+
+# goals
+	[ ] Update goals
+	[ ] Make them collapable areas/details?
+	[ ] Make it a dataset/json file 
+
+
+
+# inspo
+	[ ] Add randomize button
+	[ ] Make a dataset with tags so things can be filtered (color, typography, space, etc)
+	[ ] Add randomized positioning 
+		- Randomized positon
+		- Randomized skew
+		- Overlapping
+	[ ] Make images draggable
+
+
+# links
+
+
+# style-guide 
+
+
+# templates
+
+
+# work
+	[ ] Build case study template
