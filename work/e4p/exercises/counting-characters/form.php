@@ -1,19 +1,38 @@
 <?php 
-
-	// prompt for an input string
-	// display the output 
-		// input string
-		// number of chars the string contains
+	// x prompt for an input string
+	// x display the output 
+		// x input string
+		// x number of chars the string contains
 
 	
 	// constraints
-		// output contains og string
-		// single output statement to construct the output
-		// use built-in function to determine length of the string
+		// x output contains og string
+		// x single output statement to construct the output
+		// x use built-in function to determine length of the string
 
 	// challenges
 		// if the user enters nothing, state that the user must enter something into the program
 		// update the character count every time a key is presed 
+
+
+	function countCharacters($name) { 
+
+		if (strlen($name) > 1) {
+			$num = " characters.";
+		} else {
+			$num = " character.";
+		}
+
+		return ucfirst($name) . " has " . strlen($name) . $num;
+
+	}
+
+	if(isset($_POST["submit"])) {
+		
+		$name = $_POST["name"];
+		$output = countCharacters($name);
+
+	}
 
 ?>
 
@@ -23,6 +42,7 @@
 			<label for="name">What's your name?</label>
 
 			<input type="text" name="name" required>
+
 		</fieldset>
 
 		<fieldset>
