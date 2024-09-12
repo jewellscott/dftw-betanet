@@ -2,5 +2,9 @@
 	{
 		"id": "input-output",
 		"title": "Input, Processing, and Output"
+	},
+	{
+		"id": "calculations",
+		"title": "Calculations"
 	}
 ]

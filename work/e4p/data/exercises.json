@@ -20,7 +20,13 @@
 	{
 		"id": "mad-lib",
 		"title": "Mad Lib",
-		"description": "Person and person verb into a place...",
+		"description": "A person and a thing verb into a place...",
+		"category": "input-output"
+	},
+	{
+		"id": "simple-math",
+		"title": "Simple Math",
+		"description": "2 + 2 = 4",
 		"category": "input-output"
 	},
 	{
