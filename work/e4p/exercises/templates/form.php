@@ -21,10 +21,10 @@
 		</fieldset>
 
 		<fieldset>
-			<button class="tech-type-invert" type="submit" name="submit">
+			<button class="tech-type" type="submit" name="submit">
 			Submit
 			</button>
-			<button class="tech-type" type="reset" name="reset">
+			<button class="tech-type-invert" type="reset" name="reset">
 			<a href="work/e4p/?exercise=<?=$id?>">Reset</a>
 			</button>
 		</fieldset>
