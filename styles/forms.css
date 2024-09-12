@@ -85,13 +85,13 @@ form {
 
 	output {
 		display: grid;
+		p {
+			margin-top: 0;
+			font-size: 1.2rem;
+			font-optical-sizing: auto;
+		}
 	}
-
-	output > p {
-		font-size: 1.2rem;
-		font-optical-sizing: auto;
-	}
-
+	
 	input[type="radio"], input[type="checkbox"] {
 		display: initial;
 		width: initial;
