@@ -21,7 +21,7 @@ form {
 
 	error-message {
 		background: var(--rainbow-gradient);
-		width: 75%;
+		max-width: 500px;
 		padding-inline: .5em;
 		/* xs-type */
 		font-family: var(--display-type);
@@ -45,7 +45,7 @@ form {
 
 	label, input:not([type="color"]) {
 		display: block;
-		width: 75%;
+		min-width: 75%;
 		font-family: inherit;
 	}
 
@@ -72,7 +72,7 @@ form {
 		margin-block: 1em;
 	}
 
-	input, select, output:not(.tech-type) {
+	textarea, input, select, output:not(.tech-type) {
 		border: 2px solid var(--primary-color);
 		padding: .25em;
 		font-size: 1.2rem;
@@ -91,11 +91,16 @@ form {
 
 	 input[type="radio"] + label, input[type="checkbox"] + label {
 		display: initial;
-		width: 75%;
+		min-width: 75%;
 	 }
 
 	 input[type="color"] {
 	 	padding: unset;
+	}
+
+	textarea {
+		resize: vertical;
+		min-width: 75%;
 	}
 
 	/* explore styling of option and select later */
