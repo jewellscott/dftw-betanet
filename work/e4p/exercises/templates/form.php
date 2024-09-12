@@ -2,6 +2,11 @@
 
 	$output = null;
 
+	if(isset($_POST["submit"])) {
+		
+		$output;
+	}
+
 ?>
 
 <form method="POST" class="e4p">
