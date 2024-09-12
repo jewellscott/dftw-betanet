@@ -12,6 +12,18 @@
 		"category": "input-output"
 	},
 	{
+		"id": "printing-quotes",
+		"title": "Printing Quotes",
+		"description": "That's what she said.",
+		"category": "input-output"
+	},
+	{
+		"id": "mad-lib",
+		"title": "Mad Lib",
+		"description": "Person and person verb into a place...",
+		"category": "input-output"
+	},
+	{
 		"id": "retirement-calculator",
 		"title": "Retirement Calculator",
 		"description": "Computers know what year it is.",
