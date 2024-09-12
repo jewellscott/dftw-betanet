@@ -43,7 +43,7 @@ form {
 		padding-left: 1em;
 	}*/
 
-	label, input:not([type="color"]) {
+	label, input:not([type="color"]), textarea {
 		display: block;
 		min-width: 75%;
 		font-family: inherit;
@@ -77,6 +77,14 @@ form {
 		padding: .25em;
 		font-size: 1.2rem;
 		accent-color: var(--primary-color);
+	}
+
+	textarea, input, select {
+		font-size: 1rem;
+	}
+
+	output {
+		display: grid;
 	}
 
 	output > p {
