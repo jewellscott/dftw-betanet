@@ -3,16 +3,21 @@
 	$output = null;
 
 	if(isset($_POST["submit"])) {
-		
-		$output;
-	}
+		$arg = $_POST["arg"];
 
+		$output = functionName($arg);
+	}
 ?>
 
 <form method="POST" class="e4p">
-	<input-wrapper">
+	<input-wrapper>
 		<fieldset>
-		
+			<label for="name">
+				What's your name?
+			</label>
+
+			<input type="text" name="name" required>
+			</fieldset>
 		</fieldset>
 
 		<fieldset>
@@ -20,7 +25,7 @@
 			Submit
 			</button>
 			<button class="tech-type" type="reset" name="reset">
-			<a href="work/e4p/exercises/saying-hello">Reset</a>
+			<a href="work/e4p/?exercise=<?=$id?>">Reset</a>
 			</button>
 		</fieldset>
 	</input-wrapper>
