@@ -26,7 +26,7 @@
 		<div class="inner-column">
 
 				<!-- change dynamically into exercise title -->
-				<h1 class="xl-type rainbow"><?=$pageTitle?></h1>
+				<a href="work/e4p/?exercise=<?=$id?>"><h1 class="xl-type rainbow"><?=$pageTitle?></h1></a>
 
 				<section>
 
