@@ -1,12 +1,18 @@
 <?php 
 
+	// initialize all important data
 	$output = null;
+	$name = "";
+
+	// handle form
 
 	if(isset($_POST["submit"])) {
 		$arg = $_POST["arg"];
 
 		$output = functionName($arg);
 	}
+
+	// update output
 ?>
 
 <form method="POST" class="e4p">
@@ -16,8 +22,7 @@
 				What's your name?
 			</label>
 
-			<input type="text" name="name" required>
-			</fieldset>
+			<input id="name" type="text" name="name" required>
 		</fieldset>
 
 		<fieldset>

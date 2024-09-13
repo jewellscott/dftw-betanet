@@ -4,8 +4,10 @@
 	// use string concatenation, not string 				interpolation or string substitution
 
 	$output = null;
+	$quote = "";
+	
 
-	function generateGreeting($quote, $author) {
+	function generateQuote($quote, $author) {
 		return $author . " says, \"" . $quote . "\"";
 	}
 
@@ -13,7 +15,7 @@
 		$quote = $_POST["quote"];
 		$author = $_POST["author"];
 
-		$output = generateGreeting($quote, $author);
+		$output = generateQuote($quote, $author);
 	}
 
 ?>

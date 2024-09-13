@@ -2,8 +2,12 @@
 
 	// keep input, string concatenation, and output separate
 
+	// initalize values 
+
 	$name = "";
 	$greeting = "";
+	$errors = [];
+	$output = "";
 
 	function generateGreeting($name) {
 		switch (ucfirst($name)) {
@@ -26,17 +30,23 @@
 				$greeting = "Hello, $name!";
 		}
 		return $greeting;
-		echo $greeting;
 	}
+
+	// handle user input
 
 	if(isset($_POST["submit"])) {
-		$name = $_POST["name"];
 
-		$output = generateGreeting($name);
+
+		if ($_POST["name"] != "") {
+			$name = $_POST["name"];
+			$output = generateGreeting($name);
+
+		} else {
+			$errors[] = "Please enter your name.";
+		}
 	}
 
-	// use no variables? maybe later
-	// display different greetings for different people
+	// update the ui 
 
 ?>
 
@@ -46,8 +56,25 @@
 
 			<label for="name">What's your name?</label>
 
-			<input type="text" name="name" required>
+			<input id="name" type="text" name="name">
 		</fieldset>
+
+		<?php if ( isset($errors) ) { ?>
+			<ul>
+				
+				<?php foreach($errors as $error) {?>
+
+				<li>
+					<error-message>
+						<?=$error?>
+					</error-message>
+				</li>
+
+				<?php } ?>
+
+			</ul>
+		<?php } ?>
+
 
 		<fieldset>
 			<button class="tech-type" type="submit" name="submit">

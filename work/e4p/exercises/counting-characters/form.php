@@ -1,4 +1,10 @@
 <?php 
+
+	$name = $_POST["name"] ?? "";
+	$output = "Please enter your name.";
+
+	
+
 	// x prompt for an input string
 	// x display the output 
 		// x input string
@@ -15,8 +21,7 @@
 		// update the character count every time a key is presed 
 
 
-	function countCharacters($name) { 
-
+	function generateMessage($name) { 
 		if (strlen($name) > 1) {
 			$num = " characters.";
 		} else {
@@ -24,14 +29,14 @@
 		}
 
 		return ucfirst($name) . " has " . strlen($name) . $num;
-
 	}
 
 	if(isset($_POST["submit"])) {
-		
-		$name = $_POST["name"];
-		$output = countCharacters($name);
 
+		if (!empty($_POST["name"])) {
+			$name = $_POST["name"];
+			$output = generateMessage($name);
+		}
 	}
 
 ?>
@@ -41,27 +46,24 @@
 		<fieldset>
 			<label for="name">What's your name?</label>
 
-			<input type="text" name="name" required>
-
+			<input 
+				id="name" type="text" 
+				name="name" value="<?=$name?>"
+			>
 		</fieldset>
 
 		<fieldset>
 			<button class="tech-type" type="submit" name="submit">
 			Submit
 			</button>
-			<button class="tech-type-invert" type="reset" name="reset">
-			<a href="work/e4p/?exercise=<?=$id?>">Reset</a>
-			</button>
+			<a class="tech-type-invert" href="work/e4p/?exercise=<?=$id?>">Reset</a>
+			</input>
 		</fieldset>
 	</input-wrapper>
 
 	<output-wrapper>
-		  <output name="result" for="">
-		  		<?php
-					if (isset($_POST["submit"])) {
-						echo "<p>$output</p>";
-					}
-				?>
+		  <output name="result">
+		  		<p><?=$output?></p>
 		  </output>
 	</output-wrapper>
 </form>
