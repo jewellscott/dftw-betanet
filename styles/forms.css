@@ -21,7 +21,7 @@ form {
 
 	error-message {
 		background: var(--rainbow-gradient);
-		max-width: 500px;
+		max-width: 75%;
 		padding-inline: .5em;
 		/* xs-type */
 		font-family: var(--display-type);
@@ -32,6 +32,11 @@ form {
 
 	fieldset + fieldset, fieldset + button {
 	/*		margin-top: 3em;*/
+	}
+
+	fieldset {
+		display: grid;
+		gap: 20px;
 	}
 
 	input + label, select + *, * + output {
@@ -60,7 +65,7 @@ form {
 		font-size: 1.2rem;
 	  	font-optical-sizing: auto;
 	  	font-weight: 700;
-	  	margin-bottom: .5em;
+	  	padding-bottom: .2em;
 	}
 
 	legend {
@@ -118,6 +123,11 @@ form {
 		background-color: white;
 		width: fit-content;
 		display: inline;
+	}
+
+	actions-wrapper {
+		display: flex;
+		flex-wrap: wrap;
 	}
 }
 
