@@ -1,0 +1,117 @@
+:root {
+	--base: 1rem;
+
+	/* major third */
+	--scale: 1.25; 
+	/* perfect fourth */
+/*	--scale: 1.333; */
+	/* augmented fourth */
+/*	--scale: 1.414; */
+/*	 perfect fifth */
+/*	--scale: 1.5; */
+	/* golden ratio */
+/*	--scale: 1.618; */
+
+	--text-base: var(--base);
+
+	--text-xs: calc(var(--base) / var(--scale) / var(--scale));
+	--text-sm: calc(var(--base) / var(--scale));
+
+
+	--text-lg: calc(var(--base) * var(--scale));
+	--text-xl: calc(var(--text-lg) * var(--scale));
+	--text-2x: calc(var(--text-xl) * var(--scale));
+	--text-3x: calc(var(--text-2x) * var(--scale));
+	--text-4x: calc(var(--text-3x) * var(--scale));
+	--text-5x: calc(var(--text-4x) * var(--scale));
+	--text-6x: calc(var(--text-5x) * var(--scale));
+	--text-7x: calc(var(--text-6x) * var(--scale));
+	--text-8x: calc(var(--text-7x) * var(--scale));
+	--text-9x: calc(var(--text-8x) * var(--scale));
+	--text-10x: calc(var(--text-9x) * var(--scale));
+}
+
+/* add a media query to size down large fonts responsively..maybe clamp them or something) */
+
+body {
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+
+.text-xs { font-size: var(--text-xs); }
+.text-sm { font-size: var(--text-sm); }
+.text-base { font-size: var(--base); }
+
+.text-lg { 
+	font-size: var(--text-lg); 
+	line-height: 1.15;
+}
+
+.text-xl { 
+	font-size: var(--text-xl); 
+	line-height: 1.15;
+}
+
+.text-2x { 
+	font-size: var(--text-2x); 
+	line-height: 1.15;
+}
+
+.text-3x { 
+	font-size: var(--text-3x); 
+	line-height: 1.15;
+}
+
+.text-4x { 
+	font-size: var(--text-4x); 
+	line-height: 1.15;
+}
+
+.text-5x { 
+	font-size: var(--text-5x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-6x { 
+	font-size: var(--text-6x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-7x { 
+	font-size: var(--text-7x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-8x { 
+	font-size: var(--text-8x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-9x { 
+	font-size: var(--text-9x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-10x { 
+	font-size: var(--text-10x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.weight-200 { font-weight: 200; }
+.weight-300 { font-weight: 300; }
+.weight-700 { font-weight: 700; }
+.weight-800 { font-weight: 800; }
+.weight-900 { font-weight: 900; }
+
+.text-upper {
+	text-transform: uppercase;
+	letter-spacing: -0.022em;
+}
+
+

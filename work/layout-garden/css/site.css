@@ -1,0 +1,16 @@
+@import "reset.css";
+@import "setup.css";
+@import "settings.css";
+@import "structure.css";
+@import "typography.css";
+@import "components.css";
+@import "modules.css";
+@import "forms.css";
+
+body {
+	font-family: sans-serif;
+}
+
+a:hover {
+	color: #00000040;
+}

@@ -1,0 +1,93 @@
+:root {
+	--base: 1rem;
+	--scale: 1.25; /* major third */
+
+	--text-base: var(--base);
+
+	--text-xs: calc(var(--base) / var(--scale) / var(--scale));
+	--text-sm: calc(var(--base) / var(--scale));
+
+
+	--text-lg: calc(var(--base) * var(--scale));
+	--text-xl: calc(var(--text-lg) * var(--scale));
+	--text-2x: calc(var(--text-xl) * var(--scale));
+	--text-3x: calc(var(--text-2l) * var(--scale));
+	--text-4x: calc(var(--text-3l) * var(--scale));
+	--text-5x: calc(var(--text-4l) * var(--scale));
+	--text-6x: calc(var(--text-5l) * var(--scale));
+	--text-7x: calc(var(--text-6l) * var(--scale));
+	--text-8x: calc(var(--text-7l) * var(--scale));
+}
+
+/* add a media query to size down large fonts responsively..maybe clamp them or something) */
+
+body {
+	line-height: 1.5;
+	font-family: sans-serif;
+}
+
+.text-xs { font-size: var(--text-xs); }
+.text-sm { font-size: var(--text-sm); }
+.text-base { font-size: var(--base); }
+
+.text-lg { 
+	font-size: var(--text-lg); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-xl { 
+	font-size: var(--text-xl); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;								
+}
+
+.text-2x { 
+	font-size: var(--text-2x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-3x { 
+	font-size: var(--text-3x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-4x { 
+	font-size: var(--text-4x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-5x { 
+	font-size: var(--text-5x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-6x { 
+	font-size: var(--text-6x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-7x { 
+	font-size: var(--text-7x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+.text-8x { 
+	font-size: var(--text-8x); 
+	line-height: 1.15;
+	letter-spacing: -0.022em;
+}
+
+
+.weight-200 { font-weight: 200; }
+.weight-300 { font-weight: 300; }
+.weight-700 { font-weight: 700; }
+.weight-800 { font-weight: 800; }
+
+

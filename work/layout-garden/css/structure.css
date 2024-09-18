@@ -1,0 +1,23 @@
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh; 
+	padding: calc(var(--space) * 4);
+} 
+
+main {
+	flex: 1; 
+}
+
+inner-column {
+	display: block;
+	max-width: 1200px;
+	margin-inline: auto; 
+	padding-block: calc(var(--space) * 10); 
+}
+
+/*
+section inner-column {
+	padding-block: calc(var(--space) * 5);
+}
+*/
