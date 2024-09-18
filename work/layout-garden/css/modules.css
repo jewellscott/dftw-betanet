@@ -1,4 +1,3 @@
-s@import "../components/site-header/style.css";
+@import "../components/site-header/style.css";
 @import "../components/site-footer/style.css";
-
 @import "../modules/type-specimen/style.css";

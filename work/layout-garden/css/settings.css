@@ -1,21 +1,55 @@
 :root {
 
+	/*colors */
+	--paper: #f8f8f8;
+	--ink: #111111;
+	--white: white;
+
+	/*	--hue-primary: */
+/*	--neutral:
+	--primary:
+	--secondary:
+	--tertiary:;
+*/
+
 	/* sizing */
 	--space: 4px;
 
 	--inner-column: 1200px;
 	--inner-column-tight: 800px;
 	--inner-column-wide: 1600px;
-
-	/* colors */
-
-/*	--hue-primary: */
-
-	
-
 	
 	/* tricks */
 	/* border */
+
+	--border: 1px solid var(--ink);
+	--border-thin: 2px solid var(--ink);
+	--border-thick: 4px solid var(--ink);
+
 	/* rounded corners */
 
+	--rounded: var(--space);
+	--rounded-2x: calc(var(--space) * 2);
+	--rounded-4x: calc(var(--space) * 4);
+	--rounded-6x: calc(var(--space) * 6);
+	--rounded-8x: calc(var(--space) * 8);
+
+	--
+
 }
+
+body {
+	background-color: var(--paper);
+	color: var(--ink);
+}
+
+
+.rounded { border-radius: var(--rounded); }
+.rounded { border-radius: var(--rounded-2x); }
+.rounded { border-radius: var(--rounded-4x); }
+.rounded { border-radius: var(--rounded-6x); }
+.rounded { border-radius: var(--rounded-8x); }
+
+.border { border: var(--border); }
+.border-thin { border: var(--border-thin); }
+.border-thick { border: var(--border-thick); }

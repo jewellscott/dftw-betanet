@@ -7,9 +7,9 @@
 @import "modules.css";
 @import "forms.css";
 
-body {
+/*body {
 	font-family: sans-serif;
-}
+}*/
 
 a:hover {
 	color: #00000040;
