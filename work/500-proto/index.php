@@ -57,8 +57,6 @@
 			<?php getTemplate($page); ?>
 
 		</inner-column>
-
-		</div>
 	</main>
 
 	<footer>
