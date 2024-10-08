@@ -6,11 +6,26 @@
 	--white: white;
 
 	/*	--hue-primary: */
-/*	--neutral:
-	--primary:
-	--secondary:
-	--tertiary:;
-*/
+	--white: ;
+	--primary: 240;
+	--cool: calc(var(--hue-primary) - 40);
+	--warm: calc(var(--hue-primary) + 40);
+
+	--neut-white: 	#FFFFFF;
+	--neut-20:	 	#FAFAFA;
+	--neut-30:	  	#F7F7F7;
+	--neut-50:	  	#F2F2F2;
+	--neut-100:	  	#E5E5E5;
+	--neut-200:		#CCCCCC;
+	--neut-300: 	#B2B2B2;
+	--neut-400: 	#999999;
+	--neut-500:		#808080;
+	--neut-600:		#666666;
+	--neut-700:		#4D4D4D;
+	--neut-800:		#333333;
+	--neut-900:		#1A1A1A;
+	--neut-950:		#0d0d0d;
+	--neut-black:	#000000;
 
 	/* sizing */
 	--space: 4px;
@@ -33,9 +48,6 @@
 	--rounded-4x: calc(var(--space) * 4);
 	--rounded-6x: calc(var(--space) * 6);
 	--rounded-8x: calc(var(--space) * 8);
-
-	--
-
 }
 
 body {
@@ -43,10 +55,9 @@ body {
 	color: var(--ink);
 }
 
-
 .rounded { border-radius: var(--rounded); }
-.rounded { border-radius: var(--rounded-2x); }
-.rounded { border-radius: var(--rounded-4x); }
+.rounded-2x { border-radius: var(--rounded-2x); }
+.rounded{ border-radius: var(--rounded-4x); }
 .rounded { border-radius: var(--rounded-6x); }
 .rounded { border-radius: var(--rounded-8x); }
 

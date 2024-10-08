@@ -1,5 +1,5 @@
 :root {
-	--base: 1rem;
+	--base: 1rem; /* 16px */
 
 	/* major third */
 	--scale: 1.25; 
@@ -12,11 +12,10 @@
 	/* golden ratio */
 /*	--scale: 1.618; */
 
-	--text-base: var(--base);
-
 	--text-xs: calc(var(--base) / var(--scale) / var(--scale));
 	--text-sm: calc(var(--base) / var(--scale));
-
+	
+	--text-base: var(--base); /* 16px */
 
 	--text-lg: calc(var(--base) * var(--scale));
 	--text-xl: calc(var(--text-lg) * var(--scale));
@@ -45,7 +44,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.15;
-  line-height: 1.1;
 }
 
 .text-xs { font-size: var(--text-xs); }
@@ -72,7 +70,8 @@ h1, h2, h3, h4, h5, h6 {
 .text-upper { text-transform: uppercase; }
 .text-italic {	font-style: italic; }
 
-.text-tight { letter-spacing: -0.022em; }
+.text-tight-letter { letter-spacing: -0.022em; }
+.text-tight-line { line-height: 1.15; }
 
 .text-sans { 
 	font-family: sans-serif; /* fallback */

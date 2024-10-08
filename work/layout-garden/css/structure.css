@@ -2,23 +2,21 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100vh; 
-	padding: calc(var(--space) * 4);
 } 
 
 main {
 	flex: 1; 
-	min-height: 100vh;
+/*	min-height: 100vh;*/
 }
 
 inner-column {
 	display: block;
 	max-width: 1200px;
 	margin-inline: auto; 
-	padding-block: calc(var(--space) * 10); 
+	padding: calc(var(--space) * 4);
 }
 
-/*
+
 section inner-column {
-	padding-block: calc(var(--space) * 5);
+/*	padding-block: calc(var(--space) * 5);*/
 }
-*/
