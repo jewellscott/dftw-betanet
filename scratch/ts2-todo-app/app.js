@@ -87,14 +87,12 @@ function printStats() {
 
 	function printRoundStats() {
 		// count the number of played households in the round
-		let playedHouseholds = households.filter((h) => h.round == currentRound).length;
+		let playedHouseholds = households.filter((h) => h.round != currentRound).length;
 		let message = "";
 
-		if (playedHouseholds > 0) {
-			// if there are more households in the round
-			console.log("*** ", `${playedHouseholds}/${households.length} households left in round ${currentRound}.`);
+		console.log("*** ", `${playedHouseholds}/${households.length} households played in round ${currentRound}.`);
 
-		} else if (playedHouseholds == 0) {
+	 if (playedHouseholds == households.length) {
 			currentRound++;
 			console.log("***", `Starting round: ${currentRound}`)
 		}
