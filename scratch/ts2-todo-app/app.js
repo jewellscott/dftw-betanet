@@ -1,4 +1,5 @@
-const households = [
+const todoApp = {
+	households: [
 	{
 		id: 1,
 		name: "Lothario",
@@ -69,108 +70,96 @@ const households = [
 		],
 		notes: "",
 	},
-];
+		],
+	idCount: 6,
+	currentRound: 1,
 
-const original = [...households];
+	getHouseholdById: function(id) {
+	// returns the whole object
+		  return this.households.find((h) => h.id === id);
+	},
+	getIndexById: function(id) {
+		// returns the index
+		return this.households.findIndex((h) => h.id === id);
+	},
+	printFeedback: function(note = ""){
+			console.log("*** ", note);
+			console.log(this.households);
+	},
+	printStats: function() {
+		function printRoundStats() {
+			// count the number of played this.households in the round
+			let playedHouseholds = todoApp.households.filter((h) => h.round != todoApp.currentRound).length;
 
-var count = 6;
-var currentRound = 1;
+			console.log("*** ", `${playedHouseholds}/${todoApp.households.length} households played in round ${todoApp.currentRound}.`);
 
-// returns the whole object
-function getHouseholdById(id) {
-  return households.find((h) => h.id === id);
-}
-
-// returns the index
-function getIndexById(id) {
-	return households.findIndex((h) => h.id === id);
-}
-
-// just tells me what i did - crud, etc
-function printFeedback(note = "") {
-	console.log("*** ", note);
-	console.log(households);
-}
-
-
-function printStats() {
-
-	function printRoundStats() {
-		// count the number of played households in the round
-		let playedHouseholds = households.filter((h) => h.round != currentRound).length;
-		let message = "";
-
-		console.log("*** ", `${playedHouseholds}/${households.length} households played in round ${currentRound}.`);
-
-	 if (playedHouseholds == households.length) {
-			currentRound++;
-			console.log("***", `Starting round: ${currentRound}`)
+			if (playedHouseholds == todoApp.households.length) {
+				todoApp.currentRound++;
+				console.log("***", `Starting round: ${todoApp.currentRound}`);
+			}
 		}
-	}
+			printRoundStats();
+	},
+	playRound: function(id, notes = "") {
+		// increment the round
+		this.getHouseholdById(id).round++;
+		// add notes
+		this.getHouseholdById(id).notes = notes;
+		//output the feedback
 
-	printRoundStats();
-}
+		if (this.getHouseholdById(id).notes != "") {
+			this.printFeedback(`Played round ${this.currentRound} of the ${this.getHouseholdById(id).name} household: ${notes}`);
+		} else {
+			this.printFeedback(`Played round ${this.currentRound} of the ${this.getHouseholdById(id).name} household.`);
+		}
+		// print the stats
+		this.printStats();
+	},
+	createHousehold: function(name, subhood, notes = "", ...members) {
+		// new this.households start at the current round number
+		let household = {
+				id: ++this.idCount,
+				name: name,
+				round: this.currentRound,
+				subhood: subhood,
+				members: members,
+				notes: notes,
+			}
+			this.households.push(household);
+			this.printFeedback(`Created the ${name} household.`);
+	},
+	updateHousehold: function(id, key, ...val) {
+		this.getHouseholdById(id)[key] = val;
+		this.printFeedback(`Updated the ${this.getHouseholdById(id).name} household.`);
+		console.log(this.getHouseholdById(id));
+		// if members ends up being 0
+		if (this.getHouseholdById(id).members.length == 0) {
+			// tell the user
+			this.printFeedback(`There are no members of the ${this.getHouseholdById(id).name} household.`);
+			// delete the household
+			this.deleteHousehold(id);
+		}
+	},
+	deleteHousehold: function(id) {
+		let name = this.getHouseholdById(id).name;
+		let index = this.getIndexById(id);
+		this.households.splice(index, 1);
 
-function addRound(id, notes = "") {
-	// increment the round
-	getHouseholdById(id).round++;
-	// add notes
-	getHouseholdById(id).notes = notes;
-	//output the feedback
-	printFeedback(`Played round ${currentRound} of the ${getHouseholdById(id).name} household.`);
-	printStats();
-}
-
-// new households start at the current round number
-function createHousehold(name, subhood, notes = "", ...members) {
-	var household = {
-		id: ++count,
-		name: name,
-		round: currentRound,
-		subhood: subhood,
-		members: members,
-		notes: notes,
-	}
-	households.push(household);
-	printFeedback(`Created the ${name} household.`);
-}
-
-function updateHousehold(id, key, ...val) {
-	// make a copy so i can ref it if the household ends up deleted
-	let householdCopy = getHouseholdById(id);
-
-	getHouseholdById(id)[key] = val;
-	// using dot notation would create a "key" key instead of passing in the argument. COOL!
-
-	printFeedback(`Updated the ${getHouseholdById(id).name} household.`);
-	console.log(getHouseholdById(id));
-
-	// if members ends up being 0 (last member dies or moves into a new household), delete the household
-
-	if (getHouseholdById(id).members.length == 0) {
-		printFeedback(`There are no members of the ${getHouseholdById(id).name} household.`);
-		deleteHousehold(id);
-	}
-}
-
-
-// deletes the household entirely (if someone moves into a new house, etc);
-function deleteHousehold(id) {
-	let name = getHouseholdById(id).name;
-	let index = getIndexById(id);
-	households.splice(index, 1);
-
-	printFeedback(`Deleted the ${name} household.`);
-}
+		this.printFeedback(`Deleted the ${name} household.`);
+	},
+};
 
 
-console.log("Original Households (6)", original);
 
-createHousehold("Langerak", "Pleasantview", "Move in with Daniel (if he moves out?)", "Kaylynn Langerak");
-deleteHousehold(7);
-addRound(5, "Send Dirk to college next round");
-addRound(6, "Mary-Sue caught Daniel cheating. Breakup?");
-updateHousehold(2, "members", "Mortimer Goth", "Cassandra Goth", "Alexander Goth", "Don Lothario");
-updateHousehold(1, "members");
-createHousehold("Burb", "Pleasantview", "Move into town", "John Burb", "Jennifer Burb", "Lucy Burb");
-createHousehold("Oldie", "Pleasantview", "Move into town", "Herb Oldie", "Coral Oldie");
+
+
+console.log("Original households (6)", ...todoApp.households);
+
+todoApp.createHousehold("Langerak", "Pleasantview", "Move in with Daniel (if he moves out?)", "Kaylynn Langerak");
+todoApp.deleteHousehold(7);
+todoApp.playRound(5, "Send Dirk to college next round");
+todoApp.playRound(6, "Mary-Sue caught Daniel cheating. Breakup?");
+todoApp.updateHousehold(2, "members", "Mortimer Goth", "Cassandra Goth", "Alexander Goth", "Don Lothario");
+todoApp.updateHousehold(1, "members");
+todoApp.createHousehold("Burb", "Pleasantview", "Move into town", "John Burb", "Jennifer Burb", "Lucy Burb");
+todoApp.createHousehold("Oldie", "Pleasantview", "Move into town", "Herb Oldie", "Coral Oldie");
