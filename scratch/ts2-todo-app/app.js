@@ -48,7 +48,7 @@ const households = [
 	{
 		id: 4,
 		name: "Dreamer",
-		round: 2,
+		round: 1,
 		subhood: "Pleasantview",
 		members: [
 			"Darren Dreamer",
@@ -158,6 +158,7 @@ console.log("Original Households (6)", original);
 
 createHousehold("Burb", "Pleasantview", "Move into town", "John Burb", "Jennifer Burb", "Lucy Burb");
 deleteHousehold(6);
+addRound(4, "Send Dirk to college next round");
 addRound(5, "Mary-Sue caught Daniel cheating. Breakup?");
 updateHousehold(3, "members", "Brandi Broke", "Dustin Broke", "Beau Broke", "Bobbi Broke");
 updateHousehold(0, "members");
