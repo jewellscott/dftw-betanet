@@ -1,3 +1,25 @@
+const localLib = {
+	init(name, object, message) {
+		if (localStorage.getItem(name)) {
+			// nothing.
+		} else {
+			localStorage.setItem(name, JSON.stringify(object));
+			console.log(message);
+		}
+	},
+	retrieve(key) {
+		return JSON.parse(localStorage.getItem(key));
+	},
+	save(key, val) {
+		localStorage.setItem(key, JSON.stringify(val));
+	},
+	delete(key) {
+		localStorage.removeItem(key);
+	},
+};
+
+const app = localLib.retrieve('app');
+
 const todoApp = {
 	households: [
 	{
@@ -73,6 +95,48 @@ const todoApp = {
 		],
 	idCount: 6,
 	currentRound: 1,
+	// lastUpdated: 
+
+	// core save functions
+
+	start: function() {
+		if (localStorage.app) {
+			// load existing save
+			this.loadSave();
+		} else  { // start a new save
+			this.initSave();
+		}
+	},
+
+	initSave: function() {
+		localLib.init('app', todoApp, "Starting new save!");
+		console.log("Starting Households", todoApp.households);
+	},
+
+	loadSave: function() {
+		let app = localLib.retrieve('app');
+
+		// I don't know of a better way to just do this...
+		// see playRound() for more thoughts
+		todoApp.households = app.households;
+		todoApp.idCount = app.idCount;
+		todoApp.currentRound = app.currentRound;
+
+	 	
+		console.log("***", "Loading Save", "***")
+		console.log("Households", app.households);
+	},
+
+	save: function() {
+		localLib.save('app', todoApp);
+	},
+
+	deleteSave: function() {
+		locaLib.delete('app');
+	},
+
+	// helper functions
+
 
 	getHouseholdById: function(id) {
 	// returns the whole object
@@ -82,6 +146,10 @@ const todoApp = {
 		// returns the index
 		return this.households.findIndex((h) => h.id === id);
 	},
+
+	// printing functions 
+
+
 	printFeedback: function(note = ""){
 			console.log("*** ", note);
 			console.log(this.households);
@@ -98,13 +166,33 @@ const todoApp = {
 				console.log("***", `Starting round: ${todoApp.currentRound}`);
 			}
 		}
-			printRoundStats();
+		printRoundStats();
+
+		// save changes in localStorage
+		this.save();
+		// localLib.save(app, todoApp);
 	},
+
+	// game mechanics
+
 	playRound: function(id, notes = "") {
 		// increment the round
 		this.getHouseholdById(id).round++;
 		// add notes
 		this.getHouseholdById(id).notes = notes;
+
+		// create a new main app object and spread the old info, overwrite with what we just changed
+		
+		
+		// save changes in localStorage
+		this.save();
+		// localLib.save(app, todoApp);
+
+		// ideally, you wouldn't overwrite the whole object. But you can't update nested stuff in local storage. I read up on it and you can use the spread operator to make copying same info easier, but a lot of information is changed in most of these functions - the whole households array, and the id count... Idk. Part of me wants to write a more sophisticated function that only tracks the changes, but it's beyond my scope right now. So, I will write over the whole object. 
+
+		// I'm also not retrieving (getItem) anything at the moment.
+
+
 		//output the feedback
 
 		if (this.getHouseholdById(id).notes != "") {
@@ -125,13 +213,18 @@ const todoApp = {
 				members: members,
 				notes: notes,
 			}
-			this.households.push(household);
-			this.printFeedback(`Created the ${name} household.`);
+
+		this.households.push(household);
+		this.printFeedback(`Created the ${name} household.`);
+
+		// save changes in localStorage
+		this.save();
+		// localLib.save(app, todoApp);
 	},
 	updateHousehold: function(id, key, ...val) {
 		this.getHouseholdById(id)[key] = val;
-		this.printFeedback(`Updated the ${this.getHouseholdById(id).name} household.`);
 		console.log(this.getHouseholdById(id));
+		this.printFeedback(`Updated the ${this.getHouseholdById(id).name} household.`);
 		// if members ends up being 0
 		if (this.getHouseholdById(id).members.length == 0) {
 			// tell the user
@@ -139,6 +232,10 @@ const todoApp = {
 			// delete the household
 			this.deleteHousehold(id);
 		}
+
+		// save changes in localStorage
+		this.save();
+		// localLib.save(app, todoApp);
 	},
 	deleteHousehold: function(id) {
 		let name = this.getHouseholdById(id).name;
@@ -146,20 +243,28 @@ const todoApp = {
 		this.households.splice(index, 1);
 
 		this.printFeedback(`Deleted the ${name} household.`);
+
+		// save changes in localStorage
+		this.save();
+		// localLib.save(app, todoApp);
 	},
 };
 
+todoApp.start();
+
+// fun additions to think about!
+// turn the notes into an array of objects with timestamps so we have a timeline of sorts
+// add a feature that shows you what happened in your game (notes) the last time you played
 
 
 
-
-console.log("Original households (6)", ...todoApp.households);
-
-todoApp.createHousehold("Langerak", "Pleasantview", "Move in with Daniel (if he moves out?)", "Kaylynn Langerak");
-todoApp.deleteHousehold(7);
-todoApp.playRound(5, "Send Dirk to college next round");
-todoApp.playRound(6, "Mary-Sue caught Daniel cheating. Breakup?");
-todoApp.updateHousehold(2, "members", "Mortimer Goth", "Cassandra Goth", "Alexander Goth", "Don Lothario");
-todoApp.updateHousehold(1, "members");
-todoApp.createHousehold("Burb", "Pleasantview", "Move into town", "John Burb", "Jennifer Burb", "Lucy Burb");
-todoApp.createHousehold("Oldie", "Pleasantview", "Move into town", "Herb Oldie", "Coral Oldie");
+// console.log("Original households (6)", todoApp.households);
+// console.log("Original households (6)", todoApp.households);
+// todoApp.createHousehold("Langerak", "Pleasantview", "Move in with Daniel (if he moves out?)", "Kaylynn Langerak");
+// todoApp.deleteHousehold(7);
+// todoApp.playRound(5, "Send Dirk to college next round");
+// todoApp.playRound(6, "Mary-Sue caught Daniel cheating. Breakup?");
+// todoApp.updateHousehold(2, "members", "Mortimer Goth", "Cassandra Goth", "Alexander Goth", "Don Lothario");
+// todoApp.updateHousehold(1, "members");
+// todoApp.createHousehold("Burb", "Pleasantview", "Move into town", "John Burb", "Jennifer Burb", "Lucy Burb");
+// todoApp.createHousehold("Oldie", "Pleasantview", "Move into town", "Herb Oldie", "Coral Oldie");
