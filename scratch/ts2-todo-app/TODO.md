@@ -8,3 +8,4 @@
 		[ ] add a prompt that will let user enter notes if they want. If that prompt is empty, leave the old notes.
 	[ ] Update Delete
 		[ ] add an alert that warns them first if they click the delete button
+	[ ] Add a button to start new save
