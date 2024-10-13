@@ -20,98 +20,110 @@ const localLib = {
 
 const app = localLib.retrieve('app');
 
-class TodoApp {
+const form = document.querySelector('form');
+const name = form.querySelector('input[id=name]');
+const subhood = form.querySelector('input[id=subhood]');
+const members = form.querySelector('input[id=members]');
+const notes = form.querySelector('input[id=notes]');
+const output = document.querySelector('output');
 
-	constructor() {
-		this.households = [
-		{
-			id: 1,
-			name: "Lothario",
-			round: 2,
-			subhood: "Pleasantview",
-			members: [
-				"Don Lothario",
-			],
-			notes: "",
-		},
-		{
-			id: 2,
-			name: "Goth",
-			round: 2,
-			subhood: "Pleasantview",
-			members: [
-				"Mortimer Goth",
-				"Cassandra Goth",
-				"Alexander Goth"
-			],
-			notes: "Move Morty and Alex in with Dina?",
-		},
-		{
-			id: 3,
-			name: "Caliente",
-			round: 2,
-			subhood: "Pleasantview",
-			members: [
-				"Nina Caliente",
-				"Dina Caliente",
-			],
-			notes: "If Mortimer moves in, move Nina to the Pleasant Vista Apts",
-		},
-		{
-			id: 4,
-			name: "Broke",
-			round: 2,
-			subhood: "Pleasantview",
-			members: [
-				"Brandi Broke",
-				"Dustin Broke",
-				"Beau Broke",
-				"Bobby Broke"
-			],
-			notes: "Brandi just had Bobby Broke and is into Darren",
-		},
-		{
-			id: 5,
-			name: "Dreamer",
-			round: 1,
-			subhood: "Pleasantview",
-			members: [
-				"Darren Dreamer",
-				"Dirk Dreamer",
-			],
-			notes: "",
-		},
-		{
-			id: 6,
-			name: "Pleasant",
-			round: 1,
-			subhood: "Pleasantview",
-			members: [
-				"Daniel Pleasant",
-				"Mary-Sue Pleasant",
-				"Angela Pleasant",
-				"Lilith Pleasant"
-			],
-			notes: "",
-		},
-			];
-		this.idCount = 6;
-		this.currentRound = 1;
+form.addEventListener('submit', function(event) {
+	event.preventDefault();
 
+	todoApp.createHousehold(name.value, subhood.value, notes.value, members.value);
+});
 
-		this.form = document.querySelector('form');
-		this.name = this.form.querySelector('input[id=name]');
-		this.subhood = this.form.querySelector('input[id=subhood]');
-		this.members = this.form.querySelector('input[id=members]');
-		this.notes = this.form.querySelector('input[id=notes]');
-		this.output = document.querySelector('output');
-
-		this.addEventListeners();
-
-		// lastUpdated: 
+output.addEventListener('click', function(event) {
+	if (event.target.textContent == "Play") {
+		let id = event.target.closest('tr').dataset.id;
+		todoApp.playRound(id);
 	}
 
+	if (event.target.textContent == "Delete") {
+		let id = event.target.closest('tr').dataset.id;
+		todoApp.deleteHousehold(id);
+	}
+});
+
+const todoApp = {
+	households: [
+	{
+		id: 1,
+		name: "Lothario",
+		round: 2,
+		subhood: "Pleasantview",
+		members: [
+			"Don Lothario",
+		],
+		notes: "",
+	},
+	{
+		id: 2,
+		name: "Goth",
+		round: 2,
+		subhood: "Pleasantview",
+		members: [
+			"Mortimer Goth",
+			"Cassandra Goth",
+			"Alexander Goth"
+		],
+		notes: "Move Morty and Alex in with Dina?",
+	},
+	{
+		id: 3,
+		name: "Caliente",
+		round: 2,
+		subhood: "Pleasantview",
+		members: [
+			"Nina Caliente",
+			"Dina Caliente",
+		],
+		notes: "If Mortimer moves in, move Nina to the Pleasant Vista Apts",
+	},
+	{
+		id: 4,
+		name: "Broke",
+		round: 2,
+		subhood: "Pleasantview",
+		members: [
+			"Brandi Broke",
+			"Dustin Broke",
+			"Beau Broke",
+			"Bobby Broke"
+		],
+		notes: "Brandi just had Bobby Broke and is into Darren",
+	},
+	{
+		id: 5,
+		name: "Dreamer",
+		round: 1,
+		subhood: "Pleasantview",
+		members: [
+			"Darren Dreamer",
+			"Dirk Dreamer",
+		],
+		notes: "",
+	},
+	{
+		id: 6,
+		name: "Pleasant",
+		round: 1,
+		subhood: "Pleasantview",
+		members: [
+			"Daniel Pleasant",
+			"Mary-Sue Pleasant",
+			"Angela Pleasant",
+			"Lilith Pleasant"
+		],
+		notes: "",
+	},
+		],
+	idCount: 6,
+	currentRound: 1,
+	// lastUpdated: 
+
 	render() {
+
 		function renderHousehold(household) {
 			return `
 				<tr data-id='${household.id}'> 
@@ -138,55 +150,36 @@ class TodoApp {
 						<th>Members</th>
 						<th>Notes</th>
 					</tr>
+
 			`;
 			households.forEach(function(household) {
 				template += renderHousehold(household);
 			})
 			template += "</table>";
-			todoApp.output.innerHTML = template;
+			output.innerHTML = template;
 		}
 
 		renderHouseholds(this.households);
-	}
-
-	addEventListeners() {
-		this.form.addEventListener('submit', function(event) {
-			event.preventDefault();
-
-			todoApp.createHousehold(name.value, subhood.value, notes.value, members.value);
-		});
-
-		this.output.addEventListener('click', function(event) {
-			if (event.target.textContent == "Play") {
-				let id = event.target.closest('tr').dataset.id;
-				todoApp.playRound(id);
-			}
-
-			if (event.target.textContent == "Delete") {
-				let id = event.target.closest('tr').dataset.id;
-				todoApp.deleteHousehold(id);
-			}
-		});
-	}
+	},
 
 	// core save functions
 
-	start() {
+	start: function() {
 		if (localStorage.app) {
 			// load existing save
 			this.loadSave();
 		} else  { // start a new save
 			this.initSave();
 		}
-	}
+	},
 
-	initSave() {
+	initSave: function() {
 		localLib.init('app', todoApp, "Starting new save!");
 		console.log("Starting Households", todoApp.households);
 		this.render();
-	}
+	},
 
-	loadSave() {
+	loadSave: function() {
 		let app = localLib.retrieve('app');
 
 		// I don't know of a better way to just do this...
@@ -200,38 +193,38 @@ class TodoApp {
 		console.log("Households", app.households);
 
 		this.render();
-	}
+	},
 
-	save() {
+	save: function() {
 		localLib.save('app', todoApp);
 		this.render();
-	}
+	},
 
-	deleteSave() {
+	deleteSave: function() {
 		locaLib.delete('app');
 		this.render();
-	}
+	},
 
 	// helper functions
 
-	getHouseholdById(id) {
+
+	getHouseholdById: function(id) {
 	// returns the whole object
 		  return this.households.find((h) => h.id === id);
-	}
-
-	getIndexById(id) {
+	},
+	getIndexById: function(id) {
 		// returns the index
 		return this.households.findIndex((h) => h.id === id);
-	}
+	},
 
 	// printing functions 
 
-	printFeedback(note = ""){
+
+	printFeedback: function(note = ""){
 			console.log("*** ", note);
 			console.log(this.households);
-	}
-
-	printStats() {
+	},
+	printStats: function() {
 		function printRoundStats() {
 			// count the number of played this.households in the round
 			let playedHouseholds = todoApp.households.filter((h) => h.round != todoApp.currentRound).length;
@@ -248,11 +241,11 @@ class TodoApp {
 		// save changes in localStorage
 		this.save();
 		// localLib.save(app, todoApp);
-	}
+	},
 
 	// game mechanics
 
-	playRound(id, notes = "") {
+	playRound: function(id, notes = "") {
 		id = parseInt(id);
 		// increment the round
 		let household = this.getHouseholdById(id);
@@ -273,9 +266,8 @@ class TodoApp {
 		}
 		// print the stats
 		this.printStats();
-	}
-
-	createHousehold(name, subhood, notes = "", ...members) {
+	},
+	createHousehold: function(name, subhood, notes = "", ...members) {
 		// new this.households start at the current round number
 		let household = {
 				id: ++this.idCount,
@@ -292,9 +284,8 @@ class TodoApp {
 		// save changes in localStorage
 		this.save();
 		// localLib.save(app, todoApp);
-	}
-
-	updateHousehold(id, key, ...val) {
+	},
+	updateHousehold: function(id, key, ...val) {
 		this.getHouseholdById(id)[key] = val;
 		console.log(this.getHouseholdById(id));
 		this.printFeedback(`Updated the ${this.getHouseholdById(id).name} household.`);
@@ -309,9 +300,8 @@ class TodoApp {
 		// save changes in localStorage
 		this.save();
 		// localLib.save(app, todoApp);
-	}
-
-	deleteHousehold(id) {
+	},
+	deleteHousehold: function(id) {
 		id = parseInt(id);
 		let household = this.getHouseholdById(id);
 		let index = this.getIndexById(id);
@@ -321,11 +311,8 @@ class TodoApp {
 		// save changes in localStorage
 		this.save();
 		// localLib.save(app, todoApp);
-	}
-
+	},
 };
-
-const todoApp = new TodoApp;
 
 todoApp.start();
 
