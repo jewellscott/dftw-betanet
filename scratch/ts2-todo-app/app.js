@@ -120,7 +120,7 @@ class TodoApp {
 					<td>${household.round}</td>
 					<td>${household.name}</td>
 					<td>${household.subhood}</td>
-					<td>${household.members}</td>
+					<td>${household.members.join(', ')}</td>
 					<td>${household.notes}</td>
 				</tr>
 			`;
