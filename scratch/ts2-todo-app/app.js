@@ -20,6 +20,31 @@ const localLib = {
 
 const app = localLib.retrieve('app');
 
+const form = document.querySelector('form');
+const name = form.querySelector('input[id=name]');
+const subhood = form.querySelector('input[id=subhood]');
+const members = form.querySelector('input[id=members]');
+const notes = form.querySelector('input[id=notes]');
+const output = document.querySelector('output');
+
+form.addEventListener('submit', function(event) {
+	event.preventDefault();
+
+	todoApp.createHousehold(name.value, subhood.value, notes.value, members.value);
+});
+
+output.addEventListener('click', function(event) {
+	if (event.target.textContent == "Play") {
+		let id = event.target.closest('li').dataset.id;
+		todoApp.playRound(id);
+	}
+
+	if (event.target.textContent == "Delete") {
+		let id = event.target.closest('li').dataset.id;
+		todoApp.deleteHousehold(id);
+	}
+});
+
 const todoApp = {
 	households: [
 	{
@@ -95,24 +120,16 @@ const todoApp = {
 		],
 	idCount: 6,
 	currentRound: 1,
-	// lastUpdated:  
+	// lastUpdated: 
 
 	render() {
-		const form = document.querySelector('form');
-
-		const name = form.querySelector('input[id=name]');
-		const subhood = form.querySelector('input[id=subhood]');
-		const members = form.querySelector('input[id=members]');
-		const notes = form.querySelector('input[id=notes]');
-
-		const output = document.querySelector('output');
 
 		function renderHousehold(household) {
 			return `
 
 				<li data-id='${household.id}'>
 					<hh-card>
-						<h2>${household.name}</h2>
+						<h2>${household.name}: ${household.round}</h2>
 						<p>${household.subhood}</p>
 						<p>${household.members}</p>
 						<p>${household.notes}</p>
@@ -222,29 +239,23 @@ const todoApp = {
 	// game mechanics
 
 	playRound: function(id, notes = "") {
+		id = parseInt(id);
 		// increment the round
-		this.getHouseholdById(id).round++;
-		// add notes
-		this.getHouseholdById(id).notes = notes;
+		let household = this.getHouseholdById(id);
+		household.round++;
 
-		// create a new main app object and spread the old info, overwrite with what we just changed
-		
+		// add notes
+		household.notes = notes;		
 		
 		// save changes in localStorage
 		this.save();
-		// localLib.save(app, todoApp);
-
-		// ideally, you wouldn't overwrite the whole object. But you can't update nested stuff in local storage. I read up on it and you can use the spread operator to make copying same info easier, but a lot of information is changed in most of these functions - the whole households array, and the id count... Idk. Part of me wants to write a more sophisticated function that only tracks the changes, but it's beyond my scope right now. So, I will write over the whole object. 
-
-		// I'm also not retrieving (getItem) anything at the moment.
-
 
 		//output the feedback
 
-		if (this.getHouseholdById(id).notes != "") {
-			this.printFeedback(`Played round ${this.currentRound} of the ${this.getHouseholdById(id).name} household: ${notes}`);
+		if (household.notes != "") {
+			this.printFeedback(`Played round ${this.currentRound} of the ${household.name} household: ${notes}`);
 		} else {
-			this.printFeedback(`Played round ${this.currentRound} of the ${this.getHouseholdById(id).name} household.`);
+			this.printFeedback(`Played round ${this.currentRound} of the ${household.name} household.`);
 		}
 		// print the stats
 		this.printStats();
@@ -284,12 +295,12 @@ const todoApp = {
 		// localLib.save(app, todoApp);
 	},
 	deleteHousehold: function(id) {
-		let name = this.getHouseholdById(id).name;
+		id = parseInt(id);
+		let household = this.getHouseholdById(id);
 		let index = this.getIndexById(id);
 		this.households.splice(index, 1);
-
-		this.printFeedback(`Deleted the ${name} household.`);
-
+		
+		this.printFeedback(`Deleted the ${household.name} household.`);
 		// save changes in localStorage
 		this.save();
 		// localLib.save(app, todoApp);
