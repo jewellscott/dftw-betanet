@@ -1,0 +1,24 @@
+body {
+	font-family: sans-serif;
+}
+
+form, form-field {
+	display: grid;
+	gap: 10px;
+	max-width: 400px;
+
+	label {
+		font-weight: 700;
+	}
+
+	input {
+		padding: .5em 1em;
+		font-family: inherit;
+		font-size: 1.2rem;
+	}
+
+	button[type='submit'] {
+		max-width: max-content;
+		font-size: inherit;
+		padding: .5em 1em;
+	}
