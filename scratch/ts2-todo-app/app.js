@@ -95,7 +95,48 @@ const todoApp = {
 		],
 	idCount: 6,
 	currentRound: 1,
-	// lastUpdated: 
+	// lastUpdated:  
+
+	render() {
+		const form = document.querySelector('form');
+
+		const name = form.querySelector('input[id=name]');
+		const subhood = form.querySelector('input[id=subhood]');
+		const members = form.querySelector('input[id=members]');
+		const notes = form.querySelector('input[id=notes]');
+
+		const output = document.querySelector('output');
+
+		function renderHousehold(household) {
+			return `
+
+				<li data-id='${household.id}'>
+					<hh-card>
+						<h2>${household.name}</h2>
+						<p>${household.subhood}</p>
+						<p>${household.members}</p>
+						<p>${household.notes}</p>
+
+						<card-actions>
+							<button>Play</button>
+							<button>Delete</button>
+						</card-actions>
+					</hh-card>
+				</li>
+			`;
+		}
+
+		function renderHouseholds(households) {
+			var template = "<ul class='hh-cards'>";
+			households.forEach(function(household) {
+				template += renderHousehold(household);
+			})
+			template += "</ul>";
+			output.innerHTML = template;
+		}
+
+		renderHouseholds(this.households);
+	},
 
 	// core save functions
 
@@ -111,6 +152,7 @@ const todoApp = {
 	initSave: function() {
 		localLib.init('app', todoApp, "Starting new save!");
 		console.log("Starting Households", todoApp.households);
+		this.render();
 	},
 
 	loadSave: function() {
@@ -125,14 +167,18 @@ const todoApp = {
 	 	
 		console.log("***", "Loading Save", "***")
 		console.log("Households", app.households);
+
+		this.render();
 	},
 
 	save: function() {
 		localLib.save('app', todoApp);
+		this.render();
 	},
 
 	deleteSave: function() {
 		locaLib.delete('app');
+		this.render();
 	},
 
 	// helper functions

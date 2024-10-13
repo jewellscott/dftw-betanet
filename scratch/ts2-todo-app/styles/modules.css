@@ -1,0 +1,11 @@
+ul.hh-cards {
+	list-style: none;
+	padding: unset;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+	hh-card {
+		padding: 10px;
+	}
+}
