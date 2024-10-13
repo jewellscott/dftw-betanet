@@ -35,12 +35,12 @@ form.addEventListener('submit', function(event) {
 
 output.addEventListener('click', function(event) {
 	if (event.target.textContent == "Play") {
-		let id = event.target.closest('li').dataset.id;
+		let id = event.target.closest('tr').dataset.id;
 		todoApp.playRound(id);
 	}
 
 	if (event.target.textContent == "Delete") {
-		let id = event.target.closest('li').dataset.id;
+		let id = event.target.closest('tr').dataset.id;
 		todoApp.deleteHousehold(id);
 	}
 });
@@ -126,29 +126,36 @@ const todoApp = {
 
 		function renderHousehold(household) {
 			return `
-
-				<li data-id='${household.id}'>
-					<hh-card>
-						<h2>${household.name}: ${household.round}</h2>
-						<p>${household.subhood}</p>
-						<p>${household.members}</p>
-						<p>${household.notes}</p>
-
-						<card-actions>
-							<button>Play</button>
-							<button>Delete</button>
-						</card-actions>
-					</hh-card>
-				</li>
+				<tr data-id='${household.id}'> 
+					<td><button>Delete</button></td>
+					<td><button>Play</button></td>
+					<td>${household.round}</td>
+					<td>${household.name}</td>
+					<td>${household.subhood}</td>
+					<td>${household.members}</td>
+					<td>${household.notes}</td>
+				</tr>
 			`;
 		}
 
 		function renderHouseholds(households) {
-			var template = "<ul class='hh-cards'>";
+			var template = `
+				<table>
+					<tr class>
+						<th>***</th>
+						<th>***</th>
+						<th>Current Round: ${todoApp.currentRound}</th>
+						<th>Name</th>
+						<th>Subhood</th>
+						<th>Members</th>
+						<th>Notes</th>
+					</tr>
+
+			`;
 			households.forEach(function(household) {
 				template += renderHousehold(household);
 			})
-			template += "</ul>";
+			template += "</table>";
 			output.innerHTML = template;
 		}
 
