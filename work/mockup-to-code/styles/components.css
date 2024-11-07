@@ -12,4 +12,11 @@
 .btn-secondary {
 	border: 2px solid var(--corporate);
 	color: var(--corporate);
+	padding: 14px;
+}
+
+.video {
+	min-width: 90vw;
+	aspect-ratio: 3 / 2;
+	background-color: var(--faint);
 }

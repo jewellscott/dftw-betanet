@@ -6,12 +6,16 @@
 
 	<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit</p>
 
-	<a href="" class="link-button btn-primary">
-		Get Started
-	</a>
+	<div class="actions">
+		
+		<a href="" class="link-button btn-primary">
+			Get Started
+		</a>
 
-	<a href="" class="link-button btn-secondary">
-		Start Free Trial
-	</a>
+		<a href="" class="link-button btn-secondary">
+			Start Free Trial
+		</a>
+
+	</div>
 
 </student-welcome>
