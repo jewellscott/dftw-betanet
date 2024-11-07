@@ -1,0 +1,22 @@
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh; 
+
+main {
+	flex-grow: 1; 
+}
+
+inner-column {
+	display: block;
+	max-width: var(--standard-inner-column); 
+	margin-right: auto;
+	margin-left: auto;
+	padding-inline: 16px;
+}
+
+inner-column.tight {
+	max-width: var(--tight-inner-column);
+	padding-inline: 16px;
+}
+

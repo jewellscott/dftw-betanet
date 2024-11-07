@@ -1,0 +1,12 @@
+html {
+	--black: #111111;
+	--white: #FEFEFA;
+
+	--corporate: #3563E9;
+
+	--rounded: 5px;
+
+	/* structure */
+	--standard-inner-column: 1200px;
+	--tight-inner-column: 800px;
+}

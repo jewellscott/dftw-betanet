@@ -1,0 +1,247 @@
+{
+    "header":
+    [
+        {
+            "title": "Home",
+            "link": "#"
+        },
+        {
+            "title": "Updates",
+            "link": "#"
+        },
+        {
+            "title": "Services",
+            "link": "#"
+        },
+        {
+            "title": "Features",
+            "link": "#"
+        },
+        {
+            "title": "About Us",
+            "link": "#"
+        },
+        {
+            "title": "Home",
+            "link": "#"
+        }
+    ],
+    "cta":
+    {
+        "title": "Welcome to Lawndale’s Finest",
+        "body": "For all your existential crises and teenage woes",
+        "primaryBtn": "Register",
+        "secondaryBtn": "Start Your Free Therapy Trial"
+    },
+    "updates":
+    {
+        "eyebrow": "Stay updated with all the dramatic, trivial happenings of Lawndale High",
+        "title": "Latest Updates",
+        "body": "Principal Li enforces new hallway speed limits, and Sandi reports a fashion emergency in homeroom."
+    },
+    "services":
+    {
+        "title": "Life Lessons with Daria",
+        "body": "Learn from the best on how to handle life’s nonsense with a smirk",
+        "items":
+        [
+            {
+                "title": "Avoiding People 101",
+                "body": "An essential guide to evading social interaction without looking suspicious. Perfect for school hallways and family dinners."
+            },
+            {
+                "title": "Sarcasm as Self-Care",
+                "body": "A step-by-step approach to using biting sarcasm to keep people at arm's length. Works well with minimal eye contact."
+            },
+            {
+                "title": "Teenage Angst Masterclass",
+                "body": "For those who want to wear black and make their angst look effortless. Curriculum includes nonchalant nodding and eye-rolling."
+            },
+            {
+                "title": "How to Avoid Responsibility",
+                "body": "A comprehensive list of excuses and distractions, curated by Daria herself. Perfect for when your homework just isn’t worth the effort."
+            },
+            {
+                "title": "Snarky Comebacks",
+                "body": "Ready-to-use quips for dealing with bullies, family, and anyone with a pulse."
+            }
+        ]
+    },
+    "reviews":
+    {
+        "title": "Client Testimonials",
+        "body": "Neck-deep in high school drama? You’re not alone.",
+        "items":
+        [
+            {
+                "review": "Exactly what I needed to survive homeroom with Ms. Barch.",
+                "author": "Brittany Taylor"
+            },
+            {
+                "review": "",
+                "author": ""
+            }
+        ]
+    },
+    "faq":
+    {
+        "title": "FAQ",
+        "body": "The most common questions from Lawndale's finest",
+        "items":
+        [
+            {
+                "title": "How can I avoid participating in group projects?",
+                "body": ""
+            },
+            {
+                "title": "Is apathy a valid lifestyle choice?",
+                "body": ""
+            },
+            {
+                "title": "",
+                "body": ""
+            },
+            {
+                "title": "",
+                "body": ""
+            },
+            {
+                "title": "",
+                "body": ""
+            }
+        ]
+    },
+    "footer":
+    [
+        {
+            "title": "Sitemap",
+            "content":
+            [
+                {
+                    "category": "Product",
+                    "links":
+                    [
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "category": "Information",
+                    "links":
+                    [
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "category": "Company",
+                    "links":
+                    [
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        }
+                    ]
+                },
+                {
+                    "category": "Information",
+                    "links":
+                    [
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        },
+                        {
+                            "title": "",
+                            "link": "#"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Subscribe",
+            "body": ""
+        }
+    ]
+}
