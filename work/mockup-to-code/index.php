@@ -12,7 +12,7 @@
 
 <body>
 
-	<header>
+	<header class="site-header">
 		<inner-column>
 			<?php include('modules/site-header/template.php'); ?>
 		</inner-column>

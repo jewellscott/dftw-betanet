@@ -1,0 +1,26 @@
+faq {
+	display: grid;
+	gap: 20px;
+
+	header {
+		display: grid;
+		gap: 20px;
+
+		text-align: center;
+	}
+
+	ul.questions {
+		display: grid;
+		li {
+			padding: 20px;
+
+			p {
+				margin-top: 20px;
+			}
+		}
+
+		li + li {
+			border-top: 1px solid lightgray;
+		}
+	}
+}x

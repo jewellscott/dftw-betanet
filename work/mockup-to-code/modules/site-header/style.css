@@ -19,8 +19,10 @@ site-header {
 		flex-direction: row;
 		justify-content: space-between;
 		.site-menu ul, .user-menu ul {
-				display: flex;
-				flex-direction: row;
+			display: flex;
+			flex-direction: row;
+			margin-top: 0;
+			padding-block: 1rem;
 		}
 	}
 }

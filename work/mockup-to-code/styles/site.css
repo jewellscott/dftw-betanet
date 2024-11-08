@@ -5,3 +5,7 @@
 @import "typography.css";
 @import "components.css";
 @import "modules.css";
+
+.site-header {
+	border-bottom: 1px solid lightgray;
+}

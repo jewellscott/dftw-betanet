@@ -20,3 +20,6 @@ inner-column.tight {
 	padding-inline: 16px;
 }
 
+section {
+	padding-block: 50px;
+}

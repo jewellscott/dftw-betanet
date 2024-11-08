@@ -1,7 +1,6 @@
 services {
 	display: grid;
 	gap: 30px;
-	margin-block: 3rem;
 
 	header {
 		display: grid;
@@ -15,6 +14,10 @@ services {
 		li h3 {
 			font-size: 1.2rem;
 			font-weight: bold;
+		}
+
+		@media (width > 800px) {
+			gap: 20px;
 		}
 	}
 

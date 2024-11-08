@@ -1,0 +1,14 @@
+cta {
+	background-color: var(--faint);
+
+	display: grid;
+	gap: 20px;
+	padding-block: 7rem;
+
+	place-items: center;
+
+	h2 {
+		max-width: 50%;
+		text-align: center;
+	}
+}
