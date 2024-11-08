@@ -11,7 +11,7 @@
 	<ul class="questions">
 		<li>
 			<details>
-				<summary>
+				<summary class="strong-voice">
 					Lorem ipsum dolor sit amet?
 				</summary>
 				<p>
@@ -22,7 +22,7 @@
 
 		<li>
 			<details>
-				<summary>
+				<summary class="strong-voice">
 					Lorem ipsum dolor sit amet?
 				</summary>
 				<p>
@@ -33,7 +33,7 @@
 
 		<li>
 			<details>
-				<summary>
+				<summary class="strong-voice">
 					Lorem ipsum dolor sit amet?
 				</summary>
 				<p>
@@ -44,7 +44,7 @@
 
 		<li>
 			<details>
-				<summary>
+				<summary class="strong-voice">
 					Lorem ipsum dolor sit amet?
 				</summary>
 				<p>
@@ -55,7 +55,7 @@
 
 		<li>
 			<details>
-				<summary>
+				<summary class="strong-voice">
 					Lorem ipsum dolor sit amet?
 				</summary>
 				<p>
