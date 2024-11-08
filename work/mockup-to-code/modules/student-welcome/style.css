@@ -7,7 +7,11 @@ student-welcome {
 
 	.actions {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		gap: 20px;
+
+		@media (min-width: 800px) {
+			flex-direction: row;
+		}
 	}
 }
