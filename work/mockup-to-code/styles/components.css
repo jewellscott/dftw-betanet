@@ -16,7 +16,15 @@
 }
 
 .video {
-	min-width: 90vw;
+	display: block;
+	width: 100%;
+	height: auto;
 	aspect-ratio: 3 / 2;
 	background-color: var(--faint);
+}
+
+.profile-icon {
+	max-width: 40px;
+	border-radius: 100%;
+	overflow: hidden;
 }

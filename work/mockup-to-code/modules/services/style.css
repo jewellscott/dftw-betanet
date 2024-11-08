@@ -1,0 +1,27 @@
+services {
+	display: grid;
+	gap: 30px;
+	margin-block: 3rem;
+
+	header {
+		display: grid;
+		gap: 20px;
+	}
+
+	.features {
+		display: grid;
+		gap: 10px;
+
+		li h3 {
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
+	}
+
+	@media (width > 800px) {
+			grid-template-columns: 1fr 1fr;
+			align-items: center; 
+		}
+	}
+}
+

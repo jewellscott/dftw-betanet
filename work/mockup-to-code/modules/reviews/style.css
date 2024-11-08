@@ -1,0 +1,37 @@
+reviews {
+	display: grid;
+	gap: 20px;
+	text-align: center;
+
+	margin-block: 5rem;
+
+	header {
+		display: grid;
+		gap: 20px;
+	}
+
+	.ratings {
+		display: grid;
+		gap: 20px;
+		place-items: center;
+		padding: 20px;
+
+		.stars {
+			padding: 20px;
+		}
+
+		author-card {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			place-items: center;
+			padding: 20px;
+		}
+
+		@media (width > 800px) {
+				grid-template-columns: 1fr 1fr;
+				align-items: center; 
+			}
+		}
+	}
+}
