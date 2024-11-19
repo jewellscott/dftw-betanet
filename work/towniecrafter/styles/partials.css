@@ -1,0 +1,12 @@
+.site-header {
+	padding: var(--space);
+
+	mast-head {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.site-footer {
+	pading: var(--space);
+}

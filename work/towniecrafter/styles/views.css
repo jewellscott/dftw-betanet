@@ -1,0 +1,291 @@
+home-info {
+	display: grid;
+	gap: var(--space);
+	place-items: center;
+	p {
+		text-align: center;
+	}
+	margin: 0 auto;
+	max-width: 500px;
+	padding: var(--space);
+	picture {
+		max-width: 200px;
+	}
+	button {
+		max-width: 300px;
+	}
+}
+
+main-menu {
+	display: grid;
+	gap: 20px;
+	place-items: center;
+	margin-top: 20vh;
+}
+
+cas-edit, caf-config, caf-edit {
+	display: grid;
+	gap: 20px;
+	place-items: center;
+	/*form {
+		background-color: gray;
+		height: 600px;
+		aspect-ratio: 1 / 2;
+	}*/
+}
+
+caf-config {
+	form {
+		margin-top: 5vh;
+	}
+
+	age-form {
+
+		display: grid;
+		grid-template-columns: 2fr 1.5fr 4fr;
+		min-width: 300px;
+		
+		male-input, female-input {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+/*			border: 1px solid gray;*/
+
+			button {
+				border: 1px solid gray;
+			}
+		}
+
+		male-input button {
+			background-color: lightblue;
+		}
+
+		female-input button {
+			background-color: pink;
+		}
+
+		number-output {
+			display: grid;
+			text-align: center;
+			align-items: center;
+			font-size: 32px;
+			font-weight: 600;
+			border: 1px solid gray;
+		}
+
+		sim-age {
+			display: grid;
+			text-align: center;
+			align-items: center;
+			font-size: 32px;
+			font-weight: 600;
+			border: 1px solid gray;
+			padding: 8px;
+		}
+
+		male-count, female-count {
+			font-size: 18px;
+			text-align: center;
+			border: 1px solid gray;
+			padding: 8px;
+		}
+	}
+}
+
+caf-edit {
+	display: grid;
+	place-items: center;
+
+	form {
+		member-card {
+			background-color: #eeeeee;
+		}
+
+		family-name {
+			margin-bottom: 30px;
+			text-align: center;
+			input {
+				border: none;
+				width: 350px;
+				background-color: #efefef;
+				padding: 8px;
+				text-align: center;
+				font-size: 32px;
+				font-weight: 800;
+			}
+		}
+
+		* + member-card {
+			margin-bottom: 10px;
+			display: grid;
+			grid-template-columns: 1fr 8fr 1fr;
+		}
+
+		sim-icons {
+			display: grid;
+			grid-template-rows: 1fr 1fr;
+			.gender-icon, .stage-icon {
+				max-width: 20px;
+			}
+		}
+
+		picture.stage, picture.gender, sim-stats {
+			padding: 8px;
+			display: grid;
+			place-items: center;
+		}
+
+		*[data-gender="male"] {
+			background-color: lightblue;
+		}
+
+		*[data-gender="female"] {
+			background-color: pink;
+		}
+
+		*[data-stage="Baby"] {
+			background-color: #f5bff5;
+		}
+
+		*[data-stage="Toddler"] {
+			background-color: #f9dab7;
+		}
+
+		*[data-stage="Child"] {
+			background-color: #fef7be;
+		}
+
+		*[data-stage="Teen"] {
+			background-color: #defebc;
+		}
+
+		*[data-stage="Adult"] {
+			background-color: #c4e8fd;
+		}
+
+		*[data-stage="Elder"] {
+			background-color: #c5c8fb;
+		}
+
+		sim-stats {
+			background-color: #eeeeee;
+			padding: 16px 32px;
+			line-height: 1.2rem;
+			.sim-name {
+				font-size: 24px;
+				margin-bottom: 8px;
+				font-weight: bold;
+			}
+		}
+
+		sim-actions {
+			display: grid;
+/*			align-items: space-around;*/
+		}
+	}
+}
+
+cas-edit {
+	sim-name {
+		display: grid;
+		gap: 8px;
+		min-width: 350px;
+		flex-direction: column;
+		margin-bottom: 2rem;
+		place-items: center;
+		input {
+			border: none;
+			width: 350px;
+			background-color: #efefef;
+			padding: 8px;
+			text-align: center;
+		}
+		.first-name-input {
+			font-size: 32px;
+			font-weight: 800;
+		}
+		.last-name-input {
+			font-size: 24px;
+			font-weight: 800;
+		}
+	}
+	detail-header {
+		display: flex;
+		min-width: 350px;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 8px;
+		background-color: var(--periwinkle);
+	}
+	detail-option {
+		display: flex;
+		min-width: 350px;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 8px;
+		background-color: #efefef;
+		h4 {
+			font-weight: bold;
+			margin-right: 10px;
+		}
+		select {
+			width: 50%;
+		}
+		select.multi-option {
+/*			background-color: blue;*/
+			width: content;
+		}
+	}
+
+} 
+
+saved-sims {
+	h1 {
+		margin-bottom: 2rem;
+	}
+	family-card {
+		background-color: #efefef;
+		padding: 16px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	family-card + family-card {
+		margin-top: 16px;
+	}
+}
+
+user-prefs {
+	line-height: 1.5em;
+	label {
+		a {
+			display: inline;
+			text-decoration: underline;
+		}
+	}
+	h1 {
+		margin-block: 1em;
+	}
+	h2, h3 {
+		margin-block: 1em;
+	}
+	p + p {
+		margin-top: .5em;
+	}
+	.block-label {
+		display: block;
+		font-weight: bold;
+		margin-block: .5em;
+	}
+
+	p.eg {
+		font-style: italic;
+		margin-bottom: .5em;
+	}
+
+	fieldset {
+		input {
+/*			margin-left: 20px;*/
+		}
+	}
+}

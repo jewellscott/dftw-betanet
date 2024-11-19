@@ -1,0 +1,153 @@
+{
+    "pets":
+    {
+        "gender":
+        [
+            "Male",
+            "Female"
+        ],
+        "types":
+        [
+            {
+                "type": "Small Dog",
+                "ages":
+                [
+                    "Puppy",
+                    "Adult",
+                    "Elder"
+                ],
+                "breeds":
+                [
+                    "Basenji",
+                    "Beagle",
+                    "Black Russian Terrier",
+                    "Bocker",
+                    "Boston Terrier",
+                    "Chihuahua (Long)",
+                    "Chihuahua (Smooth)",
+                    "English Bulldog",
+                    "French Bulldog",
+                    "Italian Greyhound",
+                    "Jack Russell Terrier",
+                    "Miniature Bull Terrier",
+                    "Miniature Poodle",
+                    "Miniature Schnauzer",
+                    "Pug",
+                    "Puggle",
+                    "Schipperke",
+                    "Schnoodle",
+                    "Shiba Inu",
+                    "Smooth Fox Terrier",
+                    "Spaniel",
+                    "Staffordshire",
+                    "Purple Pug"
+                ]
+            },
+            {
+                "type": "Large Dog",
+                "ages":
+                [
+                    "Puppy",
+                    "Adult",
+                    "Elder"
+                ],
+                "breeds":
+                [
+                    "Airedale Terrier",
+                    "Akita",
+                    "American Foxhound",
+                    "Amstaff",
+                    "Austrailian Cattle Dog",
+                    "Austrailian Shepherd",
+                    "Black & Tan",
+                    "Black Lab",
+                    "Border Collie",
+                    "Borzoi",
+                    "Boxer",
+                    "Brittany",
+                    "Bull Terrier",
+                    "Bullmastiff",
+                    "Canaan Dog",
+                    "Chessie",
+                    "Chocolate Lab",
+                    "Chowchow",
+                    "Chow-Lab Mix",
+                    "Collie",
+                    "Curly Coated Retriever",
+                    "Dalmatian",
+                    "Doberman Pinscher",
+                    "English Foxhound",
+                    "German Shepherd",
+                    "Gherman Shorthaired",
+                    "Giant Schnauzer",
+                    "Golden Retriever",
+                    "Goldendoodle",
+                    "Great Dane",
+                    "Greyhound",
+                    "Husky",
+                    "Irish Wolfhound",
+                    "Keeshond",
+                    "Kerry Blue Terrier",
+                    "Labradinger",
+                    "Labradoodle",
+                    "Mastiff",
+                    "Newfoundland",
+                    "Norsk Elk Shepherd",
+                    "Pit Bull Terrier",
+                    "Pointer",
+                    "Poodle",
+                    "Redbone Coonhound",
+                    "Rottweiler",
+                    "Saint Bernard",
+                    "Saluki",
+                    "Samoyed",
+                    "Weimaraner",
+                    "Whippet",
+                    "Yellow Lab"
+                ]
+            },
+            {
+                "type": "Cat",
+                "ages":
+                [
+                    "Kitten",
+                    "Adult",
+                    "Elder"
+                ],
+                "breeds":
+                [
+                    "Abyssinian",
+                    "Balinese",
+                    "Biman",
+                    "Bombay",
+                    "British Shorthair",
+                    "Burmese",
+                    "Calico",
+                    "Chartreux",
+                    "Egyptian Mau",
+                    "Exotic Shorthair",
+                    "Havana Brown",
+                    "Himalayan",
+                    "Japanese Bobtail",
+                    "Maine Coon",
+                    "Manx",
+                    "Norwegian Forest",
+                    "Ocicat",
+                    "Oriental",
+                    "Oriental Shorthair",
+                    "Persian",
+                    "Ragdoll",
+                    "Russian Blue",
+                    "Scottish Fold",
+                    "Shorthair Tabby",
+                    "Siamese",
+                    "Siberian",
+                    "Singapura",
+                    "Tonkinese",
+                    "Turkish Agora",
+                    "Tuxedo Cat"
+                ]
+            }
+        ]
+    }
+}

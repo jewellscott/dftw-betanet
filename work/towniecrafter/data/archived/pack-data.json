@@ -1,0 +1,28 @@
+{
+    "lifetimeWants":
+    [
+        "uni",
+        "nl",
+        "seasons",
+        "bv",
+        "al",
+        "ft"
+    ],
+    "chemistry":
+    [
+        "nl",
+        "ofb",
+        "seasons",
+        "bv",
+        "ft",
+        "al"
+    ],
+    "degrees":
+    [
+        "uni"
+    ],
+    "hobbies":
+    [
+        "ft"
+    ]
+}

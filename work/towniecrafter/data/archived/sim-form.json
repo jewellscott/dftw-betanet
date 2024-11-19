@@ -1,0 +1,496 @@
+{
+    "name":
+    [
+        {
+            "id": "firstName",
+            "title": "First",
+            "input": "text"
+        },
+        {
+            "id": "lastName",
+            "title": "last",
+            "input": "text"
+        }
+    ],
+    "basics":
+    {
+        "id": "basics",
+        "title": "Basics",
+        "records":
+        [
+            {
+                "id": "gender",
+                "title": "Gender",
+                "input": "select",
+                "options":
+                [
+                    "Male",
+                    "Female"
+                ]
+            },
+            {
+                "id": "age",
+                "title": "Age",
+                "input": "select",
+                "options":
+                [
+                    "Baby",
+                    "Toddler",
+                    "Child",
+                    "Teen",
+                    "Adult",
+                    "Elder"
+                ]
+            },
+            {
+                "id": "lifeState",
+                "title": "Life State",
+                "input": "select",
+                "options":
+                [
+                    "Plantsim",
+                    "Sim",
+                    "Witch",
+                    "Vampire",
+                    "Zombie"
+                ]
+            }
+        ]
+    },
+    "personality":
+    {
+        "id": "personality",
+        "title": "Personality",
+        "records":
+        [
+            {
+                "id": "zodiac",
+                "title": "Zodiac",
+                "input": "select",
+                "options":
+                [
+                    "Aries",
+                    "Taurus",
+                    "Gemini",
+                    "Cancer",
+                    "Leo",
+                    "Virgo",
+                    "Libra",
+                    "Scorpio",
+                    "Sagittarius",
+                    "Capricorn",
+                    "Aquarius",
+                    "Pisces"
+                ]
+            },
+            {
+                "id": "aspiration",
+                "title": "Aspiration",
+                "input": "select",
+                "options":
+                [
+                    "Knowledge",
+                    "Popularity",
+                    "Fortune",
+                    "Family",
+                    "Pleasure",
+                    "Romance"
+                ]
+            },
+            {
+                "id": "lifetimeWant",
+                "title": "Lifetime Want",
+                "input": "select",
+                "options":
+                [
+                    "Max 5 skills",
+                    "Become Hospital Chief of Staff",
+                    "Become Cult Leader",
+                    "Become Ecological Guru",
+                    "Have 10 children abducted by aliens",
+                    "Become Mad Scientist",
+                    "Become Criminal Mastermind",
+                    "Earn §100,000",
+                    "Become Hospital Chief of Staff",
+                    "Become Hall of Famer",
+                    "Become Tycoon",
+                    "Become Criminal Mastermind",
+                    "Graduate 10 children from college",
+                    "Have 10 grandchildren",
+                    "Marry off 10 children",
+                    "Reach golden anniversary",
+                    "Become Captain Hero",
+                    "Become Professional Party Guest",
+                    "Become Visionary",
+                    "Woohoo with 10 different sims",
+                    "Have 10 simultaneous lovers",
+                    "Become Celebrity Chef",
+                    "Become Icon",
+                    "Become General",
+                    "Become Mayor",
+                    "Have 10 simultaneous best friends",
+                    "Become Hospital Chief of Staff",
+                    "Become Cult Leader",
+                    "Become Ecological Guru",
+                    "Go on 100 1st dates",
+                    "Become Professional Party Guest",
+                    "Have 50 Dream Dates",
+                    "Eat 200 Grilled Cheese Sandwiches"
+                ]
+            }
+        ]
+    },
+    "appearance":
+    {
+        "id": "appearance",
+        "title": "Appearance",
+        "records":
+        [
+            {
+                "id": "hairColor",
+                "title": "Hair Color",
+                "input": "select",
+                "options":
+                [
+                    "Black",
+                    "Brown",
+                    "Blonde",
+                    "Red"
+                ]
+            },
+            {
+                "id": "eyeColor",
+                "title": "Eye Color",
+                "input": "select",
+                "options":
+                [
+                    "Brown",
+                    "Blue",
+                    "Dark Blue",
+                    "Gray",
+                    "Green"
+                ]
+            },
+            {
+                "id": "skinTone",
+                "title": "Skin Tone",
+                "input": "select",
+                "options":
+                [
+                    "Light (1)",
+                    "Medium (2)",
+                    "Medium Dark (3)",
+                    "Dark (4)"
+                ]
+            },
+            {
+                "id": "fitness",
+                "title": "Fitness",
+                "input": "select",
+                "options":
+                [
+                    "Fit",
+                    "Neutral",
+                    "Fat"
+                ]
+            }
+        ]
+    },
+    "chemistry":
+    {
+        "id": "chemistry",
+        "title": "Chemistry",
+        "records":
+        [
+            {
+                "id": "turnOn-1",
+                "title": "Turn On",
+                "input": "select",
+                "options":
+                [
+                    "Athletic",
+                    "Black Hair",
+                    "Blonde Hair",
+                    "Brown Hair",
+                    "Charismatic",
+                    "Cologne",
+                    "Creative",
+                    "Custom Hair",
+                    "Facial Hair",
+                    "Fatness",
+                    "Fitness",
+                    "Formalwear",
+                    "Full Face Makeup",
+                    "Glasses",
+                    "Good at Cleaning",
+                    "Gray Hair",
+                    "Great Cook",
+                    "Hard Worker",
+                    "Hats",
+                    "Jewelry",
+                    "Logical",
+                    "Lycanthrophy",
+                    "Makeup",
+                    "Mechanical",
+                    "Plantsimism",
+                    "Red Hair",
+                    "Robots",
+                    "Stink",
+                    "Swimwear",
+                    "Underwear",
+                    "Unemployed",
+                    "Vampirism",
+                    "Zombiism"
+                ]
+            },
+            {
+                "id": "turnOn-2",
+                "title": "Turn On",
+                "input": "select",
+                "options":
+                [
+                    "Athletic",
+                    "Black Hair",
+                    "Blonde Hair",
+                    "Brown Hair",
+                    "Charismatic",
+                    "Cologne",
+                    "Creative",
+                    "Custom Hair",
+                    "Facial Hair",
+                    "Fatness",
+                    "Fitness",
+                    "Formalwear",
+                    "Full Face Makeup",
+                    "Glasses",
+                    "Good at Cleaning",
+                    "Gray Hair",
+                    "Great Cook",
+                    "Hard Worker",
+                    "Hats",
+                    "Jewelry",
+                    "Logical",
+                    "Lycanthrophy",
+                    "Makeup",
+                    "Mechanical",
+                    "Plantsimism",
+                    "Red Hair",
+                    "Robots",
+                    "Stink",
+                    "Swimwear",
+                    "Underwear",
+                    "Unemployed",
+                    "Vampirism",
+                    "Zombiism"
+                ]
+            },
+            {
+                "id": "turnOff",
+                "title": "Turn Off",
+                "input": "select",
+                "options":
+                [
+                    "Athletic",
+                    "Black Hair",
+                    "Blonde Hair",
+                    "Brown Hair",
+                    "Charismatic",
+                    "Cologne",
+                    "Creative",
+                    "Custom Hair",
+                    "Facial Hair",
+                    "Fatness",
+                    "Fitness",
+                    "Formalwear",
+                    "Full Face Makeup",
+                    "Glasses",
+                    "Good at Cleaning",
+                    "Gray Hair",
+                    "Great Cook",
+                    "Hard Worker",
+                    "Hats",
+                    "Jewelry",
+                    "Logical",
+                    "Lycanthrophy",
+                    "Makeup",
+                    "Mechanical",
+                    "Plantsimism",
+                    "Red Hair",
+                    "Robots",
+                    "Stink",
+                    "Swimwear",
+                    "Underwear",
+                    "Unemployed",
+                    "Vampirism",
+                    "Zombiism"
+                ]
+            }
+        ]
+    },
+    "eduEmploy":
+    {
+        "id": "eduEmploy",
+        "title": "Education and Employment",
+        "records":
+        [
+            {
+                "id": "career",
+                "title": "Career",
+                "input": "select",
+                "options":
+                [
+                    "Adventurer",
+                    "Architecture",
+                    "Athletic",
+                    "Artist",
+                    "Business",
+                    "Criminal",
+                    "Culinary",
+                    "Dance",
+                    "Education",
+                    "Entertainment",
+                    "Gamer",
+                    "Intelligence",
+                    "Journalism",
+                    "Law",
+                    "Law Enforcement",
+                    "Medical",
+                    "Military",
+                    "Music",
+                    "Natural Scientist",
+                    "Oceanography",
+                    "Paranormal",
+                    "Politics",
+                    "Science",
+                    "Show Business",
+                    "Slacker",
+                    "Unemployed",
+                    "Business Owner"
+                ]
+            },
+            {
+                "id": "degree",
+                "title": "Degree",
+                "input": "select",
+                "options":
+                [
+                    "Art",
+                    "Biology",
+                    "Drama",
+                    "Economics",
+                    "History",
+                    "Literature",
+                    "Mathematics",
+                    "Philosophy",
+                    "Physics",
+                    "Political Science",
+                    "Psychology"
+                ]
+            }
+        ]
+    },
+    "hobbyInterests":
+    {
+        "id": "hobbyInterests",
+        "title": "Hobby and Interests",
+        "records":
+        [
+            {
+                "id": "hobby",
+                "title": "Hobby",
+                "input": "select",
+                "options":
+                [
+                    "Arts & Crafts",
+                    "Cuisine",
+                    "Film & Literature",
+                    "Fitness",
+                    "Games",
+                    "Music & Dance",
+                    "Nature",
+                    "Science",
+                    "Sports",
+                    "Tinkering"
+                ]
+            },
+            {
+                "id": "interest-1",
+                "title": "Interest",
+                "input": "select",
+                "options":
+                [
+                    "Animals",
+                    "Crime",
+                    "Culture",
+                    "Entertainment",
+                    "Environment",
+                    "Fashion",
+                    "Food",
+                    "Health",
+                    "Money",
+                    "Paranormal",
+                    "Politics",
+                    "School",
+                    "Sci-Fi",
+                    "Sports",
+                    "Toys",
+                    "Travel",
+                    "Weather",
+                    "Work"
+                ]
+            },
+            {
+                "id": "interest-2",
+                "title": "Interest",
+                "input": "select",
+                "options":
+                [
+                    "Animals",
+                    "Crime",
+                    "Culture",
+                    "Entertainment",
+                    "Environment",
+                    "Fashion",
+                    "Food",
+                    "Health",
+                    "Money",
+                    "Paranormal",
+                    "Politics",
+                    "School",
+                    "Sci-Fi",
+                    "Sports",
+                    "Toys",
+                    "Travel",
+                    "Weather",
+                    "Work"
+                ]
+            },
+            {
+                "id": "interest-3",
+                "title": "Interest",
+                "input": "select",
+                "options":
+                [
+                    "Animals",
+                    "Crime",
+                    "Culture",
+                    "Entertainment",
+                    "Environment",
+                    "Fashion",
+                    "Food",
+                    "Health",
+                    "Money",
+                    "Paranormal",
+                    "Politics",
+                    "School",
+                    "Sci-Fi",
+                    "Sports",
+                    "Toys",
+                    "Travel",
+                    "Weather",
+                    "Work"
+                ]
+            }
+        ]
+    }
+}

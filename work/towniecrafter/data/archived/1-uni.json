@@ -1,0 +1,90 @@
+{
+    "lifetimeWants":
+    [
+        {
+            "aspiration": "Knowledge",
+            "wants":
+            [
+                "Max 5 skills",
+                "Become Hospital Chief of Staff",
+                "Become Cult Leader",
+                "Become Ecological Guru",
+                "Have 10 children abducted by aliens",
+                "Become Mad Scientist",
+                "Become Criminal Mastermind"
+            ]
+        },
+        {
+            "aspiration": "Fortune",
+            "wants":
+            [
+                "Earn §100,000",
+                "Become Hospital Chief of Staff",
+                "Become Hall of Famer",
+                "Become Tycoon",
+                "Become Criminal Mastermind"
+            ]
+        },
+        {
+            "aspiration": "Family",
+            "wants":
+            [
+                "Graduate 10 children from college",
+                "Have 10 grandchildren",
+                "Marry off 10 children",
+                "Reach golden anniversary",
+                "Become Captain Hero"
+            ]
+        },
+        {
+            "aspiration": "Romance",
+            "wants":
+            [
+                "Become Professional Party Guest",
+                "Become Visionary",
+                "Become Hall of Famer",
+                "Woohoo with 10 different sims",
+                "Have 10 simultaneous lovers",
+                "Become Celebrity Chef"
+            ]
+        },
+        {
+            "aspiration": "Popularity",
+            "wants":
+            [
+                "Become Cult Leader",
+                "Become Icon",
+                "Become General",
+                "Become Hall of Famer",
+                "Become Mayor",
+                "Become Celebrity Chef",
+                "Have 10 simultaneous best friends",
+                "Become Captain Hero"
+            ]
+        },
+        {
+            "aspiration": "Knowledge",
+            "wants":
+            [
+                "Max 5 skills",
+                "Become Hospital Chief of Staff",
+                "Become Cult Leader",
+                "Become Ecological Guru",
+                "Have 10 children abducted by aliens",
+                "Become Mad Scientist",
+                "Become Criminal Mastermind"
+            ]
+        }
+    ],
+    "careers":
+    [
+        "Artist",
+        "Natural Scientist",
+        "Paranormal",
+        "Show Business"
+    ],
+    "lifeStates":
+    [
+        "Zombie"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "collections":
+    [
+        {
+            "id": "uc",
+            "label": "Ultimate Collection",
+            "packs":
+            []
+        },
+        {
+            "id": "sc",
+            "label": "Super Collection",
+            "packs":
+            []
+        }
+    ],
+    "packs":
+    [
+        {
+            "id": "base",
+            "label": "Base Game"
+        }
+    ]
+}

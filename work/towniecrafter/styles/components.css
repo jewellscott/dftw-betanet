@@ -1,0 +1,14 @@
+.main-menu-button {
+	font-family: inherit;
+	font-size: inherit;
+	padding: 1em 2em;
+	min-width: 300px;
+}
+
+.dice-svg {
+	max-width: 25px;
+}
+
+/*button {
+	border: none;
+}*/

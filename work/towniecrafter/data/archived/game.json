@@ -1,0 +1,265 @@
+{
+    "ages":
+    [
+        "Baby",
+        "Toddler",
+        "Child",
+        "Teen",
+        "Adult",
+        "Elder"
+    ],
+    "aspirations":
+    [
+        "Knowledge",
+        "Popularity",
+        "Fortune",
+        "Family",
+        "Pleasure",
+        "Romance",
+        "Grow Up"
+    ],
+    "zodiac":
+    [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer",
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio",
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+    ],
+    "interests":
+    [
+        "Animals",
+        "Crime",
+        "Culture",
+        "Entertainment",
+        "Environment",
+        "Fashion",
+        "Food",
+        "Health",
+        "Money",
+        "Paranormal",
+        "Politics",
+        "School",
+        "Sci-Fi",
+        "Sports",
+        "Toys",
+        "Travel",
+        "Weather",
+        "Work"
+    ],
+    "careers":
+    [
+        "Adventurer",
+        "Architecture",
+        "Athletic",
+        "Artist",
+        "Business",
+        "Criminal",
+        "Culinary",
+        "Dance",
+        "Education",
+        "Entertainment",
+        "Gamer",
+        "Intelligence",
+        "Journalism",
+        "Law",
+        "Law Enforcement",
+        "Medical",
+        "Military",
+        "Music",
+        "Natural Scientist",
+        "Oceanography",
+        "Paranormal",
+        "Politics",
+        "Science",
+        "Show Business",
+        "Slacker",
+        "Unemployed",
+        "Business Owner"
+    ],
+    "eyeColors":
+    [
+        "Brown",
+        "Blue",
+        "Dark Blue",
+        "Gray",
+        "Green"
+    ],
+    "hairColors":
+    [
+        "Black",
+        "Brown",
+        "Blonde",
+        "Red"
+    ],
+    "skinTones":
+    [
+        "Light",
+        "Medium",
+        "Medium Dark",
+        "Dark"
+    ],
+    "fitness":
+    [
+        "Fit",
+        "Neutral",
+        "Fat"
+    ],
+    "chemistry":
+    [
+        "Athletic",
+        "Black Hair",
+        "Blonde Hair",
+        "Brown Hair",
+        "Charismatic",
+        "Cologne",
+        "Creative",
+        "Custom Hair",
+        "Facial Hair",
+        "Fatness",
+        "Fitness",
+        "Formalwear",
+        "Full Face Makeup",
+        "Glasses",
+        "Good at Cleaning",
+        "Gray Hair",
+        "Great Cook",
+        "Hard Worker",
+        "Hats",
+        "Jewelry",
+        "Logical",
+        "Lycanthrophy",
+        "Makeup",
+        "Mechanical",
+        "Plantsimism",
+        "Red Hair",
+        "Robots",
+        "Stink",
+        "Swimwear",
+        "Underwear",
+        "Unemployed",
+        "Vampirism",
+        "Zombiism"
+    ],
+    "lifeStates":
+    [
+        "Plantsim",
+        "Sim",
+        "Witch",
+        "Vampire",
+        "Zombie"
+    ],
+    "hobbies":
+    [
+        "Arts & Crafts",
+        "Cuisine",
+        "Film & Literature",
+        "Fitness",
+        "Games",
+        "Music & Dance",
+        "Nature",
+        "Science",
+        "Sports",
+        "Tinkering"
+    ],
+    "lifetimeWants":
+    [
+        {
+            "aspiration": "Knowledge",
+            "wants":
+            [
+                "Max 5 skills",
+                "Become Hospital Chief of Staff",
+                "Become Cult Leader",
+                "Become Ecological Guru",
+                "Have 10 children abducted by aliens",
+                "Become Mad Scientist",
+                "Become Criminal Mastermind"
+            ]
+        },
+        {
+            "aspiration": "Fortune",
+            "wants":
+            [
+                "Earn §100,000",
+                "Become Hospital Chief of Staff",
+                "Become Hall of Famer",
+                "Become Tycoon",
+                "Become Criminal Mastermind"
+            ]
+        },
+        {
+            "aspiration": "Family",
+            "wants":
+            [
+                "Graduate 10 children from college",
+                "Have 10 grandchildren",
+                "Marry off 10 children",
+                "Reach golden anniversary",
+                "Become Captain Hero"
+            ]
+        },
+        {
+            "aspiration": "Romance",
+            "wants":
+            [
+                "Become Professional Party Guest",
+                "Become Visionary",
+                "Become Hall of Famer",
+                "Woohoo with 10 different sims",
+                "Have 10 simultaneous lovers",
+                "Become Celebrity Chef"
+            ]
+        },
+        {
+            "aspiration": "Popularity",
+            "wants":
+            [
+                "Become Cult Leader",
+                "Become Icon",
+                "Become General",
+                "Become Hall of Famer",
+                "Become Mayor",
+                "Become Celebrity Chef",
+                "Have 10 simultaneous best friends",
+                "Become Captain Hero"
+            ]
+        },
+        {
+            "aspiration": "Knowledge",
+            "wants":
+            [
+                "Max 5 skills",
+                "Become Hospital Chief of Staff",
+                "Become Cult Leader",
+                "Become Ecological Guru",
+                "Have 10 children abducted by aliens",
+                "Become Mad Scientist",
+                "Become Criminal Mastermind"
+            ]
+        },
+        {
+            "aspiration": "Pleasure",
+            "wants":
+            [
+                "Go on 100 1st dates",
+                "Become Professional Party Guest",
+                "Have 50 Dream Dates"
+            ]
+        },
+        {
+            "aspiration": "Grilled Cheese",
+            "wants":
+            [
+                "Eat 200 Grilled Cheese Sandwiches"
+            ]
+        }
+    ]
+}

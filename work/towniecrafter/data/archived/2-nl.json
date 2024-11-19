@@ -1,0 +1,52 @@
+{
+    "aspirations":
+    [
+        "Pleasure",
+        "Grilled Cheese"
+    ],
+    "lifetimeWants":
+    [
+        {
+            "aspiration": "Pleasure",
+            "wants":
+            [
+                "Go on 100 1st dates",
+                "Become Professional Party Guest",
+                "Have 50 Dream Dates"
+            ]
+        },
+        {
+            "aspiration": "Grilled Cheese",
+            "wants":
+            [
+                "Eat 200 Grilled Cheese Sandwiches"
+            ]
+        }
+    ],
+    "chemistry":
+    [
+        "Black Hair",
+        "Blonde Hair",
+        "Brown Hair",
+        "Cologne",
+        "Custom Hair",
+        "Facial Hair",
+        "Fatness",
+        "Fitness",
+        "Formalwear",
+        "Full Face Makeup",
+        "Glasses",
+        "Gray Hair",
+        "Hats",
+        "Makeup",
+        "Red Hair",
+        "Stink",
+        "Swimwear",
+        "Underwear",
+        "Vampirism"
+    ],
+    "lifeStates":
+    [
+        "Vampire"
+    ]
+}

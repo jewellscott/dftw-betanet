@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>APP</title>
+	<link rel="stylesheet" href="../../../styles/app.css">
+</head>
+<body>
+
+	<header class="site-header">
+		<mast-head>
+
+			<button data-id="home">
+				APP/LOGO
+			</button>
+			<button data-id="user-pref">
+				USER PREFERENCES
+			</button>
+			
+		</mast-head>
+		<contextual-menu>
+			<!-- <button>
+				BACK
+			</button> -->
+
+			<!-- PAGE TITLE -->
+		</contextual-menu>
+	</header>
+
+	<main id="outlet">
+
+		<user-prefs>
+			<h1>User Preferences</h1>
+
+			<section>
+				<h2>Owned Packs</h2>
+				<form action="">
+
+				<fieldset>
+					<h3>Collections</h3>
+					<input type="checkbox" id="uc" name="uc" checked />
+				   <label for="uc">Ultimate Collection</label>
+
+				   <input type="checkbox" id="sc" name="usc" />
+				   <label for="sc">Super Collection (Mac)</label>
+				</fieldset>
+
+				<fieldset>
+					<h3>Individual Packs</h3>
+
+				  	<input type="checkbox" id="base" name="base" />
+				   <label for="base">Base Game</label>
+
+				   <br>
+
+				   <input type="checkbox" id="uni" name="base" />
+				   <label for="uni">University</label>
+
+				   <input type="checkbox" id="ofb" name="ofb" />
+				   <label for="ofb">Open for Business</label>
+
+				   <input type="checkbox" id="pets" name="pets" />
+				   <label for="pets">Pets</label>
+
+				   <input type="checkbox" id="seasons" name="seasons" />
+				   <label for="seasons">Seasons</label>
+
+				   <input type="checkbox" id="bv" name="bv" />
+				   <label for="bv">Bon Voyage</label>
+
+				   <input type="checkbox" id="ft" name="ft" />
+				   <label for="ft">FreeTime</label>
+
+				   <input type="checkbox" id="al" name="al" />
+				   <label for="al">Apartment Life</label>
+				</fieldset>
+			 </form>
+			</section>
+
+		 	<section>
+				<h2>User Generated Content</h2>
+
+				<form action="">
+					<input type="checkbox" id="lamare-ltws" name="lamare-ltws" />
+			    <label for="lamare-ltws"><a href="https://modthesims.info/d/669675/50-new-lifetime-wants-for-sims-2.html">Lamare's Lifetime Wants</a></label>
+			    	<h3>Custom careers</h3>
+				   <p>Enter careers, separated by commas</p>
+				   <p class="eg">E.g. X, Y, Z</p>
+
+				   <label class="block-label"for="adult-custom-careers">Adult careers</label>
+				   <textarea id="adult-custom-careers" name="custom-careers" rows="4" cols="50"></textarea>
+
+				   <label class="block-label" for="elder-custom-careers">Elder careers</label>
+				   <textarea id="elder-custom-careers" name="custom-careers" rows="4" cols="50"></textarea>
+
+				   <label class="block-label" for="teen-custom-careers">Teen careers</label>
+				   <textarea id="teen-custom-careers" name="custom-careers" rows="4" cols="50"></textarea>
+
+				   <h3>Custom majors/degrees</h3>
+				   <p>Enter majors/degrees, separated by commas</p>
+				   <p class="eg">E.g. X, Y, Z</p>
+				   <textarea id="custom-degrees" name="custom-degrees" rows="4" cols="50"></textarea>
+				</form>
+			 </section>
+		</user-prefs>
+	</main>
+
+	<!-- <script src="../../../js/app.js"></script> -->
+</body>
