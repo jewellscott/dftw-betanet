@@ -1,6 +1,7 @@
 .site-header inner-column {
-/*	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-*/}
+	max-width: 100%
+}
+
+/*.site-header {
+	border-bottom: var(--border);
+}*/

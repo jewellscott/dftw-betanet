@@ -31,16 +31,38 @@ music-player {
 	music-player {
 		player-main {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr 2fr;
 
 			playlist {
 				max-height: 60.75%;
 				overflow-y: scroll;
 			}
 
-		/*	.album {
+			song-details {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				justify-content: space-between;
+				align-items: center;
+
+				.album {
+					text-align: center;
+					font-size: var(--text-ms);
+					vertical-align: center;
+					
+					white-space: nowrap;
+            	overflow: hidden;
+            	text-overflow: ellipsis;
+
+				}
+
+				.duration {
+					text-align: end;
+				}
+			}
+
+			.album {
 				display: inline;
-			}*/
+			}
 		}
 	}
 }

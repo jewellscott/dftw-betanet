@@ -7,7 +7,7 @@
 
 <music-player>
 	<player-meta>
-		<h1 class="playlist-title text-xl weight-700">
+		<h1 class="playlist-title text-xl weight-300">
 			The Garden
 		</h1>
 		<p class="playlist-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dicta accusamus enim cum asperiores praesentium sed quibusdam in quidem velit adipisci voluptas ipsa consequatur quam exercitationem quis ad harum et?</p>
@@ -15,7 +15,7 @@
 	<player-main>
 		<album-art>
 			<picture>
-				<img id="mp-album-art" src="https://placehold.co/500x500" alt="">
+				<img id="mp-album-art" src="https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/92/62/09/9262094e-9d5d-bd60-dde7-478a5e5d081a/5054526415447_1.jpg/1200x1200bf-60.jpg" alt="">
 			</picture>
 		</album-art>
 		<playlist id="mp-playlist">
