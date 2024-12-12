@@ -16,3 +16,4 @@ $modules = json_decode($json, true);
 <?php } ?>
 
 
+<?php include './partials/site-footer/template.php'; ?>
