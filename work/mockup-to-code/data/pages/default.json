@@ -1,0 +1,29 @@
+{
+    "id": "default",
+    "sections":
+    [
+        {
+            "id": "student-welcome",
+            "module": "student-welcome",
+            "components":
+            [
+                {
+                    "header": "Whatever",
+                    "story": "Lorem ipsum, dolor sit amet consectetur adipisicing, elit",
+                    "actions":
+                    [
+                        {
+                            "type": "primary-button",
+                            "title": "",
+                            "link": "#"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "student-welcome",
+            "module": "student-welcome"
+        }
+    ]
+}

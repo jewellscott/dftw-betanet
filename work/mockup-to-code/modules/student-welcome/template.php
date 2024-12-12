@@ -1,8 +1,14 @@
+<?php 
+
+$title = $pageData["title"] ?? "Whatever" ;
+
+?>
+
 <student-welcome>
 
-	<h2 class="loud-voice">
-		Title
-	</h2>
+	<h1 class="loud-voice">
+		<?=$title?>
+	</h1>
 
 	<p>Lorem ipsum, dolor sit amet consectetur adipisicing, elit</p>
 

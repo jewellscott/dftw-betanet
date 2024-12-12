@@ -26,12 +26,14 @@
             "link": "#"
         }
     ],
-    "cta":
+    "student-welcome":
     {
         "title": "Welcome to Lawndale’s Finest",
         "body": "For all your existential crises and teenage woes",
-        "primaryBtn": "Register",
-        "secondaryBtn": "Start Your Free Therapy Trial"
+        "actions": [
+            "primaryBtn": "Register",
+            "secondaryBtn": "Start Your Free Therapy Trial"
+        ]
     },
     "updates":
     {

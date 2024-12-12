@@ -10,24 +10,24 @@
 			</li>
 
 			<li>
-				<a href='#'>Home</a>
+				<a href='?page=default'>Home</a>
 			</li>
 
 			<li>
-				<a href='#'>Updates</a>
+				<a href='?page=wavy'>Updates</a>
 			</li>
 
 			<li>
-				<a href='#'>Services</a>
+				<a href='?page=blue'>Services</a>
 			</li>
 
-			<li>
+		<!-- 	<li>
 				<a href='#'>Features</a>
 			</li>
 
 			<li>
 				<a href='#'>About Us</a>
-			</li>
+			</li> -->
 		</ul>
 	</nav>
 

@@ -9,3 +9,15 @@
 .site-header {
 	border-bottom: 1px solid lightgray;
 }
+
+body.default {
+	background-color: lightgreen;
+}
+
+body.wavy {
+	background-color: lightcyan;
+}
+
+body.blue {
+	background-color: lightblue;
+}
