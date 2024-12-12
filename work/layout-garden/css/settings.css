@@ -1,12 +1,10 @@
 :root {
 
-	/* already listed in typography */
-
 	/*colors */
-/*	--paper: #f8f8f8;
-	--ink: #111111;
+	--paper: #ffffff;
+	--ink: #000000;
 	--white: white;
-*/
+
 	/*	--hue-primary: */
 	--primary: 240;
 	--cool: calc(var(--hue-primary) - 40);
