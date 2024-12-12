@@ -24,6 +24,6 @@ section inner-column {
 /*	padding-block: calc(var(--space) * 5);*/
 }
 
-section {
+section + section {
 	margin-block: 10vh;
 }
