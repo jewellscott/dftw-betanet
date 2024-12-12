@@ -16,8 +16,12 @@
 
 	--text-xs: calc(var(--base) / var(--scale) / var(--scale));
 	--text-sm: calc(var(--base) / var(--scale));
+
+	--text-ms: calc(var(--base) / sqrt(var(--scale))); /* Between sm and base */
 	
 	--text-base: var(--base); /* 16px */
+
+	--text-ml: calc(var(--base) * sqrt(var(--scale))); /* Between base and lg */
 
 	--text-lg: calc(var(--base) * var(--scale));
 	--text-xl: calc(var(--text-lg) * var(--scale));
@@ -52,7 +56,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-xs { font-size: var(--text-xs); }
 .text-sm { font-size: var(--text-sm); }
+
+.text-ms { font-size: var(--text-ms); }
+/* medium small */
+
 .text-base { font-size: var(--base); }
+
+.text-ml { font-size: var(--text-ml); }
+/* medium large */
+
+
 .text-lg { font-size: var(--text-lg); }
 .text-xl { font-size: var(--text-xl); }
 .text-2x { font-size: var(--text-2x); }
