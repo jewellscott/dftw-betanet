@@ -1,0 +1,26 @@
+masthead {
+	display: grid;
+	gap: 10px 0;
+	li {
+		text-transform: uppercase;
+	}
+	nav.tags ul, user-actions, footer {
+		display: flex;
+		gap: 0 20px;
+		justify-content: center;
+		flex-wrap: wrap; /* I would rather it didn't wrap, but we'll cross that bridge when we get to it. Hide this altogether.*/
+	}
+	masthead-banner nav ul {
+		display: flex;
+		gap: 0 20px;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		li.the-garden {
+			font-size: clamp(var(--text-lg), 2rem, var(--text-xl));
+		}
+	}
+	user-actions {
+		justify-content: space-around ;
+	}
+}

@@ -1,3 +1,6 @@
-@import "../components/site-header/style.css";
-@import "../components/site-footer/style.css";
+@import "../partials/site-header/style.css";
+@import "../partials/masthead/style.css";
+@import "../partials/site-footer/style.css";
+
 @import "../modules/type-specimen/style.css";
+@import "../modules/garden-abstract/style.css";

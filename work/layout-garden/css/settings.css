@@ -1,12 +1,13 @@
 :root {
 
+	/* already listed in typography */
+
 	/*colors */
-	--paper: #f8f8f8;
+/*	--paper: #f8f8f8;
 	--ink: #111111;
 	--white: white;
-
+*/
 	/*	--hue-primary: */
-	--white: ;
 	--primary: 240;
 	--cool: calc(var(--hue-primary) - 40);
 	--warm: calc(var(--hue-primary) + 40);
@@ -29,6 +30,10 @@
 
 	/* sizing */
 	--space: 4px;
+	--space-2x: calc(var(--space) * 2);
+	--space-4x: calc(var(--space) * 4);
+	--space-6x: calc(var(--space) * 6);
+	--space-8x: calc(var(--space) * 8);
 
 	--inner-column: 1200px;
 	--inner-column-tight: 800px;
@@ -50,10 +55,10 @@
 	--rounded-8x: calc(var(--space) * 8);
 }
 
-body {
+/*body {
 	background-color: var(--paper);
 	color: var(--ink);
-}
+}*/
 
 .rounded { border-radius: var(--rounded); }
 .rounded-2x { border-radius: var(--rounded-2x); }

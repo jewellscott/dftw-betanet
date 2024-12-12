@@ -16,6 +16,9 @@ inner-column {
 	padding: calc(var(--space) * 4);
 }
 
+/*masthead {
+	padding: calc(var(--space) * 4);
+}*/
 
 section inner-column {
 /*	padding-block: calc(var(--space) * 5);*/
