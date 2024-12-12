@@ -1,0 +1,110 @@
+[
+    {
+        "slug": "les-fleurs",
+        "title": "Les Fleurs",
+        "artist": "Minnie Riperton",
+        "album": "Come To My Garden",
+        "album_art_url": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7d/1b/96/7d1b96cc-1519-8a06-0a28-62aba1bc0aa0/00602577421426.rgb.jpg/1200x1200bb.jpg",
+        "duration": "3:19",
+        "youtube_link": ""
+    },
+    {
+        "slug": "power-flower",
+        "title": "Power Flower",
+        "artist": "Stevie Wonder",
+        "album": "Journey Through The Secret Life Of Plants",
+        "album_art_url": "https://cdn11.bigcommerce.com/s-rdecee92oy/images/stencil/1280x1280/products/27058/6080389/6mtlp52668-large__23576.1700934963.jpg?c=2",
+        "duration": "5:31",
+        "youtube_link": ""
+    },
+    {
+        "slug": "sunflower-vol-6",
+        "title": "Sunflower, Vol. 6",
+        "artist": "Harry Styles",
+        "album": "Fine Line",
+        "album_art_url": "https://media.pitchfork.com/photos/5df3f10129131e0008fbae41/master/pass/Harry-Styles.jpg",
+        "duration": "3:42",
+        "youtube_link": ""
+    },
+    {
+        "slug": "leon-flowers",
+        "title": "Flowers",
+        "artist": "Leon Bridges",
+        "album": "Coming Home",
+        "album_art_url": "https://media.npr.org/assets/img/2015/06/20/image1_sq-682dd28c8eea386b18866d57c3c5b3fe7a78ce06.jpg?s=1100&c=50&f=jpeg",
+        "duration": "2:57",
+        "youtube_link": ""
+    },
+    {
+        "slug": "amos-flowers",
+        "title": "Flowers",
+        "artist": "Amos Lee",
+        "album": "Mission Bell",
+        "album_art_url": "https://m.media-amazon.com/images/I/91zC-pw6vtL._UF1000,1000_QL80_.jpg",
+        "duration": "3:42",
+        "youtube_link": ""
+    },
+    {
+        "slug": "sunflower-rex",
+        "title": "Sunflower",
+        "artist": "Rex Orange County",
+        "album": "Sunflower",
+        "album_art_url": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/92/62/09/9262094e-9d5d-bd60-dde7-478a5e5d081a/5054526415447_1.jpg/1200x1200bf-60.jpg",
+        "duration": "4:12",
+        "youtube_link": ""
+    },
+    {
+        "slug": "can-i-call-you-rose",
+        "title": "Can I Call You Rose?",
+        "artist": "Thee Sacred Souls",
+        "album": "Thee Sacred Souls",
+        "album_art_url": "https://shopdaptonerecords.com/cdn/shop/products/TSS_ALBUMCOVER_PRS_300x3000_72edf698-fecd-46f3-bbf8-99ac09b1798f_2048x2048.jpg?v=1720034923",
+        "duration": "3:11",
+        "youtube_link": ""
+    },
+    {
+        "slug": "wild-flower",
+        "title": "Wild Flower",
+        "artist": "The New Birth",
+        "album": "It's Been a Long Time",
+        "album_art_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bd/2d/6fbd2ded-6051-506d-d840-b4bbff7d5301/886445185621.jpg/1200x1200bb.jpg",
+        "duration": "6:31",
+        "youtube_link": ""
+    },
+    {
+        "slug": "garden-shed",
+        "title": "Garden Shed (feat. Estelle)",
+        "artist": "Tyler, The Creator, Estelle",
+        "album": "Flower Boy",
+        "album_art_url": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/fd/fd/8c/fdfd8c26-b8f9-4768-41d3-b24773250c65/886446605814.jpg/1200x1200bf-60.jpg",
+        "duration": "3:44",
+        "youtube_link": ""
+    },
+    {
+        "slug": "roses",
+        "title": "Roses",
+        "artist": "Outkast",
+        "album": "Speakerboxxx/The Love Below",
+        "album_art_url": "https://m.media-amazon.com/images/I/81xT1wIF5lL._UF1000,1000_QL80_.jpg",
+        "duration": "6:10",
+        "youtube_link": ""
+    },
+    {
+        "slug": "la-vie-en-rose",
+        "title": "La vie en rose",
+        "artist": "Louis Armstrong",
+        "album": "Satchmo Serenades",
+        "album_art_url": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/2a/6d/0b/2a6d0bdc-7177-987a-b0be-1d5f3ad98dfb/06UMGIM72672.rgb.jpg/1200x1200bf-60.jpg",
+        "duration": "3:23",
+        "youtube_link": ""
+    },
+    {
+        "slug": "days-of-wine-and-roses",
+        "title": "Days of Wine and Roses",
+        "artist": "Wes Montgomery",
+        "album": "Boss Guitar",
+        "album_art_url": "https://m.media-amazon.com/images/I/715mpmIgX3L.jpg",
+        "duration": "3:46",
+        "youtube_link": ""
+    }
+]

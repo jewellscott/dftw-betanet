@@ -1,0 +1,46 @@
+music-player {
+	display: grid;
+
+	player-meta {
+		background-color: var(--neut-50);
+		padding: var(--space-6x);
+	}
+	song-card {
+		display: flex;
+		gap: 10px;
+		padding: var(--space-4x);
+
+		img {
+			max-width: 50px;
+		}
+
+		song-details {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+		}
+
+		.album {
+			display: none;
+		}
+	}
+}
+
+
+@media (min-width: 800px) {
+	music-player {
+		player-main {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			playlist {
+				max-height: 60.75%;
+				overflow-y: scroll;
+			}
+
+		/*	.album {
+				display: inline;
+			}*/
+		}
+	}
+}
