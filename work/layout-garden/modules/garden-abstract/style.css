@@ -27,8 +27,8 @@ garden-abstract {
 			gap: 20px;
 		}
 
-		.abstract > p {
-			font-size: clamp(var(--text-lg), 10vw, var(--text-xl));
+		.content > p {
+			font-size: clamp(var(--text-lg), 8vw, var(--text-xl));
 		}
 	}
 }
