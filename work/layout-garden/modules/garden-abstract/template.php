@@ -12,8 +12,14 @@
 	</picture>
 	<article>
 		<div class="abstract">
-			<h2 class="text-base text-upper weight-700">Abstract</h2>
-			<p class="text-xl">The Garden is a living showcase of responsive design and interactive web elements. Like a carefully tended garden, each element grows and adapts.</p>
+			<div class="content">
+				<h2 class="text-base text-upper weight-700">Abstract</h2>
+				<p class="text-xl">The Garden is a living showcase of responsive design and interactive web elements. Like a carefully tended garden, each element grows and adapts.</p>
+			</div>
+			<div class="links">
+				<a href="#" class="rounded-button">Style Guide</a>
+			</div>
+			
 		</div>
 		<div class="items">
 			<ul>
