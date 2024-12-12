@@ -1,18 +1,17 @@
 masthead {
 	display: grid;
 	gap: 10px 0;
-	li {
+	masthead-banner li {
 		text-transform: uppercase;
 	}
 	nav.tags ul, user-actions, footer {
 		display: flex;
-		gap: 0 20px;
+		gap: 0 40px;
 		justify-content: center;
 		flex-wrap: wrap; /* I would rather it didn't wrap, but we'll cross that bridge when we get to it. Hide this altogether.*/
 	}
 	masthead-banner nav ul {
-		display: flex;
-		gap: 0 20px;
+		gap: 0 40px;
 		justify-content: center;
 		text-align: center;
 		align-items: center;
@@ -26,3 +25,9 @@ masthead {
 	}
 }
 
+@media (min-width: 600px) {
+	masthead-banner nav ul {
+		display: flex;
+		flex-direction: row;
+	}
+}

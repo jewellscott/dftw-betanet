@@ -10,7 +10,8 @@
 		<h1 class="playlist-title text-xl weight-300">
 			The Garden
 		</h1>
-		<p class="playlist-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dicta accusamus enim cum asperiores praesentium sed quibusdam in quidem velit adipisci voluptas ipsa consequatur quam exercitationem quis ad harum et?</p>
+		<p class="playlist-description">It's not magic, it's not madness, just the elements I style...
+</p>
 	</player-meta>
 	<player-main>
 		<album-art>
