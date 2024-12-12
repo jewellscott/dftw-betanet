@@ -1,3 +1,11 @@
+<?php 
+
+	$json = file_get_contents('modules/garden-abstract/data.json');
+	$items = json_decode($json, true);
+
+?>
+
+
 <garden-abstract>
 	<picture class="graphic-header">
 		<img src="https://placehold.co/1000x200" alt="">
@@ -9,19 +17,14 @@
 		</div>
 		<div class="items">
 			<ul>
-				<li>
-					<h3 class="text-lg text">Flowing layouts shift like vines</h3>
-					<p>Each component adapts naturally to its environment, responding to screen sizes and device constraints with fluid grace. Like plants reaching for light, content finds its optimal position in any space.</p>
-				</li>
-				<li>
-					<h3 class="text-lg">Shapes and colors bloom through dynamic manipulation</h3>
-					<p>Watch as the garden transforms through your choices. Paint with purposeful palettes, watching as new color harmonies ripple through the landscape. Adjust the scale of growth - from intimate minor thirds to expansive perfect fifths. Prune each element by sofening or sharpening the corners. Keep it safe and protected with borders, or let the wildlife roam free.
-</p>
-				</li>
-				<li>
-					<h3 class="text-lg">Patterns emerge with accessibility and purpose in mind</h3>
-					<p>Each element serves both form and function, like the precise arrangement of petals in a flower. Interactive elements respond naturally to user input, as leaves respond to touch. Navigation paths are clear and intuitive, ensuring the garden is welcoming to everyone.</p>
-				</li>
+
+				<?php foreach($items as $item) { ?>
+					<li class="items">
+						<h3 class="text-lg"><?=$item["header"]?></h3>
+						<p><?=$item["content"]?></p>
+					</li>
+				<?php } ?>
+
 			</ul>
 		</div>
 	</article>
