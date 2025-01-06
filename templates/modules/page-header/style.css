@@ -1,0 +1,23 @@
+page-header {
+	margin-bottom: 3rem;
+	display: grid;
+	gap: 1rem;
+
+	div.meta {
+		display: flex;
+		gap: 1rem;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.page-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: .5rem 1rem;
+	}
+
+	.last-updated {
+		display: inline-block;
+	}
+}
+

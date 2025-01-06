@@ -1,0 +1,16 @@
+projects-spotlight {
+	h2 {
+		margin-bottom: 1.5rem;
+	}
+
+	.project-list {
+		display: grid;
+		gap: 40px;
+	}
+}
+
+@media (min-width: 800px) {
+	projects-spotlight .project-list {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}

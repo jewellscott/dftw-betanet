@@ -1,0 +1,23 @@
+type-specimen {
+	specimen-menu {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 20px;
+		margin-bottom: 1.5rem;
+	}
+
+	form {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+		background-color: var(--background-color);
+		select {
+			margin: 0;
+			font-size: var(--base-type);
+		}
+		option {
+/*			text-transform: lowercase;*/
+		}
+	}
+}

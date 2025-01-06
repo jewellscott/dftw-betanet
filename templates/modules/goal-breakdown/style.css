@@ -1,0 +1,13 @@
+goal-breakdown {
+	display: grid;
+
+	h2 {
+		margin-bottom: 1rem;
+	}
+
+	section + section {
+		margin-block: 2vh;
+	}
+
+	margin-block: 2rem;
+}

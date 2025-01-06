@@ -1,0 +1,21 @@
+
+generic-text {
+
+	/* stuff basically just ripped from typography.css, with some adjustments. */
+	/* treating this as stuff I have to target any way I can (targeting heading tags, etc) */
+
+	h2, h3, h4, h5, h6 {
+/*		color: var(--primary-color);*/
+		font-family: var(--display-type);
+	}
+
+	h2 {
+		font-size: var(--xl-type);
+		font-weight: 700;
+	}
+
+	h3 {
+		font-size: var(--lg-type);
+		font-weight: 700;
+	}
+}
