@@ -1,0 +1,29 @@
+{
+    "title": "Sick Sad Ipsum",
+    "slug": "sick-sad-ipsum",
+    "teaser": "Daria-flavored Ipsum",
+    "description": "Project description onec vitae magna consectetur, rhoncus tortor vitae, viverra leo",
+    "links":
+    [
+        {
+            "text": "Live",
+            "url": "#"
+        },
+        {
+            "text": "Github",
+            "url": "?page=contact"
+        }
+    ],
+    "case-study":
+    [
+        {
+            "module": "generic-text"
+        },
+        {
+            "module": "graphic-diptych"
+        },
+        {
+            "module": "projects-spotlight"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "title": "Home",
+    "description": "Description",
+    "modules":
+    [
+        {
+            "module": "graphic-diptych",
+            "props":
+            {
+                "imgSrc": "",
+                "imgId": "random-bitmoji",
+                "content": "<h1 class='banner-type rainbow'>Jewell Scott</h1><h2 class='attention-voice'>Currently immersing myself in Design for the Web at Perpetual Education.</h2>"
+            }
+        }
+    ]
+}

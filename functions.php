@@ -17,3 +17,19 @@ function getData($fileName) {
 	} 
 	return null;
 }
+
+function queryString() {
+	if (isset($_GET["page"])) {
+		return $_GET["page"];
+	} else {
+		return 'home';
+	}
+}
+
+function renderModule($moduleName, $props = []) {
+	$path = "templates/modules/$moduleName/template.php";
+	if (file_exists($path)) {
+		include($path);
+	};
+}
+

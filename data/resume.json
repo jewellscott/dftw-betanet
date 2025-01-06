@@ -1,0 +1,85 @@
+{
+    "title": "Resume",
+    "topLevel": "true",
+    "lastUpdated": "January 1, 2025",
+    "description": "<span class='todo'>What I've been up to</span>",
+    "sections":
+    [
+        {
+            "heading": "Skills (Soon)",
+            "content":
+            [
+                "HTML",
+                "CSS",
+                "PHP",
+                "JavaScript",
+                "MySQL",
+                "Vue",
+                "Figma",
+                "Wordpress"
+            ]
+        },
+        {
+            "heading": "Work Experience",
+            "content":
+            [
+                {
+                    "role": "Role",
+                    "company": "Company",
+                    "start": "Start",
+                    "end": "End",
+                    "responsibilities":
+                    [
+                        "And the dish ran away with the spoon, but Hawaii was the only state which would recognize the marriage as legal",
+                        "Daria, would you say sleeping with a guitar in your hands counts as practicing? ...As long as you don't drop it",
+                        "Can anyone give me a concrete representation of this abstract theory?",
+                        "So Cinderella skipped the ball and asked her fairy Godmother to make her the first woman president",
+                        "Realizing that the monarchy was becoming obsolete, the prince opened a video store"
+                    ]
+                },
+                {
+                    "role": "Role",
+                    "company": "Company",
+                    "start": "Start",
+                    "end": "End",
+                    "responsibilities":
+                    [
+                        "And the dish ran away with the spoon, but Hawaii was the only state which would recognize the marriage as legal",
+                        "Daria, would you say sleeping with a guitar in your hands counts as practicing? ...As long as you don't drop it",
+                        "Can anyone give me a concrete representation of this abstract theory?",
+                        "So Cinderella skipped the ball and asked her fairy Godmother to make her the first woman president",
+                        "Realizing that the monarchy was becoming obsolete, the prince opened a video store"
+                    ]
+                },
+                {
+                    "role": "Role",
+                    "company": "Company",
+                    "start": "Start",
+                    "end": "End",
+                    "responsibilities":
+                    [
+                        "And the dish ran away with the spoon, but Hawaii was the only state which would recognize the marriage as legal",
+                        "Daria, would you say sleeping with a guitar in your hands counts as practicing? ...As long as you don't drop it",
+                        "Can anyone give me a concrete representation of this abstract theory?",
+                        "So Cinderella skipped the ball and asked her fairy Godmother to make her the first woman president",
+                        "Realizing that the monarchy was becoming obsolete, the prince opened a video store"
+                    ]
+                }
+            ]
+        },
+        {
+            "heading": "Education",
+            "content":
+            [
+                {
+                    "subject": "Major/Subject",
+                    "location": "Location"
+                },
+                {
+                    "subject": "Major/Subject",
+                    "location": "Location"
+                }
+            ]
+        }
+    ]
+}

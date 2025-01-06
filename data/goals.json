@@ -1,0 +1,45 @@
+{
+    "lastUpdated": "January 1, 2025",
+    "title": "Goals",
+    "description": "Where I'm heading and why",
+    "topLevel": "true",
+    "content":
+    [
+        {
+            "time": "1 Week",
+            "goals":
+            [
+                "One",
+                "Two",
+                "Three"
+            ]
+        },
+        {
+            "time": "1 Month",
+            "goals":
+            [
+                "One",
+                "Two",
+                "Three"
+            ]
+        },
+        {
+            "time": "3 Months",
+            "goals":
+            [
+                "One",
+                "Two",
+                "Three"
+            ]
+        },
+        {
+            "time": "6 Months",
+            "goals":
+            [
+                "One",
+                "Two",
+                "Three"
+            ]
+        }
+    ]
+}

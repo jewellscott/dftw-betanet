@@ -1,0 +1,30 @@
+{
+    "title": "Client Project",
+    "slug": "client-project",
+    "teaser": "Very short teaser...",
+    "description": "Project description onec vitae magna consectetur, rhoncus tortor vitae, viverra leo",
+    "links":
+    [
+        {
+            "text": "Live",
+            "url": "#"
+        },
+        {
+            "text": "Github",
+            "url": "?page=contact"
+        }
+    ],
+    "featured": true,
+    "case-study":
+    [
+        {
+            "module": "generic-text"
+        },
+        {
+            "module": "graphic-diptych"
+        },
+        {
+            "module": "projects-spotlight"
+        }
+    ]
+}

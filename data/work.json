@@ -1,0 +1,36 @@
+{
+    "lastUpdated": "January 1, 2024",
+    "topLevel": "true",
+    "title": "Work",
+    "description": "TODOooooo",
+    "links":
+    [
+        {
+            "text": "Github",
+            "url": "#"
+        },
+        {
+            "text": "Codepen",
+            "url": "#"
+        }
+    ],
+    "modules":
+    [
+        {
+            "module": "projects-spotlight",
+            "props":
+            {
+                "heading": "Featured",
+                "filter": "featured"
+            }
+        },
+        {
+            "module": "projects-spotlight",
+            "props":
+            {
+                "heading": "Latest",
+                "latest": "true"
+            }
+        }
+    ]
+}

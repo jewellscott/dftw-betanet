@@ -1,13 +1,18 @@
-
 <?php include('config.php'); ?>
-<?php include 'templates/partials/header.php'; ?>
+<?php include('templates/partials/site-header/template.php'); ?>
 
-<main class="home-main horizontal-center">
+<?php 
 
-	<div class="inner-column">
+ /* ROUTER */
 
-		<?php includeFile('templates/modules/jewell-diptych-home.php')?>
-	</div>
-</main>
+ $page = $_GET["page"] ?? "home";
 
-<?php includeFile('templates/partials/footer.php'); ?>
+ if (file_exists("templates/pages/$page.php")) {
+ 	 include("templates/pages/$page.php");	
+ } else {
+ 	 include("templates/pages/404.php");	
+ }
+
+?>
+
+<?php include('templates/partials/site-footer/template.php'); ?>

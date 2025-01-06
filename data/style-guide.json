@@ -1,0 +1,64 @@
+{
+    "title": "Style Guide",
+    "topLevel": true,
+    "description": "My design system in action",
+    "modules":
+    [
+        {
+            "module": "type-specimen"
+        },
+        {
+            "module": "graphic-diptych",
+            "props":
+            {
+                "content": "<h2 class='xl-type strong-type display-type'>Graphic Diptych</h2><p>This is the content that goes along with the graphic. This module uses a Generic Text module within it.</p>"
+            }
+        },
+        {
+            "module": "graphic-diptych",
+            "props":
+            {
+                "flipped": true,
+                "content": "<h2 class='xl-type strong-type display-type'>Graphic Diptych (Flipped)</h2><p>This is the content that goes along with the graphic. This module uses a Generic Text module within it.</p><p><code class='inline-block'>$flipped = true;</code></p>"
+            }
+        },
+        {
+            "module": "graphic-diptych",
+            "props":
+            {
+                "ratio": "1:2",
+                "content": "<h2 class='xl-type strong-type display-type'>Graphic Diptych (1:2) </h2><p>This graphic diptych accepts the following aspect ratios: 1:2, 2:1, 2:3, 3:1, 3:2. 1:1 is the default.</p>"
+            }
+        },
+        {
+            "module": "graphic-diptych",
+            "props":
+            {
+                "flipped": true,
+                "ratio": "1:3",
+                "content": "<h2 class='xl-type strong-type display-type'>Graphic Diptych (Flipped, 1:2)</h2><p>This graphic diptych accepts the following aspect ratios: 1:2, 2:1, 2:3, 3:1, 3:2. 1:1 is the default.</p><code class='inline-block'>$flipped = true; <br>$ratio = 1:3;</code>"
+            }
+        },
+        {
+            "module": "generic-text"
+        },
+        {
+            "module": "projects-spotlight",
+            "projects":
+            [
+                "florilegium",
+                "layout-garden",
+                "colorverse"
+            ]
+        },
+        {
+            "module": "blog-spotlight",
+            "blogs":
+            [
+                "one",
+                "two",
+                "three"
+            ]
+        }
+    ]
+}

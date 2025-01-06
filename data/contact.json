@@ -1,0 +1,41 @@
+{
+    "topLevel": "true",
+    "title": "Contact",
+    "description": "Call me, beep me, if you wanna reach me.",
+    "links":
+    [
+        {
+            "text": "Resume",
+            "url": "#"
+        },
+        {
+            "text": "Email",
+            "url": "#"
+        }
+    ],
+    "modules":
+    [
+        {
+            "module": "graphic-diptych",
+            "props":
+            {
+                "content": "<h2>Heading</h2><p>We're out in the middle of nowhere, nobody knows we're here, we have no way to contact anyone, and our parents have gone insane.</p>"
+            }
+        },
+        {
+            "module": "generic-text",
+            "props":
+            {
+                "content": "<h2>Want to work together?</h2><p>Humor may lift your spirits, Daria, but it takes a professional to lift your buttocks! Doctor's joke! Have a nice day girls. And remember, money can make anyone look beautiful.</p>"
+            }
+        },
+        {
+            "module": "projects-spotlight",
+            "props":
+            {
+                "filter": "featured",
+                "heading": "Featured"
+            }
+        }
+    ]
+}

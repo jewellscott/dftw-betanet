@@ -1,0 +1,32 @@
+{
+    "lastUpdated": "January 1, 2024",
+    "topLevel": "true",
+    "title": "Blog",
+    "description": "Writings and stuff",
+    "links":
+    [
+        {
+            "text": "Substack",
+            "url": "?page=substack"
+        }
+    ],
+    "modules":
+    [
+        {
+            "module": "blog-spotlight",
+            "props":
+            {
+                "heading": "Featured",
+                "filter": "featured"
+            }
+        },
+        {
+            "module": "blog-spotlight",
+            "props":
+            {
+                "heading": "Latest",
+                "latest": "true"
+            }
+        }
+    ]
+}
