@@ -1,0 +1,10 @@
+.home-page {
+	display: flex;
+	align-items: center;
+	min-height: 60vh;
+
+	graphic-diptych h1 {
+		text-transform: uppercase;
+	}
+
+}

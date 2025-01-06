@@ -1,0 +1,11 @@
+@import '../templates/partials/site-header/style.css';
+@import '../templates/partials/masthead/style.css';
+@import '../templates/partials/site-footer/style.css';
+
+@import '../templates/modules/page-header/style.css';
+@import '../templates/modules/generic-text/style.css';
+@import '../templates/modules/graphic-diptych/style.css';
+@import '../templates/modules/projects-spotlight/style.css';
+@import '../templates/modules/goal-breakdown/style.css';
+@import '../templates/modules/resume-breakdown/style.css';
+@import '../templates/modules/type-specimen/style.css';

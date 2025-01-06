@@ -1,0 +1,290 @@
+:root {
+
+	--base: 1rem; /* 16px */
+
+	/* scales */
+
+	/* minor third */
+/*	--scale: 1.200; */
+	/* major third */
+/*	--scale: 1.25; */
+	/* perfect fourth */
+/*	--scale: 1.333; */
+	/* augmented fourth */
+/*	--scale: 1.414; */
+/*	 perfect fifth */
+	--scale: 1.5; 
+	/* golden ratio */
+/*	--scale: 1.618; */
+
+	--xs-type: calc(var(--base) / var(--scale) / var(--scale));
+	--sm-type: calc(var(--base) / var(--scale));
+	--ms-type: calc(var(--base) / sqrt(var(--scale))); /* Between sm and base */
+	--base-type: var(--base); /* 1rem, 6px */
+	--ml-type: calc(var(--base) * sqrt(var(--scale))); /* Between base and lg */
+	--lg-type: calc(var(--base) * var(--scale));
+
+/*	--xl-type: calc(var(--lg-type) * var(--scale));
+	--2x-type: calc(var(--xl-type) * var(--scale));
+	--3x-type: calc(var(--2x-type) * var(--scale));
+	--4x-type: calc(var(--3x-type) * var(--scale));
+*/
+
+	--xl-type: clamp(2rem, calc(2rem + 3vw), calc(var(--lg-type) * var(--scale)));
+  --2x-type: clamp(3rem, calc(3rem + 4vw), calc(var(--xl-type) * var(--scale)));
+  --3x-type: clamp(4rem, calc(4rem + 5vw), calc(var(--2x-type) * var(--scale)));
+  --4x-type: clamp(5rem, calc(5rem + 6vw), calc(var(--3x-type) * var(--scale)));
+
+	--display-type: "Space Mono";
+	--body-type: "Helvetica Neue", sans-serif;
+	--accent-type: "Jersey 15", sans-serif;
+	--mono-type: monospace;
+}
+
+/* globals */ 
+
+body {
+	font-family: var(--body-type);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
+}
+
+p, li {
+	font-size: 1rem;
+	line-height: 1.4;
+}
+
+main {
+	line-height: 1.6em;
+}
+
+:is(p) em {
+	font-style: italic;
+}
+
+:is(p) strong {
+	font-weight: 700;
+}
+
+code {
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	padding: .1em 1em;
+	font-family: var(--display-type);
+
+	&.block {
+		margin-block: 1rem;
+	}
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+/* fonts */ 
+
+.display-type {
+	font-family: var(--display-type);
+}
+
+.accent-type {
+	font-family: var(--accent-type);
+}
+
+.colored-type {
+	color: var(--primary-color);
+}
+
+/* type scale */
+
+.xs-type { font-size: var(--xs-type); }
+.sm-type { font-size: var(--sm-type); }
+
+.ms-type { font-size: var(--ms-type); }
+.base-type { font-size: var(--base); }
+.ml-type { font-size: var(--ml-type); }
+
+.lg-type { font-size: var(--lg-type); }
+.xl-type { font-size: var(--xl-type); }
+.2x-type { font-size: var(--2x-type); }
+.3x-type { font-size: var(--3x-type); }
+.4x-type { font-size: var(--3x-type); }
+
+/* type patterns */
+
+.banner-type {
+	font-family: var(--display-type);
+	font-size: var(--3x-type);
+	font-weight: 700;
+	line-height: 0.8;
+	letter-spacing: -.05em;
+	margin-bottom: 3rem;
+
+	&.rainbow {
+		background: var(--rainbow-gradient);
+		padding: .1em;
+		color: var(--primary-color);
+	}
+	&.top-level {
+		text-transform: uppercase;
+	}
+}
+
+@media (min-width: 600px) {
+
+	/* I really only want to do this if it wraps... */
+	.top-level {
+		line-height: .1em;
+		text-transform: uppercase;
+		padding: .1em;
+	}
+}
+
+.strong-type {
+	font-weight: 700;x
+}
+
+.attention-voice {
+	font-size: var(--xl-type);
+	font-family: var(--display-type);
+/*	color: var(--primary-color);*/
+	font-weight: 700;
+}
+
+.loud-voice {
+	font-size: var(--lg-type);
+	font-family: var(--display-type);
+/*	color: var(--primary-color);*/
+	font-weight: 700;
+}
+
+.quiet-voice {
+	font-size: var(--ml-type);
+	font-family: var(--display-type);
+/*	color: var(--primary-color);*/
+	font-weight: 700;
+}
+
+.tech-type {
+	text-decoration: none;
+	background-color: var(--primary-color);
+	color: var(--background-color);
+	text-transform: uppercase;
+  font-family: "Jersey 15", sans-serif;
+  font-size: 1.2rem;
+/*	font-size: var(--ml-type);*/
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .2em;
+/*	padding: .3em 1em;*/
+	padding: .1em 1em;
+	max-width: fit-content;
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&.block {
+		margin-block: 1.5rem;
+	}
+
+	&.invert {
+		background-color: var(--background-color);
+		color: var(--primary-color);
+		padding: calc(.1em - 2px) calc(1em - 2px);
+		border: 2px solid var(--primary-color);
+	}
+
+	&.rainbow {
+		background: var(--rainbow-gradient);
+		color: var(--primary-color);
+		padding: calc(.3em - 2px) calc(1em - 2px);
+		border: 2px solid var(--primary-color);
+	}
+}
+
+span.rainbow-text {
+	background-image: var(--rainbow-gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.callout {
+	border-left: 10px solid var(--primary-color);
+	padding-left: 2em;
+}
+
+/* etc */
+
+article, generic-text, type-showcase {
+	h2, h3, h4, h5, h6 {
+/*		color: var(--primary-color);*/
+		font-family: var(--display-type);
+	}
+
+	/* should an h1 go here? */
+
+	h2 {
+		font-size: var(--xl-type);
+		font-weight: 700;
+	}
+
+	h3 {
+		font-size: var(--lg-type);
+		font-weight: 700;
+	}
+
+	h4 {
+		font-size: var(--ml-type);
+	}
+
+	p a {
+		font-weight: 700;
+		color: var(--primary-color);
+		text-decoration: underline;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+	p + h2 {
+		margin-top: 3rem;
+	}
+
+	p + h3 {
+		margin-top: 2rem;
+	}
+
+	h2 + p, h3 + p, h4 + p, p + p, p + code {
+		margin-top: 1.5rem;
+	}
+
+	.callout, ol, ul, blockquote {
+		margin-block: 2rem;
+		border-left: 10px solid var(--primary-color);
+		padding-left: 2em;
+	}
+
+	picture, iframe {
+		margin-block: 3rem;
+	}
+
+	li::marker {
+		font-weight: 700;
+	}
+
+	ul{
+		list-style-type: initial;
+	}
+
+	ol {
+		list-style-type: decimal;
+	}
+}

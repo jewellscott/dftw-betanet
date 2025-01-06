@@ -1,0 +1,31 @@
+@import 'reset.css'; 
+@import 'setup.css';
+@import 'settings.css';
+@import 'structure.css';
+@import 'typography.css';
+@import 'components.css';
+@import 'modules.css';
+
+@import 'pages.css';
+
+@import 'forms.css';
+
+@import 'developer.css';
+
+
+/* body */
+
+html {
+	min-height: 100vh;
+	overflow-y: scroll;
+	background-color: var(--primary-color);
+}
+
+body, main {
+	background-color: var(--background-color);
+}
+
+main > section + section {
+		margin-block: 5vh;
+	}
+}
