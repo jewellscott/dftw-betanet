@@ -44,21 +44,41 @@
         },
         {
             "module": "projects-spotlight",
-            "projects":
-            [
-                "florilegium",
-                "layout-garden",
-                "colorverse"
-            ]
+            "props":
+            {
+                "projects":
+                [
+                    "florilegium",
+                    "layout-garden",
+                    "colorverse"
+                ]
+            }
         },
         {
             "module": "blog-spotlight",
-            "blogs":
-            [
-                "one",
-                "two",
-                "three"
-            ]
+            "props":
+            {
+                "heading": "Blog Spotlight (Grid)",
+                "blogs":
+                [
+                    "why-your-code-editors-theme",
+                    "kitchen-sink-blog-post"
+                ]
+            }
+        },
+        {
+            "module": "blog-spotlight"
+        },
+        {
+            "module": "generic-figure"
+        },
+        {
+            "module": "generic-figure",
+            "props":
+            {
+                "centered": true,
+                "figcaption": "This is a generic figure, but smaller and centered."
+            }
         }
     ]
 }
