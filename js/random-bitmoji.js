@@ -5,6 +5,7 @@ function getRandomInt(max) {
 document.addEventListener("DOMContentLoaded", () => {
   const jewell = document.querySelector("#random-bitmoji");
   if (jewell) {
+    console.log("yup....");
     jewell.src = "https://peprojects.dev/beta-one/jewell-hosted/bitmoji-resized/numbered/bitmoji" + getRandomInt(174) + ".png";
   }
 
