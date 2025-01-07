@@ -6,7 +6,6 @@
 	$pageTitle = $blog["title"];
 	$topLevel = $blog["topLevel"];
 	$pageDescription = $blog["description"];
-	$lastUpdated = $blog["lastUpdated"];
 	$links = $blog["links"];
 
 	include('templates/modules/page-header/template.php'); 
