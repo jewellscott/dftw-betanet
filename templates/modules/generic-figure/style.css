@@ -1,0 +1,18 @@
+generic-figure	{
+	figure {
+		display: grid;
+		gap: 1rem;
+	}
+}
+
+@media (min-width: 800px) {
+	generic-figure {
+		max-width: 80%;
+		place-self: center;
+
+		&.centered {
+			max-width: 60%;
+			place-self: center;
+		}
+	}
+}
