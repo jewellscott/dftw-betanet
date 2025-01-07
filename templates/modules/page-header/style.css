@@ -3,6 +3,13 @@ page-header {
 	display: grid;
 	gap: 1rem;
 
+	.banner-type {
+		margin-bottom: 1rem;
+		&.top-level {
+		margin-bottom: 2rem;
+		}
+	}
+
 	div.meta {
 		display: flex;
 		gap: 1rem;
@@ -16,8 +23,21 @@ page-header {
 		gap: .5rem 1rem;
 	}
 
-	.last-updated {
+	.date {
 		display: inline-block;
+	}
+
+
+	/* unset article defaults */
+	
+	ul {
+		list-style: none;
+		margin: unset;
+		padding: unset;
+	}
+
+	.callout {
+		margin: unset;
 	}
 }
 
