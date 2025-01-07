@@ -9,17 +9,9 @@
 				<li><a href="/">Substack</a></li>
 			</ul>
 		</nav>
-
-		<!-- aside>
-			<dev-info>
-				<?php if(IS_DEV) { 
-					//echo $_SERVER["QUERY_STRING"];
-				 } ?>
-			</dev-info>
-		</aside> -->
 	</footer>
 
-	<script src="src/js/random-bitmoji.js"></script>
+	<script src="js/random-bitmoji.js"></script>
 
 </body>
 </html>
