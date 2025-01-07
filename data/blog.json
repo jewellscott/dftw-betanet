@@ -1,5 +1,4 @@
 {
-    "lastUpdated": "January 1, 2024",
     "topLevel": "true",
     "title": "Blog",
     "description": "Writings and stuff",
@@ -17,7 +16,8 @@
             "props":
             {
                 "heading": "Featured",
-                "filter": "featured"
+                "filter": "featured",
+                "grid": true
             }
         },
         {
