@@ -25,7 +25,7 @@ body, main {
 	background-color: var(--background-color);
 }
 
-main > section + section {
-		margin-block: 5vh;
+main > section + section, article > section + section {
+		margin-block: 10vh;
 	}
 }
