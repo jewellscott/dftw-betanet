@@ -7,10 +7,19 @@ projects-spotlight {
 		display: grid;
 		gap: 40px;
 	}
+
+	/* unset article defaults */
+	
+	ul {
+		list-style: none;
+		margin: unset;
+		padding: unset;
+		border: none;
+	}
 }
 
 @media (min-width: 800px) {
 	projects-spotlight .project-list {
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
 	}
 }
