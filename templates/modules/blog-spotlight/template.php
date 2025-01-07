@@ -6,7 +6,7 @@
     foreach ($blogFiles as $file) {
         if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
 
-            $b = getData("projects/$file");
+            $b = getData("blog/$file");
 
             array_push($blogData, $b);
 
@@ -17,6 +17,14 @@
     $filter = $props["filter"] ?? null;
     $blogs = $props["blogs"] ?? [];
 
+    $grid = $props["grid"] ?? [];
+
+    $isGrid = "";
+
+    if ($grid) {
+        $isGrid = "grid";
+    }
+
 
     if (empty($blogs)) {
 
@@ -24,13 +32,13 @@
 
             $blogs = [];
 
-            foreach ($blogsData as $blog) {
+            foreach ($blogData as $blog) {
                 if(isset($blog["$filter"])) {
                     array_push($blogs, $blog);
                 }
             }
         } else {
-            $blogs = $blogsData;
+            $blogs = $blogData;
         }
     } else {
 
@@ -42,7 +50,7 @@
 
             // filter the projectsData by the slugs and add them to projects
 
-            foreach ($blogsData as $blog) {
+            foreach ($blogData as $blog) {
                 if (in_array($blog['slug'], $blogSlugs)) {
                     array_push($blogs, $blog);
                 }
@@ -61,11 +69,11 @@
         <?=$heading?>
     </h2>
 
-    <ul class="blog-list">
+    <ul class="blog-list <?=$isGrid?>">
             <?php foreach ($blogs as $blog) { ?>
                 <li class="blog">
                     <?php   
-                    include('templates/components/project-card/template.php'); ?>
+                    include('templates/components/blog-card/template.php'); ?>
                 </li>
             <?php } ?>
     </ul>

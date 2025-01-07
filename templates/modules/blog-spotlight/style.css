@@ -1,0 +1,17 @@
+blog-spotlight {
+	h2 {
+		margin-bottom: 1.5rem;
+	}
+
+	.blog-list {
+		display: grid;
+		gap: 40px;
+	}
+}
+
+@media (min-width: 800px) {
+
+	blog-spotlight .blog-list.grid {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+
