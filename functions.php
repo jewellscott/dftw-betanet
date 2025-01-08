@@ -33,3 +33,25 @@ function renderModule($moduleName, $props = []) {
 	};
 }
 
+function slugExists($slug, $directory) {
+    $files = scandir($directory);
+
+    foreach ($files as $file) {
+
+        if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
+        	// makes sure the file is valid json
+
+        		$json = file_get_contents("$directory/$file");
+
+            $data = json_decode($json, true);
+
+
+            if (isset($data['slug']) && $data['slug'] === $slug) {
+            	// if the data has a file with the slug that matches the slug in the querystring
+            	
+                return true;
+            }
+        }
+    }
+    return false;
+}

@@ -14,20 +14,28 @@
         }
     }
 
-	foreach ($projects as $p) {
-		if ($p["slug"] == $_GET["slug"]) {
-			$project = $p;
+	$slug = $_GET["slug"] ?? null; 
+
+		foreach ($projectFiles as $file) {
+			if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
+			   $project = getData("projects/$file");
+			   
+			   if (isset($project['slug']) && $project['slug'] === $slug) {
+
+			   	// if this slug actually exists in a json file in the subdirectory, THEN load the header
+
+
+					$pageTitle = $project["title"];
+					$topLevel = false;
+					$links = $project["links"];
+
+					$pageDescription = $project["description"];
+
+			       include('templates/modules/page-header/template.php'); 
+			   }
+			}
 		}
-	}
 
-
-	$pageTitle = $project["title"];
-	$topLevel = false;
-	$links = $project["links"];
-
-	$pageDescription = $project["description"];
-
-	include('templates/modules/page-header/template.php'); 
 
 ?>
 

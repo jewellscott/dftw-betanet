@@ -2,29 +2,42 @@
 	<?php 
 
 		$blogFiles = scandir('data/blog');
-	    $blogData = [];
+		$blogData = [];
 
-	    foreach ($blogFiles as $file) {
-	        if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
-	            // at first it was sending in other files... maybe invisible files
+		foreach ($blogFiles as $file) {
+			if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
+			// at first it was sending in other files... maybe invisible files
 
-	            $blog = getData("blog/$file");
+			$blog = getData("blog/$file");
 
-	            array_push($blogData, $blog);
+			array_push($blogData, $blog);
 
-	        }
-	    }
+			}
+		}
 
-		$pageTitle = $blog["title"];
-		$topLevel = false;
-		$links = $blog["links"];
+		$slug = $_GET["slug"] ?? null; 
 
-		$pageDescription = $blog["description"];
-		$lastUpdated = $blog["lastUpdated"];
-		$published = $blog["published"];
+		foreach ($blogFiles as $file) {
+			if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
+			   $blog = getData("blog/$file");
+			   
+			   if (isset($blog['slug']) && $blog['slug'] === $slug) {
+
+			   	// if this slug actually exists in a json file in the subdirectory, THEN load the header
 
 
-		include('templates/modules/page-header/template.php'); 
+			       $pageTitle = $blog["title"];
+			       $topLevel = false;
+			       $links = $blog["links"];
+			       $pageDescription = $blog["description"];
+			       $lastUpdated = $blog["lastUpdated"];
+			       $published = $blog["published"];
+
+			       include('templates/modules/page-header/template.php'); 
+			   }
+			}
+		}
+
 
 	?>
 
