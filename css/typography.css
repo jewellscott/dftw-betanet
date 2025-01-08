@@ -40,6 +40,8 @@
 	--body-type: "Helvetica Neue", sans-serif;
 	--accent-type: "Jersey 15", sans-serif;
 	--mono-type: monospace;
+
+	--char-width: 70ch;
 }
 
 /* globals */ 
@@ -52,13 +54,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.15;
 }
 
-p, li {
+p, li, figcaption {
 	font-size: 1rem;
-	line-height: 1.4;
+	line-height: 1.6;
 }
 
 main {
-	line-height: 1.6em;
+	line-height: 1.6;
 }
 
 :is(p) em {
@@ -74,6 +76,7 @@ code {
 	color: var(--background-color);
 	padding: .1em 1em;
 	font-family: var(--display-type);
+/*	margin-block: 200rem;*/
 
 	&.block {
 		margin-block: 1rem;
@@ -133,6 +136,7 @@ code {
 	}
 	&.top-level {
 		text-transform: uppercase;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -147,7 +151,7 @@ code {
 }
 
 .strong-type {
-	font-weight: 700;x
+	font-weight: 700;
 }
 
 .attention-voice {
@@ -185,6 +189,7 @@ code {
 /*	padding: .3em 1em;*/
 	padding: .1em 1em;
 	max-width: fit-content;
+	line-height: 1.4;
 	a {
 		color: inherit;
 		text-decoration: none;
@@ -222,7 +227,10 @@ span.rainbow-text {
 
 /* etc */
 
-generic-text, type-showcase {
+generic-text, type-showcase, .page-article, figcaption {
+
+	line-height: 1.5rem;
+
 	h2, h3, h4, h5, h6 {
 /*		color: var(--primary-color);*/
 		font-family: var(--display-type);
