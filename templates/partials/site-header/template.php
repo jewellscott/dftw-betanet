@@ -2,6 +2,44 @@
 $baseDir = realpath(dirname(__FILE__) . '/../../..');
 require_once $baseDir . '/config.php';
 require_once $baseDir . '/functions.php';
+
+$page = $_GET["page"] ?? "home";
+
+
+if ($page == "post") {
+
+	$slug = $_GET["slug"] ?? null;
+
+    if ($slug) {
+    	// do some deeper checking, 
+      
+        if (slugExists($slug, 'data/blog')) {
+     			$template = "left";
+     			// all blog posts are aligned left IF the slug exists. 
+
+     			// else it will still be centered, so the 404 is as normal.        
+        	}
+
+    } else {
+
+		$template = "left";
+
+    }
+
+} else {
+
+	$json = file_get_contents("data/$page.json");
+	$pageData = json_decode($json, true);
+
+	$template = $pageData["template"] ?? "";
+}
+
+// $isTemplate = "";
+
+// if ($template) {
+// 	$isTemplate = 
+// }
+
 ?>
 
 
@@ -35,4 +73,4 @@ require_once $baseDir . '/functions.php';
 		<?php include('templates/partials/masthead/template.php'); ?>
 	</header>
 
-	<main>
+	<main class="<?=$template?>">

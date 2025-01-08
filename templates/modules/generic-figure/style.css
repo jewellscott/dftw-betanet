@@ -11,7 +11,7 @@ generic-figure	{
 		place-self: center;
 
 		&.centered {
-			max-width: 60%;
+			max-width: var(--char-width);
 			place-self: center;
 		}
 	}

@@ -1,4 +1,3 @@
-
 <?php 
 	$json = file_get_contents('data/resume.json');
 	$resumeData = json_decode($json, true);
@@ -11,7 +10,7 @@
  ?>
 
 
-<resume-breakdown>
+<resume-breakdown class="page-article">
 	<section class="skills">
 		<h2 class="attention-voice"><?=$resumeData["sections"][0]["heading"]?></h2>
 		<article class="resume-card skills-card">
@@ -30,8 +29,8 @@
 				<?php foreach ($work as $w) {?>
 					<li>
 						<article class="resume-card work-card">
-							<h3><?=$w["role"]?></h2>
-							<h4><?=$w["company"]?></h2>
+							<h3><?=$w["role"]?></h3>
+							<h4><?=$w["company"]?></h4>
 							<p class="display-type"><?=$w["start"]?> – <?=$w["end"]?></p>
 							<ul>
 								<?php foreach ($w["responsibilities"] as $r) {?>
@@ -51,8 +50,8 @@
 					<?php foreach ($education as $e) {?>
 						<li>
 							<article class="education-card work-card">
-								<h3><?=$e["subject"]?></h2>
-								<h4><?=$e["location"]?></h2>
+								<h3><?=$e["subject"]?></h3>
+								<h4><?=$e["location"]?></h4>
 							</article>
 						</li>	
 					<?php } ?>

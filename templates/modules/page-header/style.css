@@ -3,12 +3,12 @@ page-header {
 	display: grid;
 	gap: 1rem;
 
-	.banner-type {
+	/*.banner-type {
 		margin-bottom: 1rem;
 		&.top-level {
 		margin-bottom: 2rem;
 		}
-	}
+	}*/
 
 	div.meta {
 		display: flex;

@@ -19,3 +19,13 @@ generic-text {
 		font-weight: 700;
 	}
 }
+
+@media (min-width: 800px) {
+	generic-text {
+		max-width: var(--char-width);
+
+		&.centered {
+			place-self: center;
+		}
+	}
+}
