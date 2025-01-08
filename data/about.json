@@ -3,7 +3,7 @@
     "topLevel": "true",
     "title": "About",
     "description": "Description",
-    "template": "page-left",
+    "template": "left",
     "links":
     [
         {

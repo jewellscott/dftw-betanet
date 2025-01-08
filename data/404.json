@@ -1,14 +1,15 @@
 {
     "title": "404",
+    "template": "",
     "modules":
     [
         {
             "module": "graphic-diptych",
             "props":
             {
-                "imgSrc": "",
+                "imgSrc": "assets/img/placeholder/square.jpg",
                 "imgId": "bitmoji404",
-                "content": "<h1 class='banner-type rainbow'>404!</h1><h2 class='attention-voice'>Sorry! Page $page doesn't exist.</h2><a href='?page=home' class='tech-type block'>Go back home</a>"
+                "content": "<h1 class='banner-type rainbow'>404!</h1><h2 class='attention-voice'>Sorry! This page doesn't exist.</h2><a href='?page=home' class='tech-type block'>Go back home</a>"
             }
         }
     ]
