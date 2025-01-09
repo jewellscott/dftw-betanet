@@ -55,3 +55,25 @@ function slugExists($slug, $directory) {
     }
     return false;
 }
+
+
+// get rid of the function above and just return the file by default???
+
+function getFileBySlug($slug, $directory) {
+    $files = scandir($directory);
+
+    foreach ($files as $file) {
+        if (pathinfo($file, PATHINFO_EXTENSION) === 'json') {
+            $filePath = "$directory/$file";
+
+            $json = file_get_contents($filePath);
+            $data = json_decode($json, true);
+			
+			if (isset($data['slug']) && $data['slug'] === $slug) {
+                return $data; 
+            }
+        }
+    }
+
+    return null; // Return null if no file matches the slug
+}
