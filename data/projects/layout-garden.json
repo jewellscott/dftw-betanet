@@ -2,6 +2,7 @@
     "title": "Layout Garden",
     "slug": "layout-garden",
     "teaser": "Carefully tended",
+    "collection": true,
     "description": "Project description onec vitae magna consectetur, rhoncus tortor vitae, viverra leo",
     "links":
     [

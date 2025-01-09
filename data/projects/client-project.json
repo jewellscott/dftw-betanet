@@ -18,13 +18,7 @@
     "case-study":
     [
         {
-            "module": "generic-text"
-        },
-        {
             "module": "graphic-diptych"
-        },
-        {
-            "module": "projects-spotlight"
         }
     ]
 }

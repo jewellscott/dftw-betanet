@@ -2,6 +2,7 @@
     "topLevel": "true",
     "title": "Blog",
     "description": "Writings and stuff",
+    "template": "left",
     "links":
     [
         {
@@ -16,8 +17,7 @@
             "props":
             {
                 "heading": "Featured",
-                "filter": "featured",
-                "grid": true
+                "filter": "featured"
             }
         },
         {

@@ -67,9 +67,10 @@
             "props":
             {
                 "heading": "Blog Spotlight (Grid)",
+                "grid": true,
                 "blogs":
                 [
-                    "why-your-code-editors-theme",
+                    "another-fake-blog-post",
                     "kitchen-sink-blog-post"
                 ]
             }
@@ -85,8 +86,13 @@
             "props":
             {
                 "centered": true,
-                "figcaption": "This is a generic figure, but smaller (80ch width) and centered. <code>centered: true;</code>"
+                "figcaption": "This is a generic figure, but smaller (80ch width) and centered. <code>$centered: true;</code>"
             }
+        },
+        {
+            "module": "generic-codepen",
+            "props":
+            {}
         }
     ]
 }
