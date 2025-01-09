@@ -34,12 +34,6 @@ if ($page == "post") {
 	$template = $pageData["template"] ?? "";
 }
 
-// $isTemplate = "";
-
-// if ($template) {
-// 	$isTemplate = 
-// }
-
 ?>
 
 
@@ -73,4 +67,4 @@ if ($page == "post") {
 		<?php include('templates/partials/masthead/template.php'); ?>
 	</header>
 
-	<main class="<?=$template?>">
+	<main class="page-content <?=$template?>">
