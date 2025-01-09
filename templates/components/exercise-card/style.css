@@ -1,0 +1,12 @@
+exercise-card {
+	display: grid;
+	gap: 10px;
+/*  	grid-template-rows: auto 1fr auto; */
+/*  	height: 100%; /* take up full height */
+}
+
+exercise-card a.tech-type {
+/*  grid-row: 2; /* put the link at the bottom of the card */*/
+}
+
+

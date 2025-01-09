@@ -14,7 +14,7 @@ if (file_exists("templates/pages/$page.php")) {
     if ($slug) {
     	// do some deeper checking
       
-        if (slugExists($slug, 'data/blog') || slugExists($slug,'data/projects')) {
+        if (slugExists($slug, 'data/blog') || slugExists($slug,'data/projects') || slugExists($slug,'data/e4p')) {
             include("templates/pages/$page.php");
         } else {
             include("templates/pages/404.php");

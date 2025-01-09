@@ -1,0 +1,20 @@
+{
+    "title": "Another E4P",
+    "intro": "sdfass",
+    "slug": "fsfadsfdA",
+    "teaser": "SdfasfdasfadsfA",
+    "filter": true,
+    "conclusion": "sdfads",
+    "case-study":
+    [
+        {
+            "module": "generic-text"
+        },
+        {
+            "module": "generic-codepen"
+        },
+        {
+            "module": "generic-text"
+        }
+    ]
+}

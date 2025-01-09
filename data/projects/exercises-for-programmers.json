@@ -1,0 +1,28 @@
+{
+    "title": "Exercises for Programmers",
+    "slug": "exercises-for-programmers",
+    "teaser": "How to get good",
+    "collection": true,
+    "description": "Project description onec vitae magna consectetur, rhoncus tortor vitae, viverra leo",
+    "links":
+    [
+        {
+            "text": "Live",
+            "url": "#"
+        },
+        {
+            "text": "Github",
+            "url": "?page=contact"
+        }
+    ],
+    "case-study":
+    [
+        {
+            "module": "exercises-spotlight",
+            "props":
+            {
+                "heading": "Some Section"
+            }
+        }
+    ]
+}
