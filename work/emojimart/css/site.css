@@ -1,0 +1,95 @@
+@import 'preset.css';
+@import 'setup.css';
+@import 'settings.css';
+@import 'structure.css';
+@import 'typography.css';
+@import 'components.css';
+@import 'modules.css';
+@import 'forms.css';
+
+
+emojimart-app {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+product-view {
+	max-height: 100vh;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+
+checkout-view {
+	max-height: 100vh;
+	overflow-y: scroll;
+}
+
+product-showcase {
+	margin-block: 2em;
+	ul {
+		list-style: none;
+		padding: unset;
+
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+		gap: 20px;
+
+		overflow-x: scroll;
+
+		li {
+			grid-row: 1;
+		}
+
+	}
+}
+
+product-card {
+	display: grid;
+	gap: .5rem;
+	min-width: 250px;
+	position: relative;
+
+	p {
+		margin: unset;
+	}
+	img {
+		max-width: 150px;
+	}
+	.name {
+	}
+	.price {
+		font-weight: 700;
+		font-size: 2rem;
+	}
+
+	button {
+		position: absolute;
+		background-color: #defebc;
+		padding: 0 .6rem;
+		color: black;
+		font-size: 2rem;
+		left: 150px;
+		border-radius: 100%;
+		border: none;
+	}
+}
+
+
+
+empty-cart {
+
+	display: grid;
+	min-width: 100%;
+	justify-items: center;
+	opacity: 40%;
+
+	p {
+		font-size: 2rem;
+		font-weight: 700;
+		max-width: 20ch;
+		text-align: center;
+	}
+	picture {
+		max-width: 250px;
+	}
+}

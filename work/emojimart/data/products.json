@@ -1,0 +1,257 @@
+{
+    "categories":
+    [
+        {
+            "id": "fresh-fruit",
+            "name": "Fresh Fruit",
+            "products":
+            [
+                {
+                    "id": "grapes",
+                    "name": "Grapes",
+                    "thumb": "https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/grapes.png",
+                    "price": "4.99",
+                    "unit": "bunch"
+                },
+                {
+                    "id": "honeydew-melon",
+                    "name": "Honeydew Melon",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/melon.png",
+                    "price": "5.99",
+                    "unit": "each"
+                },
+                {
+                    "id": "watermelon",
+                    "name": "Watermelon",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/watermelon.png",
+                    "price": "7.99",
+                    "unit": "each"
+                },
+                {
+                    "id": "tangerine",
+                    "name": "Tangerine",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/tangerine.png",
+                    "price": "0.79",
+                    "unit": "each"
+                },
+                {
+                    "id": "lemon",
+                    "name": "Lemon",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/lemon.png",
+                    "price": "0.89",
+                    "unit": "each"
+                },
+                {
+                    "id": "bananas",
+                    "name": "Bananas",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/banana.png",
+                    "price": "3.99",
+                    "unit": "bunch"
+                },
+                {
+                    "id": "pineapple",
+                    "name": "Pineapple",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/pineapple.png",
+                    "price": "4.99",
+                    "unit": "each"
+                },
+                {
+                    "id": "mango",
+                    "name": "Mango",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/mango.png",
+                    "price": "2.49",
+                    "unit": "each"
+                },
+                {
+                    "id": "red-apple",
+                    "name": "Red Apple",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/red-apple.png",
+                    "price": "0.89",
+                    "unit": "each"
+                },
+                {
+                    "id": "green-apple",
+                    "name": "Green Apple",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/green-apple.png",
+                    "price": "0.89",
+                    "unit": "each"
+                },
+                {
+                    "id": "pear",
+                    "name": "Pear",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/pear.png",
+                    "price": "1.29",
+                    "unit": "each"
+                },
+                {
+                    "id": "peach",
+                    "name": "Peach",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/peach.png",
+                    "price": "1.49",
+                    "unit": "each"
+                },
+                {
+                    "id": "cherries",
+                    "name": "Cherries",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/cherries.png",
+                    "price": "5.99",
+                    "unit": "lb"
+                },
+                {
+                    "id": "strawberries",
+                    "name": "Strawberries",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/strawberry.png",
+                    "price": "4.99",
+                    "unit": "carton"
+                }
+            ]
+        },
+        {
+            "id": "fresh-vegetables",
+            "name": "Fresh Vegetables",
+            "products":
+            [
+                {
+                    "id": "tomato",
+                    "name": "Tomato",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/tomato.png",
+                    "price": "0.79",
+                    "unit": "each"
+                },
+                {
+                    "id": "avocado",
+                    "name": "Avocado",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/avocado.png",
+                    "price": "2.49",
+                    "unit": "each"
+                },
+                {
+                    "id": "eggplant",
+                    "name": "Eggplant",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/eggplant.png",
+                    "price": "2.99",
+                    "unit": "each"
+                },
+                {
+                    "id": "potato",
+                    "name": "Potato",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/potato.png",
+                    "price": "0.99",
+                    "unit": "lb"
+                },
+                {
+                    "id": "carrot",
+                    "name": "Carrot",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/carrot.png",
+                    "price": "1.99",
+                    "unit": "lb"
+                },
+                {
+                    "id": "corn",
+                    "name": "Corn",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/ear-of-corn.png",
+                    "price": "0.89",
+                    "unit": "ear"
+                },
+                {
+                    "id": "hot-pepper",
+                    "name": "Hot Pepper",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/hot-pepper.png",
+                    "price": "0.49",
+                    "unit": "each"
+                },
+                {
+                    "id": "cucumber",
+                    "name": "Cucumber",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/cucumber.png",
+                    "price": "1.49",
+                    "unit": "each"
+                },
+                {
+                    "id": "kale",
+                    "name": "Kale",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/leafy-green.png",
+                    "price": "2.99",
+                    "unit": "bunch"
+                },
+                {
+                    "id": "broccoli",
+                    "name": "Broccoli",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/broccoli.png",
+                    "price": "2.99",
+                    "unit": "lb"
+                }
+            ]
+        },
+        {
+            "id": "bakery",
+            "name": "Bakery",
+            "products":
+            [
+                {
+                    "id": "bread",
+                    "name": "Bread",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/bread.png",
+                    "price": "3.99",
+                    "unit": "loaf"
+                },
+                {
+                    "id": "croissant",
+                    "name": "Croissant",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/croissant.png",
+                    "price": "2.49",
+                    "unit": "each"
+                },
+                {
+                    "id": "baguette",
+                    "name": "Baguette",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/baguette-bread.png",
+                    "price": "3.99",
+                    "unit": "each"
+                },
+                {
+                    "id": "bagel",
+                    "name": "Bagel",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/bagel.png",
+                    "price": "1.29",
+                    "unit": "each"
+                },
+                {
+                    "id": "doughnut",
+                    "name": "Doughnut",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/doughnut.png",
+                    "price": "1.49",
+                    "unit": "each"
+                },
+                {
+                    "id": "cookie",
+                    "name": "Cookie",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/cookie.png",
+                    "price": "1.99",
+                    "unit": "each"
+                },
+                {
+                    "id": "cake",
+                    "name": "Cake",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/shortcake.png",
+                    "price": "24.99",
+                    "unit": "each"
+                },
+                {
+                    "id": "pie",
+                    "name": "Pie",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/pie.png",
+                    "price": "14.99",
+                    "unit": "each"
+                },
+                {
+                    "id": "cupcake",
+                    "name": "Cupcake",
+                    "thumb": "https://d2trtkcohkrm90.cloudfront.net/images/emoji/apple/ios-12/128/cupcake.png",
+                    "price": "2.99",
+                    "unit": "each"
+                }
+            ]
+        }
+    ]
+}
