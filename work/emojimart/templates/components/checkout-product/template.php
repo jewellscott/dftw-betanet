@@ -14,6 +14,12 @@ foreach ($allProducts as $product) {
         break;
     }
 }
+
+// $total = $total ?? 0;
+// // stuff that needs to be calculated each time a product runs
+$itemTotal = $thisProduct['price'] * $qty;
+$total += $itemTotal;
+$totalTax = ($total * $taxRate);
 ?>
 
 <checkout-product>
@@ -23,9 +29,9 @@ foreach ($allProducts as $product) {
 	</picture>
 
 	<product-details>
-		<h3><?=$thisProduct["name"]?></h3>
+		<h3><?=$thisProduct["name"]?> irl these names are longer</h3>
 		<h4><?=$qty?> @ <?=$thisProduct["price"]?>/<?=$thisProduct["unit"]?></h4>
-		<h4><?php ($qty * $thisProduct["price"]); ?></h4>
+		<h4>$<?=number_format($itemTotal, 2)?></h4>
 	</product-details>
 
 	<?php include('templates/components/product-actions/template.php'); ?>
