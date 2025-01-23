@@ -14,46 +14,11 @@
  <product-view>
  	<inner-column>
 
- 	 <?php foreach ($productData["categories"] as $category) { ?>
+ 	 <?php foreach ($productData["categories"] as $category) { 
 
-	 	<product-showcase class="<?=$category["id"]?>">
+ 	 		include('templates/modules/product-showcase/template.php');
 
-	 	<h1><?=$category["name"]?></h1>
-
-	 	<ul class="<?=$category["id"]?>-list">
-
-	 		<?php foreach ($category["products"] as $product) { ?>
-
-	 			<li class="<?=$product["id"]?>">
-	 				<product-card data-id="<?=$product["id"]?>">
-	 					<picture>
-	 						<img 
-	 							src="<?=$product["thumb"]?>" 
-	 							alt="<?=$product["name"]?>"
-	 						>
-	 					</picture>
-	 					<p class="name"><?=$product["name"]?></p>
-	 					<p><span class="price">$<?=$product["price"]?></span> <span class="unit">/<?=$product["unit"]?></span></p>
-
-	 					<form action="" method="POST" class="product-actions">
-							<button type="submit" name="action" value="decrease" class="btn-decrease">-</button>
-
-							<span class="count">
-							   0
-							</span>
-
-							<button type="submit" name="action" value="increase" class="btn-increase">+</button>
-						</form>
-	 				</product-card>
-	 			</li>
-
-		 	 <?php } ?>
-
-	 	</ul>
-
-	 	</product-showcase>
-	 	
-	 <?php } ?>	
+	  } ?>	
 
 	</inner-column>
  	
@@ -65,15 +30,7 @@
  		<!-- display cart -->
  	<?php } else { ?>
 
- 		<empty-cart>
-
-	 		<p>Your cart is empty.<br> Please enjoy a landscape.</p>
-
-		 	<picture>
-		 		<img src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/national-park.png" alt="National Park Emoji">
-		 	</picture>
- 		
- 		</empty-cart>
+		<?php include('templates/modules/empty-cart/template.php');?>
 
  	<?php } ?>
 
