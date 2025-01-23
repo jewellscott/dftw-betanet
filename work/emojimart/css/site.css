@@ -25,7 +25,7 @@ checkout-view {
 }
 
 product-showcase {
-	margin-block: 2em;
+	margin-bottom: 4em;
 	ul {
 		list-style: none;
 		padding: unset;
@@ -48,6 +48,7 @@ product-card {
 	gap: .5rem;
 	min-width: 250px;
 	position: relative;
+	margin-bottom: 1rem;
 
 	p {
 		margin: unset;
@@ -62,16 +63,43 @@ product-card {
 		font-size: 2rem;
 	}
 
-	button {
+	form.product-actions {
+		display: flex;
+/*		gap: 20px;*/
+		position: absolute;
+		background-color: #defebc;
+		padding: .25rem;
+/*		padding: 0 .6rem;*/
+		color: black;
+		font-size: 1.2rem;
+		font-weight: 700;
+		left: 80px;
+		border-radius: 100px;
+		border: none;
+
+		button {
+			padding: unset;
+			border: unset;
+			background-color: inherit;
+			padding-inline: .5rem;
+		}
+
+		.count {
+			background-color: #defebc;
+			padding-inline: 1rem;
+		}
+	}
+
+	/*form.product-add {
 		position: absolute;
 		background-color: #defebc;
 		padding: 0 .6rem;
 		color: black;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		left: 150px;
 		border-radius: 100%;
 		border: none;
-	}
+	}*/
 }
 
 

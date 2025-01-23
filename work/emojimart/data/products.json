@@ -11,7 +11,7 @@
                     "name": "Grapes",
                     "thumb": "https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/grapes.png",
                     "price": "4.99",
-                    "unit": "bunch"
+                    "unit": "lb"
                 },
                 {
                     "id": "honeydew-melon",
