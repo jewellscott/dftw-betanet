@@ -5,7 +5,17 @@
 	$json = file_get_contents('data/products.json');
 	$productData = json_decode($json, true); 
 
-	$cart = [];
+	session_start();
+
+	$cart = $_SESSION['cart'] ?? [];
+
+	$emptyCart = true;
+
+	foreach ($cart as $quantity) {
+	    if ($quantity > 0) {
+	        $emptyCart = false;
+	    }
+	}
 
  ?>
 
@@ -26,8 +36,9 @@
 
  <checkout-view>
 
- 	<?php if (!empty($cart)) { ?>
- 		<!-- display cart -->
+ 	<?php if (!$emptyCart) { ?>
+ 		<?php include('templates/modules/full-cart/template.php');?>
+
  	<?php } else { ?>
 
 		<?php include('templates/modules/empty-cart/template.php');?>
