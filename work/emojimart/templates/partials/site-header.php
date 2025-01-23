@@ -7,10 +7,10 @@
 	<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-	<header>
-		<masthead>
+	<header class="site-header">
+		<mast-head>
 			<h1>😋 emojiMart 🥦</h1>
-		</masthead>
+		</mast-head>
 	</header>
 	<main>
 
