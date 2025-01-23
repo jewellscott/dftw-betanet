@@ -1,6 +1,6 @@
 <?php 
 
-var_dump($cart);
+// var_dump($cart);
 
 $total = $total ?? 0;
 $totalTax = $totalTax ?? 0;
