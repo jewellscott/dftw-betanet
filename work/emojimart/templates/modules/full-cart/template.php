@@ -1,13 +1,12 @@
 <?php var_dump($cart); ?>
 
 <full-cart>
-	<?php foreach ($cart as $key => $val) { 
+	<?php foreach ($cart as $item => $qty) { 
 
-		echo($key);
-		echo($val);
+		// echo($item);
+		// echo($qty);
 
-
-	// include('templates/components/checkout-product/template.php');
+	include('templates/components/checkout-product/template.php');
 
 	 } ?>
 

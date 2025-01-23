@@ -102,8 +102,6 @@ product-card {
 	}*/
 }
 
-
-
 empty-cart {
 
 	display: grid;
@@ -120,4 +118,25 @@ empty-cart {
 	picture {
 		max-width: 250px;
 	}
+}
+
+checkout-product {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	padding: 1rem;
+	picture {
+		max-width: 50px;
+	}
+
+	/*product-details {
+		display: flex;
+		flex-direction: column;
+		margin: unset;
+	}*/
+
+	/*product-actions {
+		display: flex;
+		flex-direction: column;
+	}*/
 }
