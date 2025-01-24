@@ -2,6 +2,8 @@
 
 // we run into another problem here because how the data is set up - multiple categories, each with their own products. we either have to flatten it or loop through every category... gonna flatten it
 
+// maybe some of this stuff should be broken up into a controller file?
+
 $allProducts = array_merge(...array_map(function($category) {
    return $category['products'];
 }, $productData['categories']));
@@ -29,7 +31,7 @@ $totalTax = ($total * $taxRate);
 	</picture>
 
 	<product-details>
-		<h3><?=$thisProduct["name"]?> irl these names are longer</h3>
+		<h3><?=$thisProduct["name"]?> (padded – these names are longer IRL)</h3>
 		<h4><?=$qty?> @ <?=$thisProduct["price"]?>/<?=$thisProduct["unit"]?></h4>
 		<h4>$<?=number_format($itemTotal, 2)?></h4>
 	</product-details>

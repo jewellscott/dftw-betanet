@@ -7,8 +7,9 @@
 @import 'modules.css';
 @import 'forms.css';
 
-masthead {
-	background-color: red;
+mast-head {
+	padding-inline: 20px;
+	color: #80cacb;
 }
 
 emojimart-app {
@@ -20,6 +21,7 @@ product-view {
 	max-height: 100vh;
 	overflow: hidden;
 	overflow-y: scroll;
+	margin-left: 20px;
 }
 
 checkout-view {
@@ -128,7 +130,7 @@ checkout-product {
 	gap: 50px;
 	justify-content: space-between;
 	align-items: center;
-	padding: 2rem;
+	padding: .5rem 2rem;
 	picture {
 		max-width: 75px;
 	}
@@ -140,7 +142,8 @@ checkout-product {
 	}*/
 
 	.product-actions {
-		display: grid;
+		display: flex;
+		flex-direction: column-reverse;
 		gap: 10px;
 		background-color: #defebc;
 		padding: .5rem;
@@ -149,6 +152,8 @@ checkout-product {
 		font-weight: 700;
 		border-radius: 100px;
 		border: none;
+
+
 
 		button {
 			padding: unset;
