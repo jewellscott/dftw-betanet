@@ -1,44 +1,50 @@
 {
-    "lastUpdated": "January 1, 2025",
+    "lastUpdated": "February 1, 2025",
     "title": "Goals",
-    "description": "Where I'm heading and why",
+    "description": "Projects I want to complete and why",
     "topLevel": "true",
     "content":
     [
         {
+            "time": "Ongoing",
+            "goals":
+            [
+                "Layout Garden – Showcasing basic front-end skills",
+                "Exercises for Programmers – Showcasing basic programming skills"
+            ]
+        },
+        {
             "time": "1 Week",
             "goals":
             [
-                "One",
-                "Two",
-                "Three"
+                "Betanet Portfolio – First point of contact; showcasing my work and design process",
+                "Mockup to Code – Showcasing basic front-end (hand-off) skills"
             ]
         },
         {
             "time": "1 Month",
             "goals":
             [
-                "One",
-                "Two",
-                "Three"
+                "500 Greatest – A useful PHP playground (refactor + case study)",
+                "Colorverse – Color exploration (with JavaScript) and UI showcase (refactor + case study)",
+                "Curry Crush – Client project (refactor + case study)",
+                "Research and Destroy – Design exploration showcase (refactor + case study)",
+                "TownieCrafter – JavaScript application prototype (refactor + case study)",
+                "Passphrase Pal – Progressively enhanced JavaScript mini-app (refactor + case study)",
+                "Sick Sad Ipsum – Showcasing different client-side and server-side rendering methods"
             ]
         },
         {
             "time": "3 Months",
             "goals":
             [
-                "One",
-                "Two",
-                "Three"
-            ]
-        },
-        {
-            "time": "6 Months",
-            "goals":
-            [
-                "One",
-                "Two",
-                "Three"
+                "HoodCrafter – Full JavaScript application",
+                "Florilegium – Tumblr-style PHP CMS",
+                "Counterpoint Records – Full Wordpress application",
+                "EmojiCart – InstaCart clone (using Vue?)",
+                "Chord Sheet Site – Wordpress client project",
+                "PHP Form Builder (work into another project)",
+                "Live Style Tile (work into another project)"
             ]
         }
     ]
