@@ -20,4 +20,8 @@ type-specimen {
 /*			text-transform: lowercase;*/
 		}
 	}
+
+	p {
+		font-family: var(--display-type);
+	}
 }
