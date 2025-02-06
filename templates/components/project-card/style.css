@@ -1,12 +1,20 @@
 project-card {
 	display: grid;
-	gap: 10px;
-/*  	grid-template-rows: auto 1fr auto; */
-/*  	height: 100%; /* take up full height */
+	gap: 40px;
+
+	card-content {
+		display: grid;
+		gap: 10px;
+	}
 }
 
-.project-card a.tech-type {
-/*  grid-row: 2; /* put the link at the bottom of the card */*/
+
+
+@media (min-width: 800px) {
+	project-card {
+	grid-template-columns: 1fr 1fr;
+
+	card-content {
+		align-self: center;
+	}
 }
-
-

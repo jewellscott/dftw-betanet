@@ -21,6 +21,15 @@
     $filter = $props["filter"] ?? null;
     $projects = $props["projects"] ?? [];
 
+    $grid = $props["grid"] ?? [];
+
+    $isGrid = "";
+
+    if ($grid) {
+        $isGrid = "grid";
+    }
+
+
 
     if (empty($projects)) {
 
@@ -65,7 +74,7 @@
         <?=$heading?>
     </h2>
 
-    <ul class="project-list">
+    <ul class="project-list <?=$isGrid?>">
             <?php foreach ($projects as $project) { ?>
                 <li class="project">
                     <?php   

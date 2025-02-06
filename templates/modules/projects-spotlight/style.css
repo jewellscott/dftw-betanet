@@ -19,7 +19,8 @@ projects-spotlight {
 }
 
 @media (min-width: 800px) {
-	projects-spotlight .project-list {
-		grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+
+	projects-spotlight .project-list.grid {
+		grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
 	}
 }
