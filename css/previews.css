@@ -3,7 +3,8 @@
 
 .preview-card {
 	aspect-ratio: 3 / 2;
+	max-width: 583px;
 /*	background-color: #91b0f9;*/
 /*	border: 3px solid var(--primary-color);*/
-	padding: 1rem;
+/*	padding: 1rem;*/
 }
