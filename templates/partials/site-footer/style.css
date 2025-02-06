@@ -1,32 +1,7 @@
 .site-footer {
 	background-color: var(--primary-color);
 	color: var(--background-color);
-/*	padding: 1em 2em;*/
-/*	padding: .5em 2em;*/
 	padding: .25em 2em;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	.tagline {
-		text-align: center;
-		/*a {
-			color: var(--background-color);
-			text-decoration: none;
-		}*/
-	}
-	.contact-nav {
-		ul {
-			display: flex;
-			justify-content: center;
-		}
-			li {
-			padding: 0 1em;
-		}
-		a {
-			font-family: var(--accent-type);
-			text-decoration: none;
-			color: var(--background-color);
-			text-transform: uppercase;
-		}
-	} 
 }
