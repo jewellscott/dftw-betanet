@@ -54,7 +54,7 @@ if ($page == "home") {
 	<meta name="Description" content="Jewell, online!">
 	<meta property="og:title" content="jewell.dev">
 	<meta property="og:description" content="Jewell, online!">
-	<meta property="og:image" content="https://peprojects.dev/beta-one/jewell/assets/img/social/bliss-online-now.png">
+	<meta property="og:image" content="https://peprojects.dev/beta-one/jewell/assets/img/social/bliss.png">
 
 	<link rel="stylesheet" href="css/styles.css">
 
