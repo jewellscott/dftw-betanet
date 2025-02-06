@@ -8,7 +8,7 @@
 
 	$lastUpdated = $resumeData["lastUpdated"];
 
-	// $pageDescription = $resumeData["description"];
+	$pageDescription = $resumeData["description"];
 
 	$links = [
 			[
@@ -16,11 +16,11 @@
 				"text" => "Download"
 			],
 			[
-				"url" => "#",
+				"url" => "?page=contact",
 				"text" => "Contact"
 			],
 			[
-				"url" => "#",
+				"url" => "https://github.com/jewellscott",
 				"text" => "Github"
 			],
 			[

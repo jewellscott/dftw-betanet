@@ -26,6 +26,7 @@
 								<li>
 									<a 
 										href="<?=$link["url"]?>"
+										target="_blank"
 										class="tech-type">
 											<?=$link["text"]?>
 										</a>

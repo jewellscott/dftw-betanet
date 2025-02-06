@@ -3,8 +3,9 @@
 	$resumeData = json_decode($json, true);
 
 	$skills = $resumeData["sections"][0]["content"];
-	$work = $resumeData["sections"][1]["content"];
-	$education = $resumeData["sections"][2]["content"];
+	$projects = $resumeData["sections"][1]["content"];
+	$work = $resumeData["sections"][2]["content"];
+	$education = $resumeData["sections"][3]["content"];
 
 	$lastUpdated = $resumeData["lastUpdated"];
  ?>
@@ -23,8 +24,25 @@
 			</ul>
 		</article>
 	</section>
-	<section class="work">
+	<section class="projects">
 		<h2 class="attention-voice"><?=$resumeData["sections"][1]["heading"]?></h2>
+		<article class="resume-card project-card">
+			<ul class="projects-list">
+					<?php foreach ($projects as $p) {?>
+					<li>
+						<article class="resume-card work-card">
+							<h3><?=$p["title"]?></h3>
+							<h4><?=$p["description"]?></h4>
+							<p class="display-type"><a href="<?=$p["url"]?>" target="_blank"><?=$p["text"]?></p>
+							<p><?=$p["stack"]?></p>
+						</article>
+					</li>	
+					<?php } ?>
+			</ul>
+		</article>
+	</section>
+	<section class="work">
+		<h2 class="attention-voice"><?=$resumeData["sections"][2]["heading"]?></h2>
 			<ul class="work-list">
 				<?php foreach ($work as $w) {?>
 					<li>
@@ -45,7 +63,7 @@
 			</ul>
 		</section>
 			<section class="education">
-			<h2 class="attention-voice"><?=$resumeData["sections"][2]["heading"]?></h2>
+			<h2 class="attention-voice"><?=$resumeData["sections"][3]["heading"]?></h2>
 				<ul class="education-list">
 					<?php foreach ($education as $e) {?>
 						<li>
