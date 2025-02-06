@@ -1,7 +1,9 @@
 layoutgarden-preview {
+	background-color: #82E9FF;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	padding: 1rem;
 
 	header {
 		display: flex;
@@ -10,24 +12,23 @@ layoutgarden-preview {
 		margin-bottom: 1rem;
 	}
 	.box {
-		min-width: 150px;
-		min-height: 100px;
-		background-color: red;
+		display: grid;
+		place-items: center;
+		aspect-ratio: 1 / 1;
+		font-size: 50px;
+/*		min-width: 30px;
+		max-width: 70px;
+*/		background-color: #B7FF93;
 		border-radius: .25rem;
 	}
 
-	.box:nth-child(1), .box:nth-child(3){
-		min-height: 200px;
-		background-color: #b1fca3;
-	}
-
-	.box:nth-child(2){
-		min-height: 250px;
-		background-color: #80cacb;
+	.box:nth-child(even) {
+		background-color: #FAFF84;
 	}
 
 	preview-boxes {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
