@@ -50,11 +50,11 @@ if ($page == "home") {
 	<meta charset="UTF-8">
 	<base href="<?=BASE_URL?>"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>✨ jewell.online ✨</title>
-	<meta name="Description" content="Jewell's PE Portal">
-	<meta property="og:title" content="JEWELL!">
-	<meta property="og:description" content="Jewell's PE Portal">
-	<meta property="og:image" content="https://peprojects.dev/beta-one/jewell/assets/img/social/rainbowskygrid.jpg">
+	<title>jewell.dev</title>
+	<meta name="Description" content="Jewell, online!">
+	<meta property="og:title" content="jewell.dev">
+	<meta property="og:description" content="Jewell, online!">
+	<meta property="og:image" content="https://peprojects.dev/beta-one/jewell/assets/img/social/bliss-online-now.png">
 
 	<link rel="stylesheet" href="css/styles.css">
 
