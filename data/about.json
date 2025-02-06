@@ -5,10 +5,6 @@
     "links":
     [
         {
-            "text": "Resume",
-            "url": "?page=resume"
-        },
-        {
             "text": "Contact",
             "url": "?page=contact"
         }
@@ -19,15 +15,8 @@
             "module": "graphic-diptych",
             "props":
             {
-                "content": "<h2>About me</h2><p>Hey, I’m Jewell: web developer by trade, internet enthusiast by nature. I’ve been obsessed with the web since the 00s, back when AIM away messages were an art form. Now I spend my time crafting things in PHP and JavaScript, trying to keep that early-web energy alive in everything I make.</p>"
-            }
-        },
-        {
-            "module": "graphic-diptych",
-            "props":
-            {
-                "flipped": true,
-                "content": "<h2>About this site</h2><p>This site is a collection of my web projects and the stories behind them. It's a space to share my thought process, technical decisions, and the occasional interesting rabbit hole I fell into while building for the web.</p>"
+                "imgSrc": "https://peprojects.dev/beta-one/jewell-hosted/bitmoji-resized/named/heyy.png",
+                "content": "<h2>About me</h2><p>Hey, I’m Jewell: web developer by trade, internet enthusiast by nature. I’ve been obsessed with the web since the 00s, back when AIM away messages were an art form. Now I spend my time crafting things in PHP and JavaScript, trying to keep that early-web energy alive in everything I make.</p><h2>About this site</h2><p>This site is a collection of my web projects and the stories behind them. It's a space to share my thought process, technical decisions, and the occasional interesting rabbit hole I fell into while building for the web.</p>"
             }
         }
     ]
