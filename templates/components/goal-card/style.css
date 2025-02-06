@@ -1,0 +1,14 @@
+goal-card {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+	padding-block: 1rem;
+
+	goal-content {
+		h3.title {
+		font-family: var(--display-type);
+		font-size: var(--lg-type);
+		font-weight: 700;
+	}
+}
