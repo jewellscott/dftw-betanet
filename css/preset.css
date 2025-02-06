@@ -1,0 +1,30 @@
+@import 'reset.css';
+
+html,
+body {
+	cursor: default;
+}
+
+code {
+	cursor: text;
+}
+
+/* 
+textarea and input[type="text"] already receive 
+"cursor: text" via browsers' base stylesheets 
+*/
+
+a,
+label,
+button,
+input[type="submit"], 
+input[type="button"],  
+input[type="radio"], 
+input[type="checkbox"] {
+	cursor: pointer;
+}
+
+button[disabled], 
+input[disabled] {
+	cursor: default;
+}
