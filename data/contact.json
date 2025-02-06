@@ -15,6 +15,7 @@
             "module": "graphic-diptych",
             "props":
             {
+                "imgSrc": "https://peprojects.dev/beta-one/jewell-hosted/bitmoji-resized/named/surfingthenet.png",
                 "content": "<h2>Want to work together?</h2><p>Drop me a line if you want to chat about web development, collaboration opportunities, or just to say hi.</p><p>Email me at <a href='mailto:jewelljrscott@gmail.com' target='_blank'><strong>jewelljrscott@gmail.com</strong></a>.</p>"
             }
         },
