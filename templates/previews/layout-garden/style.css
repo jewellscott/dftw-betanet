@@ -1,0 +1,36 @@
+layoutgarden-preview {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	header {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 1rem;
+	}
+	.box {
+		min-width: 150px;
+		min-height: 100px;
+		background-color: red;
+		border-radius: .25rem;
+	}
+
+	.box:nth-child(1), .box:nth-child(3){
+		min-height: 200px;
+		background-color: #b1fca3;
+	}
+
+	.box:nth-child(2){
+		min-height: 250px;
+		background-color: #80cacb;
+	}
+
+	preview-boxes {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		margin-block: 1rem;
+	}
+}

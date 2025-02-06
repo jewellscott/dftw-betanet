@@ -8,12 +8,26 @@
 	$slug = $project["slug"];
 	$github = $project["links"][1];
 
+	$preview = "templates/previews/$slug/template.php" ?? null;
+
  ?>
 
 <project-card>
+
+	<?php if (file_exists($preview)) { 
+
+		include($preview);
+	
+	} else { ?>
+
+
+
 	<figure>
 		<img src="<?=$img?>" alt="<?=$title?>">
 	</figure>
+
+	<?php } ?>
+
 	<card-content>
 		<h3 class="lg-type strong-type colored-type"><?=$title?></h3>
 		<p class="display-type"><?=$teaser?></p>

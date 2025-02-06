@@ -1,0 +1,9 @@
+@import '../templates/previews/layout-garden/style.css';
+
+
+.preview-card {
+	aspect-ratio: 3 / 2;
+/*	background-color: #91b0f9;*/
+/*	border: 3px solid var(--primary-color);*/
+	padding: 1rem;
+}
