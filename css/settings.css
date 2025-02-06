@@ -47,6 +47,10 @@
 	.tech-type {
 		color: white;
 		background-color: blue;
+		&.invert {
+/*			background-color: white;*/
+		color: white;
+		}
 	}
 
 	.site-footer {
