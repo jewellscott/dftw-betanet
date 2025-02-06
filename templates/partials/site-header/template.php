@@ -45,7 +45,7 @@ if ($page == "home") {
 
 
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-GB" data-theme="light">
 <head>
 	<meta charset="UTF-8">
 	<base href="<?=BASE_URL?>"> 

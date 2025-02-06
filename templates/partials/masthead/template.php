@@ -21,6 +21,9 @@
 			<li><a href="?page=goals" class="tech-type <?=($page === "goals") ? "invert" : "";?>">Goals</a></li>
 			<!-- <li><a href="?page=resume" class="tech-type <?=($page === "resume") ? "invert" : "";?>">Resume</a></li> -->
 			<li><a href="?page=style-guide" class="tech-type <?=($page === "style-guide") ? "invert" : "";?>">Style Guide</a></li>
+
+		<?php include(getFile('templates/components/theme-toggle/template.php'));?>
+
 		</ol>
 	</nav>
 </masthead>
