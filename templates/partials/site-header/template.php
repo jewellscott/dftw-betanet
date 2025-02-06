@@ -5,6 +5,8 @@ require_once $baseDir . '/functions.php';
 
 $page = $_GET["page"] ?? "home";
 
+$background = "";
+
 
 if ($page == "post") {
 
@@ -34,6 +36,11 @@ if ($page == "post") {
 	$template = $pageData["template"] ?? "";
 }
 
+if ($page == "home") {
+	$background = "bliss";
+}
+
+
 ?>
 
 
@@ -61,7 +68,7 @@ if ($page == "post") {
 	<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
 	<link rel="manifest" href="assets/favicon/manifest.webmanifest">
 </head>
-<body>
+<body class="<?=$page?>">
 
 	<header class="site-header">
 		<?php include('templates/partials/masthead/template.php'); ?>

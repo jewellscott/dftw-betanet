@@ -21,6 +21,18 @@ html {
 	background-color: var(--primary-color);
 }
 
+/*body.home {
+	background-image: url('../assets/img/bliss.png');
+	background-size: contain;
+
+	.site-header {
+		background-color: transparent;
+	}
+	main {
+		background-color: transparent;
+	}
+}*/
+
 body, main {
 	background-color: var(--background-color);
 }
