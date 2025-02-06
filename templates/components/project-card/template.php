@@ -1,7 +1,7 @@
 <?php 
 
 	$title = $project["title"];
-	$img = $project["img"] ?? "../../../assets/img/placeholder/landscape.jpg";
+	$img = $project["img"] ?? "assets/img/placeholder/landscape.jpg";
 	$teaser = $project["teaser"];
 	$description = $project["description"];
 	$slug = $project["slug"];
