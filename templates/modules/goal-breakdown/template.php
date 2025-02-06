@@ -13,7 +13,7 @@
 			<ol class="callout">
 				<?php foreach ($section["goals"] as $goal) {?>
 				<li>
-					<p><?=$goal?></p>
+					<?php include('templates/components/goal-card/template.php');?>
 				</li>
 				<?php } ?>
 			</ol>

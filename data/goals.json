@@ -9,57 +9,141 @@
             "time": "Overall",
             "goals":
             [
-                "Work for a sick web-based company – I love the Internet, and I want to stay here for as long as I live.",
-                "Ideate and build my JS Webiverse – An indie Internet playground and suite of fun webpages",
-                "Contribute to the Open Source community – Contribute to an active project, or publish and share my own"
+                {
+                    "title": "Work for a sick web-based company",
+                    "description": "I love the Internet, and I want to stay here for as long as I live",
+                    "completed": true
+                },
+                {
+                    "title": "Ideate and build my JS Webiverse",
+                    "description": "An indie Internet playground and suite of fun webpages",
+                    "completed": false
+                },
+                {
+                    "title": "Contribute to the Open Source community",
+                    "description": "Contribute to an active project, or publish and share my own",
+                    "completed": false
+                }
             ]
         },
         {
             "time": "Projects: Ongoing",
             "goals":
             [
-                "Layout Garden – Showcasing basic front-end skills",
-                "Exercises for Programmers – Showcasing basic programming skills"
+                {
+                    "title": "Layout Garden",
+                    "description": "Showcasing basic front-end skills",
+                    "completed": false
+                },
+                {
+                    "title": "Exercises for Programmers",
+                    "description": "Showcasing basic programming skills",
+                    "completed": false
+                }
             ]
         },
         {
             "time": "Projects: 1 Week",
             "goals":
             [
-                "Betanet Portfolio – First point of contact; showcasing my work and design process",
-                "Mockup to Code – Showcasing basic front-end (hand-off) skills"
+                {
+                    "title": "Betanet Portfolio",
+                    "description": "First point of contact; showcasing my work and design process",
+                    "completed": false
+                },
+                {
+                    "title": "Mockup to Code",
+                    "description": "Showcasing basic front-end (hand-off) skills",
+                    "completed": false
+                }
             ]
         },
         {
             "time": "Projects: February",
             "goals":
             [
-                "Betanet Portfolio – First point of contact; showcasing my work and design process",
-                "Mockup to Code – Showcasing basic front-end (hand-off) skills",
-                "500 Greatest – A useful PHP playground (refactor + case study)",
-                "Colorverse – Color exploration (with JavaScript) and UI showcase (refactor + case study)",
-                "Curry Crush – Client project (refactor + case study)",
-                "Research and Destroy – Design exploration showcase (refactor + case study)",
-                "TownieCrafter – JavaScript application prototype (refactor + case study)",
-                "Passphrase Pal – Progressively enhanced JavaScript mini-app (refactor + case study)"
+                {
+                    "title": "Betanet Portfolio",
+                    "description": "First point of contact; showcasing my work and design process",
+                    "completed": false
+                },
+                {
+                    "title": "Mockup to Code",
+                    "description": "Showcasing basic front-end (hand-off) skills",
+                    "completed": false
+                },
+                {
+                    "title": "500 Greatest",
+                    "description": "A useful PHP playground (refactor + case study)",
+                    "completed": false
+                },
+                {
+                    "title": "Colorverse",
+                    "description": "Color exploration (with JavaScript) and UI showcase (refactor + case study)",
+                    "completed": false
+                },
+                {
+                    "title": "Curry Crush",
+                    "description": "Client project (refactor + case study)",
+                    "completed": false
+                },
+                {
+                    "title": "Research and Destroy",
+                    "description": "Design exploration showcase (refactor + case study)",
+                    "completed": false
+                },
+                {
+                    "title": "TownieCrafter",
+                    "description": "JavaScript application prototype (refactor + case study)",
+                    "completed": false
+                },
+                {
+                    "title": "Passphrase Pal",
+                    "description": "Progressively enhanced JavaScript mini-app (refactor + case study)",
+                    "completed": false
+                }
             ]
         },
         {
             "time": "Projects: March",
             "goals":
             [
-                "Sick Sad Ipsum – Showcasing different client-side and server-side rendering methods",
-                "HoodCrafter – Full JavaScript application (with live style-tile)",
-                "Florilegium – Tumblr-style PHP CMS (with PHP form-builder)",
-                "Counterpoint Records – Full Wordpress application"
+                {
+                    "title": "Sick Sad Ipsum",
+                    "description": "Showcasing different client-side and server-side rendering methods",
+                    "completed": false
+                },
+                {
+                    "title": "HoodCrafter",
+                    "description": "Full JavaScript application (with live style-tile)",
+                    "completed": false
+                },
+                {
+                    "title": "Florilegium",
+                    "description": "Tumblr-style PHP CMS (with PHP form-builder)",
+                    "completed": false
+                },
+                {
+                    "title": "Counterpoint Records",
+                    "description": "Full Wordpress application",
+                    "completed": false
+                }
             ]
         },
         {
             "time": "Projects: April",
             "goals":
             [
-                "EmojiCart – InstaCart clone (using Vue?)",
-                "Chord Sheet Site – Wordpress client project"
+                {
+                    "title": "EmojiCart",
+                    "description": "InstaCart clone (using Vue?)",
+                    "completed": false
+                },
+                {
+                    "title": "Chord Sheet Site",
+                    "description": "Wordpress client project",
+                    "completed": false
+                }
             ]
         }
     ]
