@@ -1,12 +1,21 @@
 {
     "lastUpdated": "February 1, 2025",
     "title": "Goals",
-    "description": "Projects I want to complete and why",
+    "description": "Where I'm headed and why",
     "topLevel": "true",
     "content":
     [
         {
-            "time": "Ongoing",
+            "time": "Overall",
+            "goals":
+            [
+                "Work for a sick web-based company – I love the Internet, and I want to stay here for as long as I live.",
+                "Ideate and build my JS Webiverse – An indie Internet playground and suite of fun webpages",
+                "Contribute to the Open Source community – Contribute to an active project, or publish and share my own"
+            ]
+        },
+        {
+            "time": "Projects: Ongoing",
             "goals":
             [
                 "Layout Garden – Showcasing basic front-end skills",
@@ -14,7 +23,7 @@
             ]
         },
         {
-            "time": "1 Week",
+            "time": "Projects: 1 Week",
             "goals":
             [
                 "Betanet Portfolio – First point of contact; showcasing my work and design process",
@@ -22,29 +31,35 @@
             ]
         },
         {
-            "time": "1 Month",
+            "time": "Projects: February",
             "goals":
             [
+                "Betanet Portfolio – First point of contact; showcasing my work and design process",
+                "Mockup to Code – Showcasing basic front-end (hand-off) skills",
                 "500 Greatest – A useful PHP playground (refactor + case study)",
                 "Colorverse – Color exploration (with JavaScript) and UI showcase (refactor + case study)",
                 "Curry Crush – Client project (refactor + case study)",
                 "Research and Destroy – Design exploration showcase (refactor + case study)",
                 "TownieCrafter – JavaScript application prototype (refactor + case study)",
-                "Passphrase Pal – Progressively enhanced JavaScript mini-app (refactor + case study)",
-                "Sick Sad Ipsum – Showcasing different client-side and server-side rendering methods"
+                "Passphrase Pal – Progressively enhanced JavaScript mini-app (refactor + case study)"
             ]
         },
         {
-            "time": "3 Months",
+            "time": "Projects: March",
             "goals":
             [
-                "HoodCrafter – Full JavaScript application",
-                "Florilegium – Tumblr-style PHP CMS",
-                "Counterpoint Records – Full Wordpress application",
+                "Sick Sad Ipsum – Showcasing different client-side and server-side rendering methods",
+                "HoodCrafter – Full JavaScript application (with live style-tile)",
+                "Florilegium – Tumblr-style PHP CMS (with PHP form-builder)",
+                "Counterpoint Records – Full Wordpress application"
+            ]
+        },
+        {
+            "time": "Projects: April",
+            "goals":
+            [
                 "EmojiCart – InstaCart clone (using Vue?)",
-                "Chord Sheet Site – Wordpress client project",
-                "PHP Form Builder (work into another project)",
-                "Live Style Tile (work into another project)"
+                "Chord Sheet Site – Wordpress client project"
             ]
         }
     ]

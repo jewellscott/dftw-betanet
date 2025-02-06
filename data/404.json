@@ -9,7 +9,7 @@
             {
                 "imgSrc": "assets/img/placeholder/square.jpg",
                 "imgId": "bitmoji404",
-                "content": "<h1 class='banner-type rainbow'>404!</h1><h2 class='attention-voice'>Sorry! This page doesn't exist.</h2><a href='?page=home' class='tech-type block'>Go back home</a>"
+                "content": "<h1 class='banner-type rainbow'>404!</h1><h2 class='attention-voice'>I never meant to cause you any sorrow... But this page doesn't exist.</h2><a href='?page=home' class='tech-type block'>Go back home</a>"
             }
         }
     ]

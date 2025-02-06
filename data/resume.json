@@ -1,22 +1,28 @@
 {
     "title": "Resume",
     "topLevel": "true",
-    "lastUpdated": "January 1, 2025",
-    "description": "<span class='todo'>What I've been up to</span>",
+    "lastUpdated": "February 3, 2025",
+    "description": "Skills and background",
     "sections":
     [
         {
-            "heading": "Skills (Soon)",
+            "heading": "Skills",
             "content":
             [
-                "HTML",
-                "CSS",
-                "PHP",
-                "JavaScript",
-                "MySQL",
-                "Vue",
-                "Figma",
-                "Wordpress"
+                "HTML, CSS, PHP, Laravel, JavaScript, Node.js, Vue, React, Git, MySQL, Figma, Affinity Designer, Wordpress"
+            ]
+        },
+        {
+            "heading": "Recent Projects",
+            "content":
+            [
+                {
+                    "title": "Title",
+                    "description": "description - key results and high level summary",
+                    "stack": "Stack",
+                    "url": "#",
+                    "text": "Link"
+                }
             ]
         },
         {
@@ -24,45 +30,29 @@
             "content":
             [
                 {
-                    "role": "Role",
-                    "company": "Company",
-                    "start": "Start",
-                    "end": "End",
+                    "role": "Central Selling Associate",
+                    "company": "Lowe’s Companies Inc",
+                    "start": "May 2023",
+                    "end": "Present",
                     "responsibilities":
                     [
-                        "And the dish ran away with the spoon, but Hawaii was the only state which would recognize the marriage as legal",
-                        "Daria, would you say sleeping with a guitar in your hands counts as practicing? ...As long as you don't drop it",
-                        "Can anyone give me a concrete representation of this abstract theory?",
-                        "So Cinderella skipped the ball and asked her fairy Godmother to make her the first woman president",
-                        "Realizing that the monarchy was becoming obsolete, the prince opened a video store"
+                        "Exceeded performance metrics by over 80%, surpassing $1.5 million in remote installed-sales",
+                        "Proactively identified and implemented process improvements within the centralized selling model, contributing valuable insights and recommendations to enhance the customer experience and streamline operations",
+                        "Successfully delivered prompt and knowledgeable responses to inquiries, resolved issues efficiently, and ensured the successful completion of projects",
+                        "Collaborated with cross-functional teams to optimize work processes and maintain effective communication, showcasing strong teamwork and collaboration skills"
                     ]
                 },
                 {
-                    "role": "Role",
-                    "company": "Company",
-                    "start": "Start",
-                    "end": "End",
+                    "role": "Central Quoting Coordinator",
+                    "company": "Lowe’s Companies Inc",
+                    "start": "Oct. 2017",
+                    "end": "May 2023",
                     "responsibilities":
                     [
-                        "And the dish ran away with the spoon, but Hawaii was the only state which would recognize the marriage as legal",
-                        "Daria, would you say sleeping with a guitar in your hands counts as practicing? ...As long as you don't drop it",
-                        "Can anyone give me a concrete representation of this abstract theory?",
-                        "So Cinderella skipped the ball and asked her fairy Godmother to make her the first woman president",
-                        "Realizing that the monarchy was becoming obsolete, the prince opened a video store"
-                    ]
-                },
-                {
-                    "role": "Role",
-                    "company": "Company",
-                    "start": "Start",
-                    "end": "End",
-                    "responsibilities":
-                    [
-                        "And the dish ran away with the spoon, but Hawaii was the only state which would recognize the marriage as legal",
-                        "Daria, would you say sleeping with a guitar in your hands counts as practicing? ...As long as you don't drop it",
-                        "Can anyone give me a concrete representation of this abstract theory?",
-                        "So Cinderella skipped the ball and asked her fairy Godmother to make her the first woman president",
-                        "Realizing that the monarchy was becoming obsolete, the prince opened a video store"
+                        "Provided hands-on technical assistance and business support for cross-functional teams",
+                        "Assessed processes to uncover bottlenecks and implement solutions for smoother operations",
+                        "Delivered timely and accurate estimates to drive increase sales and maintain service-level agreement",
+                        "Provided 1-on-1 mentorship for colleagues, facilitating the dissemination of best practices and product knowledge and fostering a collaborative team environment"
                     ]
                 }
             ]
@@ -72,13 +62,20 @@
             "content":
             [
                 {
-                    "subject": "Major/Subject",
-                    "location": "Location"
+                    "location": "Perpetual Education",
+                    "subject": "Design for the Web"
                 },
                 {
-                    "subject": "Major/Subject",
-                    "location": "Location"
+                    "location": "The University of North Carolina at Greensboro",
+                    "subject": "B.S. Information Systems"
                 }
+            ]
+        },
+        {
+            "heading": "Interests",
+            "content":
+            [
+                "Musicology, reading, modding The Sims 2"
             ]
         }
     ]

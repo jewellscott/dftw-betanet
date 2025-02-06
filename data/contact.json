@@ -1,16 +1,12 @@
 {
     "topLevel": "true",
     "title": "Contact",
-    "description": "Call me, beep me, if you wanna reach me.",
+    "description": "How to get in touch",
     "links":
     [
         {
-            "text": "Resume",
-            "url": "#"
-        },
-        {
             "text": "Email",
-            "url": "#"
+            "url": "mailto:jewelljrscott@gmail.com"
         }
     ],
     "modules":
@@ -19,14 +15,7 @@
             "module": "graphic-diptych",
             "props":
             {
-                "content": "<h2>Heading</h2><p>We're out in the middle of nowhere, nobody knows we're here, we have no way to contact anyone, and our parents have gone insane.</p>"
-            }
-        },
-        {
-            "module": "generic-text",
-            "props":
-            {
-                "content": "<h2>Want to work together?</h2><p>Humor may lift your spirits, Daria, but it takes a professional to lift your buttocks! Doctor's joke! Have a nice day girls. And remember, money can make anyone look beautiful.</p>"
+                "content": "<h2>Want to work together?</h2><p>Drop me a line if you want to chat about web development, collaboration opportunities, or just to say hi.</p><p>Email me at <a href='mailto:jewelljrscott@gmail.com' target='_blank'><strong>jewelljrscott@gmail.com</strong></a>.</p>"
             }
         },
         {
@@ -34,7 +23,7 @@
             "props":
             {
                 "filter": "featured",
-                "heading": "Featured"
+                "heading": "Work I'm proud to share – let's talk!"
             }
         }
     ]

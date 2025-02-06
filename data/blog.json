@@ -1,15 +1,7 @@
 {
     "topLevel": "true",
     "title": "Blog",
-    "description": "Writings and stuff",
-    "template": "left",
-    "links":
-    [
-        {
-            "text": "Substack",
-            "url": "?page=substack"
-        }
-    ],
+    "description": "Notes on building for the web",
     "modules":
     [
         {

@@ -1,17 +1,16 @@
 {
-    "lastUpdated": "January 1, 2024",
     "topLevel": "true",
     "title": "Work",
-    "description": "TODOooooo",
+    "description": "Projects and their stories",
     "links":
     [
         {
             "text": "Github",
-            "url": "#"
+            "url": "https://github.com/jewellscott"
         },
         {
             "text": "Codepen",
-            "url": "#"
+            "url": "https://codepen.io/jewellscott"
         }
     ],
     "modules":
